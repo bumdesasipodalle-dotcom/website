@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website Resmi BUMDes Sipodalle Batetangnga Sejahtera - Pusat Ekonomi Desa Mandiri, Transparan, Layanan Unit Usaha, dan Pelaporan Keuangan Digital Realtime.">
+  <meta name="keywords" content="BUMDes, BUMDes Sipodalle, Batetangnga, Laporan Keuangan BUMDes, Unit Usaha Desa, Desa Mandiri, PPAK BUMDes">
+  <meta name="author" content="BUMDes Sipodalle Batetangnga Sejahtera">
+  <title>Website Resmi BUMDes Sipodalle Batetangnga Sejahtera | Maju, Transparan & Berkelanjutan</title>
+
+  <!-- Favicon Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏢</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- ========================================================================
+       DESAIN SISTEM CSS LENGKAP & MANDIRI (HIJAU, ORANYE, PUTIH)
+       ======================================================================== -->
+  <style>
+    :root {
+      /* Brand Green Palette */
+      --primary-900: #064e3b;
+      --primary-800: #065f46;
+      --primary-700: #047857;
+      --primary-600: #059669;
+      --primary-500: #10b981;
+      --primary-400: #34d399;
+      --primary-200: #a7f3d0;
+      --primary-100: #d1fae5;
+      --primary-50:  #ecfdf5;
+
+      /* Brand Orange Palette */
+      --accent-900: #7c2d12;
+      --accent-800: #9a3412;
+      --accent-700: #c2410c;
+      --accent-600: #ea580c;
+      --accent-500: #f97316;
+      --accent-400: #fb923c;
+      --accent-200: #fed7aa;
+      --accent-100: #ffedd5;
+      --accent-50:  #fff7ed;
+
+      /* Neutral Palette */
+      --neutral-900: #0f172a;
+      --neutral-800: #1e293b;
+      --neutral-700: #334155;
+      --neutral-600: #475569;
+      --neutral-500: #64748b;
+      --neutral-400: #94a3b8;
+      --neutral-300: #cbd5e1;
+      --neutral-200: #e2e8f0;
+      --neutral-100: #f1f5f9;
+      --neutral-50:  #f8fafc;
+      --white: #ffffff;
+
+      /* Gradients */
+      --grad-primary: linear-gradient(135deg, #065f46 0%, #059669 50%, #10b981 100%);
+      --grad-accent: linear-gradient(135deg, #ea580c 0%, #f97316 60%, #fb923c 100%);
+      --grad-hero: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #0f172a 100%);
+
+      /* Shadows */
+      --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 8px 20px rgba(15, 23, 42, 0.07);
+      --shadow-lg: 0 16px 36px rgba(15, 23, 42, 0.10);
+      --shadow-xl: 0 24px 50px rgba(15, 23, 42, 0.14);
+      --shadow-green: 0 8px 24px rgba(16, 185, 129, 0.28);
+      --shadow-orange: 0 8px 24px rgba(234, 88, 12, 0.28);
+
+      /* Radius */
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-full: 9999px;
+      --nav-height: 76px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--neutral-800);
+      background-color: var(--neutral-50);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      color: var(--neutral-900);
+      line-height: 1.25;
+    }
+    a { color: inherit; text-decoration: none; transition: all 0.25s ease; }
+    img { max-width: 100%; height: auto; display: block; }
+    button, input, select, textarea { font-family: inherit; font-size: inherit; }
+
+    .container {
+      width: 100%;
+      max-width: 1220px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* Navbar */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: var(--nav-height);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--neutral-200);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: var(--shadow-md);
+      height: 68px;
+    }
+    .navbar { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-icon {
+      width: 44px; height: 44px; border-radius: var(--radius-md);
+      background: var(--grad-primary);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--white); font-size: 20px;
+      box-shadow: var(--shadow-green); position: relative; overflow: hidden; flex-shrink: 0;
+    }
+    .brand-icon::after {
+      content: ''; position: absolute; top: 0; right: 0; width: 14px; height: 14px;
+      background: var(--accent-500); border-radius: 0 0 0 100%;
+    }
+    .brand-text h1 { font-size: 1.15rem; font-weight: 800; color: var(--primary-900); margin-bottom: -3px; }
+    .brand-text span { font-size: 0.72rem; font-weight: 700; color: var(--accent-600); text-transform: uppercase; letter-spacing: 0.6px; }
+
+    .nav-menu { display: flex; align-items: center; gap: 6px; list-style: none; }
+    .nav-link {
+      display: flex; align-items: center; gap: 7px;
+      padding: 8px 16px; font-size: 0.92rem; font-weight: 600; color: var(--neutral-700);
+      border-radius: var(--radius-full); transition: all 0.2s ease; cursor: pointer;
+    }
+    .nav-link i { font-size: 0.95rem; color: var(--neutral-400); transition: color 0.2s ease; }
+    .nav-link:hover { color: var(--primary-700); background: var(--primary-50); }
+    .nav-link:hover i { color: var(--primary-600); }
+    .nav-link.active { color: var(--primary-900); background: var(--primary-100); font-weight: 700; }
+    .nav-link.active i { color: var(--primary-700); }
+
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 10px 20px; border-radius: var(--radius-full);
+      font-size: 0.9rem; font-weight: 700; cursor: pointer; border: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); text-align: center; white-space: nowrap;
+    }
+    .btn-primary { background: var(--grad-primary); color: var(--white); box-shadow: var(--shadow-green); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(16, 185, 129, 0.4); }
+    .btn-accent { background: var(--grad-accent); color: var(--white); box-shadow: var(--shadow-orange); }
+    .btn-accent:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(234, 88, 12, 0.4); }
+    .btn-outline-white { background: rgba(255, 255, 255, 0.15); color: var(--white); border: 1.5px solid rgba(255, 255, 255, 0.4); backdrop-filter: blur(8px); }
+    .btn-outline-white:hover { background: var(--white); color: var(--primary-900); }
+    .btn-outline-primary { background: var(--white); color: var(--primary-700); border: 1.5px solid var(--primary-500); }
+    .btn-outline-primary:hover { background: var(--primary-50); }
+    .btn-sm { padding: 6px 14px; font-size: 0.82rem; }
+    .btn-lg { padding: 13px 26px; font-size: 1rem; }
+
+    .mobile-toggle {
+      display: none; width: 40px; height: 40px; border-radius: var(--radius-md);
+      border: 1.5px solid var(--neutral-200); background: var(--white); color: var(--neutral-800);
+      font-size: 18px; cursor: pointer;
+    }
+
+    /* SPA Page Sections */
+    .page-section {
+      display: none; padding-top: calc(var(--nav-height) + 24px);
+      padding-bottom: 70px; min-height: 100vh; animation: fadeIn 0.3s ease;
+    }
+    .page-section.active-page { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Section Headers */
+    .section-intro { text-align: center; max-width: 720px; margin: 0 auto 44px; }
+    .section-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 5px 14px; border-radius: var(--radius-full);
+      background: var(--accent-100); color: var(--accent-700);
+      font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; margin-bottom: 12px;
+    }
+    .section-badge.green { background: var(--primary-100); color: var(--primary-800); }
+    .section-title { font-size: 2.2rem; color: var(--neutral-900); margin-bottom: 12px; }
+    .section-title span.text-green { color: var(--primary-600); }
+    .section-title span.text-orange { color: var(--accent-600); }
+    .section-desc { font-size: 1rem; color: var(--neutral-600); }
+
+    /* Hero */
+    .hero-wrapper {
+      position: relative; border-radius: var(--radius-xl);
+      background: var(--grad-hero); color: var(--white);
+      padding: 60px 36px; overflow: hidden; margin-bottom: 50px; box-shadow: var(--shadow-xl);
+    }
+    .hero-bg-pattern {
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.25) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.25) 0%, transparent 45%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 36px;
+      align-items: center; position: relative; z-index: 2;
+    }
+    .hero-badge-top {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 14px; border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.25); font-size: 0.82rem; font-weight: 600;
+      color: var(--primary-200); margin-bottom: 16px;
+    }
+    .hero-title { font-size: 2.7rem; font-weight: 800; line-height: 1.18; margin-bottom: 16px; color: var(--white); }
+    .hero-title .highlight-orange { color: var(--accent-400); }
+    .hero-subtitle { font-size: 1.05rem; color: var(--neutral-200); margin-bottom: 28px; max-width: 560px; line-height: 1.6; }
+    .hero-cta-group { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+
+    .hero-visual-card {
+      background: rgba(255, 255, 255, 0.12); backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px); border: 1.5px solid rgba(255, 255, 255, 0.25);
+      border-radius: var(--radius-lg); padding: 26px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    }
+    .hero-app-preview-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); margin-bottom: 18px;
+    }
+    .hero-status-pill {
+      display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px;
+      border-radius: var(--radius-full); background: rgba(16, 185, 129, 0.25);
+      border: 1px solid var(--primary-400); color: var(--primary-200); font-size: 0.78rem; font-weight: 700;
+    }
+    .hero-status-pill .pulse-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--primary-400); box-shadow: 0 0 10px var(--primary-400);
+      animation: pulse 1.6s infinite;
+    }
+    @keyframes pulse { 0% { transform: scale(0.9); opacity: 0.8; } 50% { transform: scale(1.3); opacity: 1; } 100% { transform: scale(0.9); opacity: 0.8; } }
+
+    .preview-stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+    .preview-stat-box {
+      background: rgba(0, 0, 0, 0.22); border-radius: var(--radius-md);
+      padding: 12px 14px; border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .preview-stat-box .lbl { font-size: 0.75rem; color: var(--neutral-300); margin-bottom: 4px; }
+    .preview-stat-box .val { font-size: 1.2rem; font-weight: 800; color: var(--white); }
+
+    .hero-transparency-card {
+      background: linear-gradient(135deg, rgba(234, 88, 12, 0.3) 0%, rgba(6, 78, 59, 0.4) 100%);
+      border-radius: var(--radius-md); padding: 14px 16px;
+      border: 1px solid rgba(249, 115, 22, 0.3); display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+
+    /* Stats Grid */
+    .stats-counter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 60px; }
+    .stat-card {
+      background: var(--white); border-radius: var(--radius-lg); padding: 24px 20px;
+      border: 1px solid var(--neutral-200); box-shadow: var(--shadow-sm); transition: all 0.3s ease;
+    }
+    .stat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--primary-400); }
+    .stat-card-icon {
+      width: 46px; height: 46px; border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 14px;
+    }
+    .stat-card-icon.green { background: var(--primary-100); color: var(--primary-700); }
+    .stat-card-icon.orange { background: var(--accent-100); color: var(--accent-700); }
+    .stat-card-icon.blue { background: #e0f2fe; color: #0284c7; }
+    .stat-card-icon.purple { background: #f3e8ff; color: #9333ea; }
+    .stat-card-num { font-size: 1.7rem; font-weight: 800; color: var(--neutral-900); margin-bottom: 4px; letter-spacing: -0.5px; }
+    .stat-card-label { font-size: 0.86rem; color: var(--neutral-500); font-weight: 600; }
+
+    /* Features Grid */
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 60px; }
+    .feature-card {
+      background: var(--white); border-radius: var(--radius-lg); padding: 28px 22px;
+      border: 1px solid var(--neutral-200); box-shadow: var(--shadow-sm); transition: all 0.3s ease;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--accent-400); }
+    .feature-card-icon {
+      width: 50px; height: 50px; border-radius: var(--radius-md);
+      background: var(--accent-50); color: var(--accent-600);
+      display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 18px; border: 1px solid var(--accent-200);
+    }
+    .feature-card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .feature-card p { color: var(--neutral-600); font-size: 0.92rem; }
+
+    /* Home Units Grid */
+    .home-units-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 60px; }
+
+    /* Testimonials */
+    .testimonials-wrapper {
+      background: linear-gradient(180deg, var(--primary-50) 0%, var(--neutral-50) 100%);
+      border-radius: var(--radius-xl); padding: 44px 26px; border: 1px solid var(--primary-100); margin-bottom: 50px;
+    }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .testi-card {
+      background: var(--white); border-radius: var(--radius-lg); padding: 24px;
+      box-shadow: var(--shadow-sm); border: 1px solid var(--neutral-200); display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .testi-quote { font-size: 0.92rem; color: var(--neutral-700); font-style: italic; margin-bottom: 18px; line-height: 1.6; }
+    .testi-user { display: flex; align-items: center; gap: 12px; }
+    .testi-user img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-500); }
+    .testi-user-info h4 { font-size: 0.92rem; font-weight: 700; margin-bottom: 2px; }
+    .testi-user-info span { font-size: 0.78rem; color: var(--neutral-500); }
+
+    /* Profile Section */
+    .profile-overview-card {
+      background: var(--white); border-radius: var(--radius-xl); border: 1px solid var(--neutral-200);
+      box-shadow: var(--shadow-md); padding: 36px; margin-bottom: 44px;
+    }
+    .profile-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; }
+    .profile-text h2 { font-size: 1.9rem; margin-bottom: 14px; color: var(--primary-900); }
+    .profile-text p { color: var(--neutral-700); margin-bottom: 14px; line-height: 1.65; font-size: 0.95rem; }
+    .legalitas-box {
+      background: var(--primary-50); border-radius: var(--radius-md); padding: 18px;
+      border-left: 4px solid var(--primary-600); margin-top: 20px;
+    }
+    .legalitas-box h4 { font-size: 0.92rem; color: var(--primary-900); margin-bottom: 8px; }
+    .legalitas-box p { font-size: 0.85rem; margin-bottom: 4px; color: var(--neutral-700); }
+
+    .visi-misi-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 22px; margin-bottom: 50px; }
+    .visi-card {
+      background: var(--grad-hero); color: var(--white); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-md);
+    }
+    .visi-card h3 { color: var(--accent-400); font-size: 1.4rem; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+    .visi-card p { font-size: 1.05rem; line-height: 1.65; color: var(--neutral-100); }
+    .misi-card { background: var(--white); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--neutral-200); box-shadow: var(--shadow-sm); }
+    .misi-card h3 { color: var(--primary-800); font-size: 1.4rem; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+    .misi-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .misi-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--neutral-700); }
+    .misi-list li i { color: var(--primary-600); font-size: 0.95rem; margin-top: 3px; flex-shrink: 0; }
+
+    .org-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 50px; }
+    .org-card {
+      background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--neutral-200);
+      padding: 22px 18px; text-align: center; box-shadow: var(--shadow-sm); transition: all 0.3s ease;
+    }
+    .org-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--primary-400); }
+    .org-avatar-icon {
+      width: 58px; height: 58px; border-radius: 50%; background: var(--primary-50); border: 2px solid var(--primary-200);
+      display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--primary-700); margin: 0 auto 12px;
+    }
+    .org-card.orange .org-avatar-icon { background: var(--accent-50); border-color: var(--accent-200); color: var(--accent-700); }
+    .org-card h4 { font-size: 1rem; margin-bottom: 4px; color: var(--neutral-900); }
+    .org-role-badge {
+      display: inline-block; padding: 3px 10px; border-radius: var(--radius-full);
+      background: var(--primary-100); color: var(--primary-800); font-size: 0.75rem; font-weight: 700; margin-bottom: 10px;
+    }
+    .org-card.orange .org-role-badge { background: var(--accent-100); color: var(--accent-800); }
+    .org-card p { font-size: 0.82rem; color: var(--neutral-600); }
+
+    /* Berita */
+    .filter-search-bar {
+      background: var(--white); border-radius: var(--radius-lg); padding: 14px 20px;
+      border: 1px solid var(--neutral-200); box-shadow: var(--shadow-sm);
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 35px; flex-wrap: wrap;
+    }
+    .category-pills { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .cat-btn {
+      padding: 7px 16px; border-radius: var(--radius-full); background: var(--neutral-100);
+      color: var(--neutral-700); font-size: 0.85rem; font-weight: 600; border: none; cursor: pointer; transition: all 0.2s ease;
+    }
+    .cat-btn:hover { background: var(--primary-100); color: var(--primary-800); }
+    .cat-btn.active { background: var(--primary-700); color: var(--white); box-shadow: 0 4px 10px rgba(4, 120, 87, 0.25); }
+
+    .search-input-box { position: relative; min-width: 250px; }
+    .search-input-box i { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--neutral-400); }
+    .search-input-box input {
+      width: 100%; padding: 8px 14px 8px 36px; border-radius: var(--radius-full);
+      border: 1.5px solid var(--neutral-200); outline: none; font-size: 0.88rem; background: var(--neutral-50); transition: all 0.2s ease;
+    }
+    .search-input-box input:focus { border-color: var(--primary-500); background: var(--white); box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15); }
+
+    .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .news-card {
+      background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--neutral-200);
+      overflow: hidden; box-shadow: var(--shadow-sm); transition: all 0.3s ease; display: flex; flex-direction: column;
+    }
+    .news-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--primary-300); }
+    .news-thumb { height: 190px; position: relative; overflow: hidden; background: var(--neutral-200); }
+    .news-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+    .news-card:hover .news-thumb img { transform: scale(1.05); }
+    .news-category-badge {
+      position: absolute; top: 12px; left: 12px; padding: 4px 10px; border-radius: var(--radius-full);
+      background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(4px); color: var(--white); font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    }
+    .news-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+    .news-meta { display: flex; align-items: center; gap: 12px; font-size: 0.78rem; color: var(--neutral-400); margin-bottom: 8px; }
+    .news-meta span { display: flex; align-items: center; gap: 5px; }
+    .news-title { font-size: 1.1rem; margin-bottom: 8px; line-height: 1.4; color: var(--neutral-900); }
+    .news-excerpt { font-size: 0.88rem; color: var(--neutral-600); margin-bottom: 16px; flex: 1; line-height: 1.55; }
+    .news-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--neutral-100); }
+    .read-more-btn { font-size: 0.85rem; font-weight: 700; color: var(--primary-700); display: flex; align-items: center; gap: 5px; background: none; border: none; cursor: pointer; }
+    .read-more-btn:hover { color: var(--accent-600); transform: translateX(3px); }
+
+    /* Unit Usaha */
+    .unit-filter-pills { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 35px; }
+    .unit-card-full {
+      background: var(--white); border-radius: var(--radius-xl); border: 1px solid var(--neutral-200);
+      box-shadow: var(--shadow-md); overflow: hidden; margin-bottom: 30px; transition: all 0.3s ease;
+      display: grid; grid-template-columns: 360px 1fr;
+    }
+    .unit-card-full:hover { box-shadow: var(--shadow-xl); border-color: var(--primary-400); }
+    .unit-image-side { position: relative; min-height: 260px; background: var(--neutral-200); }
+    .unit-image-side img { width: 100%; height: 100%; object-fit: cover; }
+    .unit-image-overlay {
+      position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.75) 100%);
+      display: flex; align-items: flex-end; padding: 20px;
+    }
+    .unit-omset-pill {
+      background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(8px);
+      padding: 5px 12px; border-radius: var(--radius-full); font-size: 0.78rem; font-weight: 700; color: var(--neutral-900);
+    }
+    .unit-content-side { padding: 28px 32px; display: flex; flex-direction: column; justify-content: space-between; }
+    .unit-header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+    .unit-tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+    .unit-tag.green { background: var(--primary-100); color: var(--primary-800); }
+    .unit-tag.orange { background: var(--accent-100); color: var(--accent-800); }
+    .unit-tag.blue { background: #e0f2fe; color: #0369a1; }
+    .unit-status-badge { font-size: 0.78rem; color: var(--primary-600); font-weight: 600; display: flex; align-items: center; gap: 5px; }
+    .unit-title { font-size: 1.45rem; color: var(--neutral-900); margin-bottom: 6px; }
+    .unit-tagline { font-size: 0.92rem; font-weight: 600; color: var(--accent-600); margin-bottom: 12px; }
+    .unit-desc { font-size: 0.9rem; color: var(--neutral-600); margin-bottom: 18px; line-height: 1.55; }
+    .unit-services-list {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px;
+      background: var(--neutral-50); padding: 14px; border-radius: var(--radius-md); border: 1px solid var(--neutral-200);
+    }
+    .unit-services-list .srv-item { display: flex; align-items: center; gap: 7px; font-size: 0.84rem; color: var(--neutral-700); font-weight: 500; }
+    .unit-services-list .srv-item i { color: var(--primary-600); font-size: 0.85rem; }
+    .unit-footer-actions {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      padding-top: 14px; border-top: 1px solid var(--neutral-200); flex-wrap: wrap;
+    }
+    .unit-contact-info { font-size: 0.82rem; color: var(--neutral-500); }
+    .unit-contact-info strong { color: var(--neutral-800); }
+
+    /* Laporan Keuangan */
+    .keuangan-tabs-nav { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 30px; }
+    .keuangan-tab-btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px;
+      border-radius: var(--radius-full); background: var(--white); border: 1.5px solid var(--neutral-300);
+      color: var(--neutral-700); font-weight: 700; font-size: 0.92rem; cursor: pointer; transition: all 0.25s ease;
+    }
+    .keuangan-tab-btn.active { background: var(--grad-primary); color: var(--white); border-color: transparent; box-shadow: var(--shadow-green); }
+    .keuangan-tab-content { display: none; }
+    .keuangan-tab-content.active { display: block; }
+
+    .apps-script-container {
+      background: var(--white); border-radius: var(--radius-xl); border: 1px solid var(--neutral-200);
+      box-shadow: var(--shadow-lg); overflow: hidden; margin-bottom: 36px;
+    }
+    .apps-script-toolbar {
+      background: var(--neutral-900); color: var(--white); padding: 12px 20px;
+      display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+    }
+    .app-title-badge { display: flex; align-items: center; gap: 8px; }
+    .app-indicator-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--primary-400); box-shadow: 0 0 8px var(--primary-400); }
+    .app-title-badge span { font-size: 0.88rem; font-weight: 700; }
+    .app-toolbar-buttons { display: flex; align-items: center; gap: 8px; }
+    .tool-btn {
+      background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--white); padding: 6px 12px; border-radius: var(--radius-sm); font-size: 0.78rem; font-weight: 600;
+      cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;
+    }
+    .tool-btn:hover { background: rgba(255, 255, 255, 0.25); }
+    .iframe-wrapper { position: relative; width: 100%; height: 800px; background: var(--neutral-100); overflow: hidden; }
+    .iframe-wrapper iframe { width: 100%; height: 100%; border: none; display: block; }
+
+    .apps-script-container.is-fullscreen {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh;
+      z-index: 99999; border-radius: 0; margin: 0;
+    }
+    .apps-script-container.is-fullscreen .iframe-wrapper { height: calc(100vh - 54px); }
+
+    .transparency-dashboard {
+      background: var(--white); border-radius: var(--radius-xl); border: 1px solid var(--neutral-200);
+      box-shadow: var(--shadow-md); padding: 32px; margin-bottom: 36px;
+    }
+    .financial-metric-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
+    .fin-card { padding: 20px; border-radius: var(--radius-lg); border: 1.5px solid var(--neutral-200); background: var(--neutral-50); }
+    .fin-card.highlight { background: var(--primary-50); border-color: var(--primary-300); }
+    .fin-card.orange { background: var(--accent-50); border-color: var(--accent-300); }
+    .fin-card .lbl { font-size: 0.78rem; color: var(--neutral-500); font-weight: 600; margin-bottom: 5px; }
+    .fin-card .amt { font-size: 1.45rem; font-weight: 800; color: var(--neutral-900); letter-spacing: -0.4px; }
+    .fin-card.highlight .amt { color: var(--primary-800); }
+    .fin-card.orange .amt { color: var(--accent-700); }
+
+    .composition-section { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 32px; align-items: center; margin-bottom: 36px; }
+    .comp-bars-list { display: flex; flex-direction: column; gap: 14px; }
+    .comp-bar-item .bar-label { display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; }
+    .progress-track { height: 9px; border-radius: var(--radius-full); background: var(--neutral-200); overflow: hidden; }
+    .progress-fill { height: 100%; border-radius: var(--radius-full); transition: width 0.8s ease; }
+
+    .allocation-box { background: var(--neutral-900); color: var(--white); border-radius: var(--radius-lg); padding: 26px; }
+    .allocation-box h4 { color: var(--primary-300); font-size: 1.15rem; margin-bottom: 14px; }
+    .alloc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .alloc-list li { display: flex; justify-content: space-between; font-size: 0.85rem; border-bottom: 1px dashed rgba(255, 255, 255, 0.15); padding-bottom: 6px; }
+    .alloc-list li span:last-child { font-weight: 700; color: var(--accent-400); }
+
+    .modul-laporan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .modul-card {
+      background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--neutral-200);
+      padding: 22px; box-shadow: var(--shadow-sm); transition: all 0.3s ease;
+    }
+    .modul-card:hover { transform: translateY(-3px); border-color: var(--primary-400); box-shadow: var(--shadow-md); }
+    .modul-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+    .modul-icon {
+      width: 40px; height: 40px; border-radius: var(--radius-md); background: var(--primary-100); color: var(--primary-700);
+      display: flex; align-items: center; justify-content: center; font-size: 18px;
+    }
+    .modul-card h4 { font-size: 1.05rem; margin-bottom: 6px; }
+    .modul-card p { font-size: 0.82rem; color: var(--neutral-600); line-height: 1.5; }
+
+    /* GitHub Modal & Banner */
+    .github-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      border-radius: var(--radius-xl); padding: 36px; color: var(--white);
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+      margin-top: 50px; box-shadow: var(--shadow-lg); border: 1px solid rgba(255, 255, 255, 0.1); flex-wrap: wrap;
+    }
+    .github-banner-left { display: flex; align-items: center; gap: 18px; }
+    .github-icon-large { font-size: 42px; color: var(--white); }
+    .github-banner-text h3 { font-size: 1.3rem; color: var(--white); margin-bottom: 4px; }
+    .github-banner-text p { color: var(--neutral-300); font-size: 0.9rem; }
+    .code-block {
+      background: #0f172a; color: #38bdf8; border-radius: var(--radius-md); padding: 14px 18px;
+      font-family: 'Consolas', 'Courier New', monospace; font-size: 0.85rem; line-height: 1.6;
+      margin: 12px 0 18px; overflow-x: auto; border: 1px solid #334155;
+    }
+    .code-block .comment { color: #64748b; }
+    .code-block .keyword { color: #f43f5e; }
+    .code-block .string { color: #34d399; }
+
+    /* Modals */
+    .modal-backdrop {
+      position: fixed; inset: 0; background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); z-index: 2000;
+      display: none; align-items: center; justify-content: center; padding: 20px; opacity: 0; transition: opacity 0.25s ease;
+    }
+    .modal-backdrop.open { display: flex; opacity: 1; }
+    .modal-window {
+      background: var(--white); border-radius: var(--radius-xl); max-width: 700px; width: 100%;
+      max-height: 88vh; overflow-y: auto; box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+      transform: translateY(16px); transition: transform 0.25s ease; position: relative;
+    }
+    .modal-backdrop.open .modal-window { transform: translateY(0); }
+    .modal-close-btn {
+      position: absolute; top: 16px; right: 16px; width: 34px; height: 34px; border-radius: 50%;
+      background: var(--neutral-100); border: none; color: var(--neutral-600); cursor: pointer;
+      display: flex; align-items: center; justify-content: center; font-size: 16px; z-index: 10; transition: all 0.2s ease;
+    }
+    .modal-close-btn:hover { background: var(--accent-100); color: var(--accent-700); }
+    .modal-body-content { padding: 32px; }
+
+    /* Footer */
+    .site-footer { background: var(--neutral-900); color: var(--neutral-300); padding: 60px 0 26px; border-top: 4px solid var(--primary-500); }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 36px; margin-bottom: 44px; }
+    .footer-brand h3 { font-size: 1.3rem; color: var(--white); margin-bottom: 10px; }
+    .footer-brand p { font-size: 0.88rem; color: var(--neutral-400); margin-bottom: 18px; line-height: 1.55; }
+    .footer-socials { display: flex; gap: 10px; }
+    .social-link {
+      width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 255, 255, 0.1);
+      display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 15px; transition: all 0.2s ease;
+    }
+    .social-link:hover { background: var(--primary-500); transform: translateY(-2px); }
+    .footer-col h4 { font-size: 1rem; color: var(--white); margin-bottom: 18px; position: relative; padding-bottom: 7px; }
+    .footer-col h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 28px; height: 2px; background: var(--accent-500); }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .footer-links a { color: var(--neutral-400); font-size: 0.86rem; display: flex; align-items: center; gap: 7px; }
+    .footer-links a:hover { color: var(--primary-400); transform: translateX(4px); }
+    .footer-contact-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-contact-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; color: var(--neutral-400); }
+    .footer-contact-list li i { color: var(--primary-400); margin-top: 3px; }
+    .footer-bottom {
+      padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex; align-items: center; justify-content: space-between; font-size: 0.82rem; color: var(--neutral-500); flex-wrap: wrap; gap: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .stats-counter-grid { grid-template-columns: repeat(2, 1fr); }
+      .home-units-grid, .news-grid, .features-grid, .testimonials-grid, .modul-laporan-grid { grid-template-columns: repeat(2, 1fr); }
+      .org-grid, .financial-metric-row { grid-template-columns: repeat(2, 1fr); }
+      .unit-card-full { grid-template-columns: 1fr; }
+      .composition-section { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .mobile-toggle { display: flex; align-items: center; justify-content: center; }
+      .nav-menu {
+        position: fixed; top: var(--nav-height); left: 0; right: 0; background: var(--white);
+        flex-direction: column; padding: 20px; box-shadow: var(--shadow-lg); border-bottom: 1px solid var(--neutral-200);
+        transform: translateY(-120%); opacity: 0; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); pointer-events: none; z-index: 999;
+      }
+      .nav-menu.mobile-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+      .nav-link { width: 100%; padding: 10px 16px; }
+      .nav-actions { display: none; }
+      .hero-title { font-size: 2rem; }
+      .section-title { font-size: 1.7rem; }
+      .home-units-grid, .news-grid, .features-grid, .testimonials-grid, .modul-laporan-grid, .org-grid, .stats-counter-grid, .financial-metric-row, .visi-misi-grid, .profile-grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid { grid-template-columns: 1fr; }
+      .iframe-wrapper { height: 580px; }
+      .unit-services-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       SITE HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#beranda" class="brand" onclick="navigateTo('beranda')">
+        <div class="brand-icon">
+          <i class="fa-solid fa-building-columns"></i>
+        </div>
+        <div class="brand-text">
+          <h1>BUMDes Sipodalle</h1>
+          <span>Batetangnga Sejahtera</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#beranda" class="nav-link active" data-nav="beranda"><i class="fa-solid fa-house"></i> Beranda</a></li>
+        <li><a href="#profil" class="nav-link" data-nav="profil"><i class="fa-solid fa-circle-info"></i> Profil</a></li>
+        <li><a href="#berita" class="nav-link" data-nav="berita"><i class="fa-solid fa-newspaper"></i> Berita</a></li>
+        <li><a href="#unit-usaha" class="nav-link" data-nav="unit-usaha"><i class="fa-solid fa-boxes-stacked"></i> Unit Usaha</a></li>
+        <li><a href="#laporan-keuangan" class="nav-link" data-nav="laporan-keuangan"><i class="fa-solid fa-chart-pie"></i> Laporan Keuangan</a></li>
+      </ul>
+
+      <!-- Navbar Action Buttons -->
+      <div class="nav-actions">
+        <a href="#laporan-keuangan" class="btn btn-accent btn-sm" onclick="openAppsScriptTab()">
+          <i class="fa-solid fa-bolt"></i> Portal Keuangan
+        </a>
+        <button class="btn btn-outline-primary btn-sm" onclick="openGitHubModal()" title="Panduan & Koneksi GitHub">
+          <i class="fa-brands fa-github"></i> GitHub
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         1. HALAMAN BERANDA (HOME)
+         ====================================================================== -->
+    <section id="beranda" class="page-section active-page">
+      <div class="container">
+        
+        <!-- Hero Banner Section -->
+        <div class="hero-wrapper">
+          <div class="hero-bg-pattern"></div>
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="hero-badge-top">
+                <i class="fa-solid fa-certificate"></i> Badan Usaha Milik Desa Resmi Kemenkumham
+              </div>
+              <h1 class="hero-title">
+                Membangun Ekonomi Desa <span class="highlight-orange">Mandiri & Transparan</span>
+              </h1>
+              <p class="hero-subtitle">
+                Selamat datang di portal resmi BUMDes Sipodalle Batetangnga Sejahtera. Menggerakkan potensi agrowisata, pertanian, sarana air bersih, dan layanan digital dengan tata kelola keuangan terbuka dan akuntabel.
+              </p>
+              <div class="hero-cta-group">
+                <a href="#unit-usaha" class="btn btn-accent btn-lg" onclick="navigateTo('unit-usaha')">
+                  <i class="fa-solid fa-shop"></i> Jelajahi Unit Usaha
+                </a>
+                <a href="#laporan-keuangan" class="btn btn-outline-white btn-lg" onclick="navigateTo('laporan-keuangan')">
+                  <i class="fa-solid fa-file-invoice-dollar"></i> Pantau Laporan Keuangan
+                </a>
+              </div>
+            </div>
+
+            <!-- Hero Right Visual Card -->
+            <div class="hero-visual-card">
+              <div class="hero-app-preview-header">
+                <div>
+                  <div style="font-size: 0.78rem; color: var(--neutral-300); font-weight: 600;">SISTEM AKUNTANSI TERINTEGRASI</div>
+                  <div style="font-size: 1.1rem; font-weight: 800; color: var(--white);">PPAK BUMDes Live</div>
+                </div>
+                <div class="hero-status-pill">
+                  <span class="pulse-dot"></span> Online & Terhubung
+                </div>
+              </div>
+
+              <div class="preview-stat-row">
+                <div class="preview-stat-box">
+                  <div class="lbl">Akumulasi Omset 2026</div>
+                  <div class="val text-green" id="heroOmsetVal">Rp 842.500.000</div>
+                </div>
+                <div class="preview-stat-box">
+                  <div class="lbl">Kontribusi PADes</div>
+                  <div class="val text-orange" id="heroPADesVal">Rp 77.680.000</div>
+                </div>
+              </div>
+
+              <div class="hero-transparency-card">
+                <div>
+                  <div style="font-size: 0.85rem; font-weight: 700; color: var(--white);">Laporan Keuangan Terbuka</div>
+                  <div style="font-size: 0.78rem; color: var(--neutral-200);">Tersambung langsung ke Google Apps Script Spreadsheet.</div>
+                </div>
+                <a href="#laporan-keuangan" class="btn btn-primary btn-sm" onclick="navigateTo('laporan-keuangan')">
+                  Lihat <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Quick Stats Counters -->
+        <div class="stats-counter-grid" id="statsCounterContainer">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- 3 Pilar Keunggulan BUMDes -->
+        <div class="section-intro">
+          <div class="section-badge green"><i class="fa-solid fa-award"></i> Komitmen Kami</div>
+          <h2 class="section-title">Nilai Utama <span class="text-green">BUMDes Sipodalle</span></h2>
+          <p class="section-desc">Mewujudkan tata kelola usaha desa yang modern, profesional, dan memberikan dampak langsung bagi kesejahteraan warga.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <h3>Transparansi Penuh</h3>
+            <p>Setiap transaksi jurnal, laba rugi, dan neraca dapat diakses secara terbuka melalui sistem pelaporan PPAK digital terintegrasi.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon" style="background: var(--primary-50); color: var(--primary-600); border-color: var(--primary-200);"><i class="fa-solid fa-users-gear"></i></div>
+            <h3>Pemberdayaan Warga</h3>
+            <p>Menyerap tenaga kerja lokal dan bermitra dengan lebih dari 130+ petani, peternak, dan pengrajin UMKM di pelosok desa.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon" style="background: #e0f2fe; color: #0284c7; border-color: #bae6fd;"><i class="fa-solid fa-tree"></i></div>
+            <h3>Potensi Alam Berkelanjutan</h3>
+            <p>Mengembangkan ekowisata alam, agrowisata durian, dan pengelolaan air bersih lestari berbasis kearifan lokal Batetangnga.</p>
+          </div>
+        </div>
+
+        <!-- Sorotan Unit Usaha Terpilih -->
+        <div class="section-intro">
+          <div class="section-badge"><i class="fa-solid fa-fire"></i> Layanan Unggulan</div>
+          <h2 class="section-title">Unit Usaha <span class="text-orange">Prioritas Desa</span></h2>
+          <p class="section-desc">Menyediakan berbagai kebutuhan masyarakat mulai dari saprodi pertanian, wisata, air bersih, hingga pembayaran digital.</p>
+        </div>
+
+        <div class="home-units-grid" id="homeUnitsPreview">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Berita Terkini Preview -->
+        <div class="section-intro">
+          <div class="section-badge green"><i class="fa-solid fa-bullhorn"></i> Kabar Terkini</div>
+          <h2 class="section-title">Informasi & <span class="text-green">Kegiatan BUMDes</span></h2>
+          <p class="section-desc">Ikuti perkembangan program, penyaluran PADes, dan kegiatan ekonomi produktif masyarakat.</p>
+        </div>
+
+        <div class="news-grid" id="homeNewsPreview">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Testimoni Warga & Mitra -->
+        <div class="testimonials-wrapper" style="margin-top: 70px;">
+          <div class="section-intro" style="margin-bottom: 35px;">
+            <div class="section-badge"><i class="fa-solid fa-comments"></i> Suara Warga</div>
+            <h2 class="section-title">Apa Kata Masyarakat & Mitra Usaha?</h2>
+          </div>
+          <div class="testimonials-grid" id="testimoniContainer">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- GitHub Connect Banner in Home -->
+        <div class="github-banner">
+          <div class="github-banner-left">
+            <div class="github-icon-large"><i class="fa-brands fa-github"></i></div>
+            <div class="github-banner-text">
+              <h3>Siap Dihubungkan ke GitHub & Onlinekan Gratis!</h3>
+              <p>Source code website ini telah siap disinkronkan ke akun GitHub Anda dan dapat di-hosting via GitHub Pages.</p>
+            </div>
+          </div>
+          <button class="btn btn-outline-white" onclick="openGitHubModal()">
+            <i class="fa-solid fa-book-bookmark"></i> Buka Panduan GitHub
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. HALAMAN PROFIL BUMDES
+         ====================================================================== -->
+    <section id="profil" class="page-section">
+      <div class="container">
+        
+        <div class="section-intro">
+          <div class="section-badge green"><i class="fa-solid fa-landmark"></i> Tentang Kami</div>
+          <h2 class="section-title">Profil <span class="text-green">BUMDes Sipodalle</span></h2>
+          <p class="section-desc">Mengenal lebih dekat sejarah, visi misi, legalitas hukum, dan struktur kepengurusan BUM Desa Batetangnga Sejahtera.</p>
+        </div>
+
+        <!-- Profile Overview Card -->
+        <div class="profile-overview-card">
+          <div class="profile-grid-2">
+            <div class="profile-text">
+              <h2>Mewujudkan Kemandirian Desa Lewat Usaha Berkelanjutan</h2>
+              <p>
+                <strong>BUM Desa Sipodalle Batetangnga Sejahtera</strong> didirikan secara resmi pada tahun 2019 atas kesepakatan Musyawarah Desa (Musdes) sebagai wujud komitmen pemerintah desa bersama seluruh warga untuk mendayagunakan seluruh potensi ekonomi, kelembagaan, serta sumber daya alam desa.
+              </p>
+              <p>
+                Nama <em>"Sipodalle"</em> berakar dari kearifan lokal Mandar yang bermakna saling memberi rezeki, bergotong royong, dan membagi kemakmuran bersama demi kemajuan seluruh lapisan masyarakat Batetangnga.
+              </p>
+              <div class="legalitas-box">
+                <h4><i class="fa-solid fa-shield-check"></i> Dasar Hukum & Legalitas Resmi:</h4>
+                <p><strong>Nomor Registrasi Kemenkumham:</strong> AHU-01289.AH.01.33.TAHUN 2021</p>
+                <p><strong>Peraturan Desa (Perdes):</strong> Perdes Batetangnga No. 04 Tahun 2019</p>
+                <p><strong>Status Badan Hukum:</strong> Terdaftar Resmi di Kemendesa PDTT RI</p>
+              </div>
+            </div>
+            <div class="profile-image-wrap">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Pemandangan Alam Desa Batetangnga" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); width: 100%; height: 380px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Visi & Misi -->
+        <div class="visi-misi-grid">
+          <div class="visi-card">
+            <h3><i class="fa-solid fa-compass"></i> Visi BUMDes</h3>
+            <p id="profileVisiText">
+              "Terwujudnya BUMDes Sipodalle sebagai pilar kemandirian ekonomi Desa Batetangnga yang berdaya saing, transparan, berkeadilan, dan berkelanjutan menuju kesejahteraan masyarakat desa."
+            </p>
+          </div>
+          <div class="misi-card">
+            <h3><i class="fa-solid fa-list-check"></i> Misi Utama Kami</h3>
+            <ul class="misi-list" id="profileMisiList">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Struktur Organisasi -->
+        <div class="section-intro" style="margin-top: 60px;">
+          <div class="section-badge"><i class="fa-solid fa-sitemap"></i> Tata Kelola</div>
+          <h2 class="section-title">Struktur <span class="text-orange">Kepengurusan</span></h2>
+          <p class="section-desc">Didukung oleh sumber daya manusia berintegritas dan berdedikasi tinggi untuk kemajuan desa.</p>
+        </div>
+
+        <div class="org-grid" id="orgStructureContainer">
+          <!-- Rendered dynamically -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. HALAMAN BERITA & PENGUMUMAN
+         ====================================================================== -->
+    <section id="berita" class="page-section">
+      <div class="container">
+        
+        <div class="section-intro">
+          <div class="section-badge green"><i class="fa-solid fa-newspaper"></i> Pusat Informasi</div>
+          <h2 class="section-title">Berita & <span class="text-green">Pengumuman Desa</span></h2>
+          <p class="section-desc">Publikasi transparansi, agenda kegiatan, pengumuman resmi, dan perkembangan usaha BUMDes Sipodalle.</p>
+        </div>
+
+        <!-- Filter & Search Bar -->
+        <div class="filter-search-bar">
+          <div class="category-pills" id="newsCategoryPills">
+            <button class="cat-btn active" data-cat="Semua" onclick="filterNews('Semua')">Semua</button>
+            <button class="cat-btn" data-cat="Laporan Publik" onclick="filterNews('Laporan Publik')">Laporan Publik</button>
+            <button class="cat-btn" data-cat="Usaha Desa" onclick="filterNews('Usaha Desa')">Usaha Desa</button>
+            <button class="cat-btn" data-cat="Kegiatan Warga" onclick="filterNews('Kegiatan Warga')">Kegiatan Warga</button>
+            <button class="cat-btn" data-cat="Pengumuman Resmi" onclick="filterNews('Pengumuman Resmi')">Pengumuman</button>
+          </div>
+          <div class="search-input-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="newsSearchInput" placeholder="Cari berita / informasi..." onkeyup="searchNews()">
+          </div>
+        </div>
+
+        <!-- News Cards Grid -->
+        <div class="news-grid" id="allNewsGrid">
+          <!-- Rendered dynamically -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. HALAMAN UNIT USAHA & KATALOG
+         ====================================================================== -->
+    <section id="unit-usaha" class="page-section">
+      <div class="container">
+        
+        <div class="section-intro">
+          <div class="section-badge"><i class="fa-solid fa-store"></i> Sektor Bisnis</div>
+          <h2 class="section-title">Unit Usaha & <span class="text-orange">Layanan Desa</span></h2>
+          <p class="section-desc">Jelajahi berbagai unit bisnis produktif BUMDes Sipodalle yang siap melayani kebutuhan warga, wisatawan, dan mitra usaha.</p>
+        </div>
+
+        <!-- Filter Unit Category -->
+        <div class="unit-filter-pills" id="unitCategoryFilter">
+          <button class="cat-btn active" data-unitcat="Semua" onclick="filterUnits('Semua')">Semua Unit</button>
+          <button class="cat-btn" data-unitcat="Pertanian" onclick="filterUnits('Pertanian')">Pertanian & Saprodi</button>
+          <button class="cat-btn" data-unitcat="Pariwisata" onclick="filterUnits('Pariwisata')">Ekowisata & Rekreasi</button>
+          <button class="cat-btn" data-unitcat="Layanan Publik" onclick="filterUnits('Layanan Publik')">Air Bersih (PAMSIMAS)</button>
+          <button class="cat-btn" data-unitcat="Jasa Keuangan" onclick="filterUnits('Jasa Keuangan')">Jasa Keuangan & PPOB</button>
+          <button class="cat-btn" data-unitcat="Ekonomi Kreatif" onclick="filterUnits('Ekonomi Kreatif')">UMKM & Kopi Khas</button>
+          <button class="cat-btn" data-unitcat="Lingkungan Hidup" onclick="filterUnits('Lingkungan Hidup')">Bank Sampah Desa</button>
+        </div>
+
+        <!-- List of Business Units -->
+        <div id="unitUsahaListContainer">
+          <!-- Rendered dynamically -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. HALAMAN LAPORAN KEUANGAN (GOOGLE APPS SCRIPT EMBED & TRANSPARENCY)
+         ====================================================================== -->
+    <section id="laporan-keuangan" class="page-section">
+      <div class="container">
+        
+        <div class="section-intro">
+          <div class="section-badge green"><i class="fa-solid fa-scale-balanced"></i> Transparansi Finansial</div>
+          <h2 class="section-title">Laporan Keuangan <span class="text-green">& Aplikasi PPAK</span></h2>
+          <p class="section-desc">Akses langsung aplikasi pelaporan akuntansi BUMDes Sipodalle yang tersambung secara live dengan Google Apps Script.</p>
+        </div>
+
+        <!-- Tab Navigasi Sub-Laporan -->
+        <div class="keuangan-tabs-nav">
+          <button class="keuangan-tab-btn active" id="tabBtnPortal" onclick="switchKeuanganTab('portal')">
+            <i class="fa-solid fa-laptop-code"></i> Live Portal Aplikasi Google Apps Script
+          </button>
+          <button class="keuangan-tab-btn" id="tabBtnTransparansi" onclick="switchKeuanganTab('transparansi')">
+            <i class="fa-solid fa-chart-column"></i> Ringkasan Transparansi Publik
+          </button>
+        </div>
+
+        <!-- TAB 1: LIVE GOOGLE APPS SCRIPT PORTAL -->
+        <div id="tabContentPortal" class="keuangan-tab-content active">
+          <div class="apps-script-container" id="appsScriptContainer">
+            <!-- Toolbar -->
+            <div class="apps-script-toolbar">
+              <div class="app-title-badge">
+                <span class="app-indicator-dot"></span>
+                <span>PPAK BUM Desa Sipodalle Batetangnga Sejahtera (Live System)</span>
+              </div>
+              <div class="app-toolbar-buttons">
+                <button class="tool-btn" onclick="reloadAppsScriptIframe()" title="Muat Ulang Portal">
+                  <i class="fa-solid fa-rotate-right"></i> Segarkan
+                </button>
+                <button class="tool-btn" onclick="toggleIframeFullscreen()" id="fullscreenBtn" title="Mode Layar Penuh">
+                  <i class="fa-solid fa-expand"></i> Layar Penuh
+                </button>
+                <a href="https://script.google.com/macros/s/AKfycbyWAjcU3O2Z6rjZjg3gZsyrpj9YA93npKDt2mlCxDqnG85Sr3zRmYRQLKRb64YtZQw9VA/exec" target="_blank" rel="noopener noreferrer" class="tool-btn" style="background: var(--accent-600); border-color: var(--accent-500);">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+
+            <!-- Iframe Wrapper -->
+            <div class="iframe-wrapper" id="iframeWrapper">
+              <iframe 
+                id="appsScriptIframe"
+                src="https://script.google.com/macros/s/AKfycbyWAjcU3O2Z6rjZjg3gZsyrpj9YA93npKDt2mlCxDqnG85Sr3zRmYRQLKRb64YtZQw9VA/exec" 
+                title="Aplikasi Pelaporan PPAK BUM Desa Sipodalle Batetangnga Sejahtera"
+                allow="fullscreen; accelerometer; autoplay; clipboard-read; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                sandbox="allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: RINGKASAN TRANSPARANSI PUBLIK -->
+        <div id="tabContentTransparansi" class="keuangan-tab-content">
+          
+          <div class="transparency-dashboard">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="font-size: 1.4rem; color: var(--primary-900);">Ringkasan Kinerja Keuangan BUMDes</h3>
+                <p style="font-size: 0.9rem; color: var(--neutral-500);">Data Konsolidasi Seluruh Unit Usaha Tahun Buku 2026</p>
+              </div>
+              <span class="hero-status-pill" style="background: var(--primary-100); color: var(--primary-800); border-color: var(--primary-400);">
+                <i class="fa-solid fa-circle-check"></i> Terverifikasi Badan Pengawas
+              </span>
+            </div>
+
+            <!-- 4 Financial Metrics -->
+            <div class="financial-metric-row">
+              <div class="fin-card">
+                <div class="lbl">TOTAL PENDAPATAN USAHA</div>
+                <div class="amt text-green" id="finTotalPendapatan">Rp 842.500.000</div>
+              </div>
+              <div class="fin-card">
+                <div class="lbl">TOTAL BEBAN OPERASIONAL</div>
+                <div class="amt" style="color: #dc2626;" id="finTotalBeban">Rp 648.300.000</div>
+              </div>
+              <div class="fin-card highlight">
+                <div class="lbl">LABA BERSIH TAHUN BERJALAN</div>
+                <div class="amt text-green" id="finLabaBersih">Rp 194.200.000</div>
+              </div>
+              <div class="fin-card orange">
+                <div class="lbl">ALOKASI PADES (KAS DESA)</div>
+                <div class="amt text-orange" id="finPADes">Rp 77.680.000</div>
+              </div>
+            </div>
+
+            <!-- Composition Section & Allocation -->
+            <div class="composition-section">
+              <div>
+                <h4 style="font-size: 1.15rem; margin-bottom: 6px; color: var(--neutral-900);">Kontribusi Pendapatan per Unit Usaha</h4>
+                <p style="font-size: 0.85rem; color: var(--neutral-500); margin-bottom: 20px;">Persentase kontribusi masing-masing unit bisnis terhadap total pendapatan BUMDes.</p>
+                <div class="comp-bars-list" id="compBarsContainer">
+                  <!-- Rendered dynamically -->
+                </div>
+              </div>
+
+              <!-- Porsi Pembagian Laba Bersih AD/ART -->
+              <div class="allocation-box">
+                <h4><i class="fa-solid fa-pie-chart"></i> Pembagian Hasil Usaha</h4>
+                <p style="font-size: 0.82rem; color: var(--neutral-300); margin-bottom: 16px;">Sesuai Peraturan Desa & AD/ART BUMDes Batetangnga:</p>
+                <ul class="alloc-list">
+                  <li><span>Pendapatan Asli Desa (PADes)</span> <span>40%</span></li>
+                  <li><span>Cadangan Penambahan Modal</span> <span>30%</span></li>
+                  <li><span>Jasa Pengurus & Pengawas</span> <span>15%</span></li>
+                  <li><span>Dana Pendidikan & Sosial Warga</span> <span>10%</span></li>
+                  <li><span>Dana Kesejahteraan Pegawai</span> <span>5%</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Modul Laporan yang Tersedia -->
+            <div style="margin-top: 40px;">
+              <h4 style="font-size: 1.2rem; margin-bottom: 18px; color: var(--neutral-900);">Modul Laporan Keuangan Standar Akuntansi BUMDes (PPAK)</h4>
+              <div class="modul-laporan-grid" id="modulLaporanContainer">
+                <!-- Rendered dynamically -->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       MODAL: PEMBACA BERITA LENGKAP
+       ======================================================================== -->
+  <div class="modal-backdrop" id="newsModalBackdrop" onclick="closeNewsModal(event)">
+    <div class="modal-window" id="newsModalWindow">
+      <button class="modal-close-btn" onclick="closeNewsModalDirect()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body-content" id="newsModalBody">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: PANDUAN KONEKSI & DEPLOYMENT GITHUB
+       ======================================================================== -->
+  <div class="modal-backdrop" id="githubModalBackdrop" onclick="closeGitHubModal(event)">
+    <div class="modal-window" style="max-width: 680px;" id="githubModalWindow">
+      <button class="modal-close-btn" onclick="closeGitHubModalDirect()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body-content">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 18px;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #0f172a; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px;">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 2px;">Panduan Koneksi ke GitHub Anda</h3>
+            <p style="font-size: 0.85rem; color: var(--neutral-500);">Langkah mudah menyambungkan project ini ke repository GitHub pribadi & online gratis via GitHub Pages.</p>
+          </div>
+        </div>
+
+        <div style="font-size: 0.92rem; color: var(--neutral-700); line-height: 1.6;">
+          <p><strong>Langkah 1:</strong> Buat repository baru di akun GitHub Anda (misal: <code>bumdes-sipodalle</code>).</p>
+          <p style="margin-top: 10px;"><strong>Langkah 2:</strong> Buka terminal PowerShell di folder project ini, lalu jalankan perintah berikut:</p>
+
+          <div class="code-block">
+            <span class="comment"># 1. Hubungkan remote origin</span><br>
+            <span class="keyword">git</span> remote add origin <span class="string">https://github.com/USERNAME-ANDA/bumdes-sipodalle.git</span><br>
+            <span class="keyword">git</span> branch -M main<br>
+            <span class="keyword">git</span> push -u origin main
+          </div>
+
+          <p><strong>Langkah 3 (Aktifkan Website Online):</strong></p>
+          <ul style="padding-left: 20px; margin-top: 6px; font-size: 0.88rem;">
+            <li>Buka repository Anda di <strong>GitHub.com</strong></li>
+            <li>Klik menu <strong>Settings</strong> &gt; <strong>Pages</strong></li>
+            <li>Pada bagian <em>Build and deployment / Branch</em>, pilih <strong>main</strong> lalu simpan (Save)</li>
+            <li>Website BUMDes Anda akan langsung online dan bisa diakses gratis di <code>https://username.github.io/bumdes-sipodalle</code>!</li>
+          </ul>
+        </div>
+
+        <div style="margin-top: 24px; text-align: right;">
+          <button class="btn btn-primary" onclick="closeGitHubModalDirect()">
+            <i class="fa-solid fa-check"></i> Mengerti & Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SITE FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <div class="brand-icon" style="width: 40px; height: 40px; font-size: 18px;">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div>
+              <h3 style="margin-bottom: 0; font-size: 1.15rem;">BUMDes Sipodalle</h3>
+              <span style="font-size: 0.75rem; color: var(--accent-400); font-weight: 700; text-transform: uppercase;">Batetangnga Sejahtera</span>
+            </div>
+          </div>
+          <p>
+            Badan Usaha Milik Desa Batetangnga, Kec. Binuang, Kab. Polewali Mandar. Mengabdi untuk kemandirian ekonomi, kesejahteraan petani, UMKM, dan transparansi publik.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/6282198765432" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigasi Cepat -->
+        <div class="footer-col">
+          <h4>Menu Utama</h4>
+          <ul class="footer-links">
+            <li><a href="#beranda" onclick="navigateTo('beranda')"><i class="fa-solid fa-chevron-right"></i> Beranda</a></li>
+            <li><a href="#profil" onclick="navigateTo('profil')"><i class="fa-solid fa-chevron-right"></i> Profil & Legalitas</a></li>
+            <li><a href="#berita" onclick="navigateTo('berita')"><i class="fa-solid fa-chevron-right"></i> Berita & Informasi</a></li>
+            <li><a href="#unit-usaha" onclick="navigateTo('unit-usaha')"><i class="fa-solid fa-chevron-right"></i> Unit Usaha Desa</a></li>
+            <li><a href="#laporan-keuangan" onclick="navigateTo('laporan-keuangan')"><i class="fa-solid fa-chevron-right"></i> Laporan Keuangan Live</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Unit Usaha -->
+        <div class="footer-col">
+          <h4>Unit Usaha</h4>
+          <ul class="footer-links">
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Pertanian')"><i class="fa-solid fa-seedling"></i> Pertanian & Saprodi</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Pariwisata')"><i class="fa-solid fa-mountain-sun"></i> Wisata Batetangnga</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Layanan Publik')"><i class="fa-solid fa-faucet-drip"></i> Air Bersih (PAMSIMAS)</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Jasa Keuangan')"><i class="fa-solid fa-credit-card"></i> BUMDes Pay & Digital</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Ekonomi Kreatif')"><i class="fa-solid fa-store"></i> UMKM & Kopi Desa</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Kontak & Kantor -->
+        <div class="footer-col">
+          <h4>Kontak & Kantor</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Jl. Poros Batetangnga No. 12, Kec. Binuang, Kab. Polewali Mandar, Sulawesi Barat 91353</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+62 821-9876-5432</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>bumdes.sipodalle@gmail.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Senin - Sabtu: 08.00 - 17.00 WITA</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 BUMDes Sipodalle Batetangnga Sejahtera. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+        <div style="display: flex; gap: 16px; align-items: center;">
+          <a href="#" onclick="openGitHubModal(); return false;" style="color: var(--primary-400); display: flex; align-items: center; gap: 6px;">
+            <i class="fa-brands fa-github"></i> Terhubung dengan GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       STANDALONE JAVASCRIPT LOGIC & DATASET
+       ======================================================================== -->
+  <script>
+    const BUMDES_DATA = {
+      info: {
+        nama: "BUMDes Sipodalle",
+        namaLengkap: "BUM Desa Sipodalle Batetangnga Sejahtera",
+        slogan: "Membangun Ekonomi Desa Mandiri, Transparan, dan Berkelanjutan",
+        desa: "Desa Batetangnga",
+        kecamatan: "Binuang",
+        kabupaten: "Polewali Mandar",
+        provinsi: "Sulawesi Barat",
+        whatsapp: "6282198765432",
+        appsScriptUrl: "https://script.google.com/macros/s/AKfycbyWAjcU3O2Z6rjZjg3gZsyrpj9YA93npKDt2mlCxDqnG85Sr3zRmYRQLKRb64YtZQw9VA/exec"
+      },
+      statistik: {
+        totalOmset: "Rp 842.500.000",
+        padesDisalurkan: "Rp 77.680.000",
+        unitUsahaAktif: 6,
+        wargaTerlayani: "1.420 KK"
+      },
+      visiMisi: {
+        misi: [
+          "Mengoptimalkan pengelolaan potensi dan aset desa melalui unit usaha yang produktif dan inovatif.",
+          "Meningkatkan pendapatan asli desa (PADes) guna mendukung pembangunan infrastruktur dan pemberdayaan masyarakat.",
+          "Menciptakan lapangan kerja seluas-luasnya dan memperkuat kemitraan dengan petani, pekebun, dan pelaku UMKM lokal.",
+          "Menerapkan tata kelola keuangan yang akuntabel, transparan, dan terdigitalisasi berbasis aplikasi modern.",
+          "Melestarikan lingkungan hidup dan potensi agrowisata berbasis kearifan lokal."
+        ]
+      },
+      pengurus: [
+        { nama: "H. Muhammad Ridwan, S.Sos", jabatan: "Penasihat / Kepala Desa", kategori: "penasihat", fotoIcon: "user-tie", deskripsi: "Mengarahkan kebijakan strategis BUMDes dan menjamin keselarasan dengan program desa." },
+        { nama: "Drs. Syamsuddin, M.Si", jabatan: "Ketua Badan Pengawas", kategori: "pengawas", fotoIcon: "shield-halved", deskripsi: "Mengawasi jalannya operasional, kepatuhan hukum, dan tata kelola keuangan BUMDes." },
+        { nama: "Andi Faisal Pratama, S.E.", jabatan: "Direktur Utama BUMDes", kategori: "direksi", fotoIcon: "user-gear", deskripsi: "Memimpin operasional seluruh unit usaha, ekspansi kemitraan, dan inovasi pelayanan." },
+        { nama: "Nurul Hidayah, S.Ak.", jabatan: "Bendahara & Akuntan", kategori: "direksi", fotoIcon: "calculator", deskripsi: "Mengelola pembukuan, jurnal transaksi, dan penyusunan laporan keuangan PPAK terintegrasi." },
+        { nama: "Rahmat Hidayat, S.Kom.", jabatan: "Sekretaris & IT", kategori: "direksi", fotoIcon: "laptop-code", deskripsi: "Mengelola administrasi persuratan, arsip dokumen, serta sistem informasi dan digitalisasi." },
+        { nama: "Mansyur Basri", jabatan: "Manajer Unit Pertanian", kategori: "manajer", fotoIcon: "seedling", deskripsi: "Memimpin distribusi pupuk, sarana pertanian, dan serapan hasil panen petani binaan." },
+        { nama: "Siti Rahmawati", jabatan: "Manajer Unit Wisata & UMKM", kategori: "manajer", fotoIcon: "mountain-sun", deskripsi: "Mengelola kawasan agrowisata Batetangnga, galeri produk UMKM, dan promosi kuliner desa." },
+        { nama: "Hasbullah, S.T.", jabatan: "Manajer Unit Air Bersih", kategori: "manajer", fotoIcon: "faucet-drip", deskripsi: "Menjamin ketersediaan, pemeliharaan pipa, dan distribusi air bersih bagi 1.400+ keluarga." }
+      ],
+      unitUsaha: [
+        {
+          id: "unit-pertanian", kode: "U01", nama: "Unit Pertanian & Saprodi Desa", kategori: "Pertanian",
+          tagline: "Penyedia Pupuk, Bibit Unggul & Serapan Hasil Bumi", icon: "seedling", badgeColor: "green",
+          gambar: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80",
+          deskripsiSingkat: "Melayani kebutuhan pupuk non-subsidi, bibit berkualitas, pestisida ramah lingkungan, serta menampung hasil panen petani dengan harga adil.",
+          deskripsiLengkap: "Unit Pertanian & Saprodi didirikan untuk memotong rantai tengkulak dan mempermudah akses petani Desa Batetangnga terhadap sarana produksi pertanian berkualitas. Kami bermitra dengan kelompok tani lokal untuk distribusi pupuk, bibit kakao, bibit durian montong, padi gogo, serta menyediakan layanan konsultasi budidaya.",
+          layananUnggulan: ["Pupuk Organik Padat & Cair", "Bibit Durian Khas Batetangnga", "Sewa Mesin Pertanian", "Tampung Biji Kakao & Kopi Petani"],
+          kontakPerson: "Mansyur Basri (0821-9876-5431)", omsetTahun: "Rp 320.000.000", status: "Aktif & Beroperasi"
+        },
+        {
+          id: "unit-wisata", kode: "U02", nama: "Unit Ekowisata & Rekreasi Alam", kategori: "Pariwisata",
+          tagline: "Pesona Alam Asri, Agrowisata & Kuliner Khas Batetangnga", icon: "mountain-sun", badgeColor: "orange",
+          gambar: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          deskripsiSingkat: "Pengelolaan destinasi pemandian alam alami, agrowisata durian/buah lokal, spot foto instagramable, gazebo keluarga, dan camping ground.",
+          deskripsiLengkap: "Unit Wisata mengelola potensi alam Desa Batetangnga yang terkenal dengan aliran sungai jernih, kebun buah durian, dan panorama perbukitan sejuk. Kami menyediakan fasilitas rekreasi keluarga yang lengkap, ramah anak, serta menyajikan kuliner tradisional khas Sulawesi Barat.",
+          layananUnggulan: ["Tiket Wisata Sungai & Permandian Alam", "Sewa Gazebo & Tenda Camping", "Paket Wisata Petik Buah Durian", "Penyewaan Area Outbound & Gathering"],
+          kontakPerson: "Siti Rahmawati (0821-9876-5432)", omsetTahun: "Rp 185.000.000", status: "Aktif & Ramai Pengunjung"
+        },
+        {
+          id: "unit-pamsimas", kode: "U03", nama: "Unit Pengelolaan Air Bersih (PAMSIMAS)", kategori: "Layanan Publik",
+          tagline: "Air Bersih Mengalir 24 Jam untuk Kesejahteraan Warga", icon: "faucet-drip", badgeColor: "blue",
+          gambar: "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80",
+          deskripsiSingkat: "Penyaluran air bersih sumber mata air pegunungan langsung ke rumah-rumah warga dengan tarif terjangkau dan kualitas higienis.",
+          deskripsiLengkap: "Unit PAMSIMAS mengelola jaringan transmisi air bersih dari sumber mata air alami Batetangnga menuju lebih dari 1.400 sambungan rumah (SR). Didukung pemeliharaan berkala, uji kualitas air, dan sistem pencatatan meteran digital demi keadilan pemakaian.",
+          layananUnggulan: ["Sambungan Baru Air Bersih ke Rumah", "Pemeliharaan & Perbaikan Pipa Jaringan", "Pembayaran Rekening Air Bulanan", "Penyediaan Air Tangki Kebutuhan Khusus"],
+          kontakPerson: "Hasbullah, S.T. (0821-9876-5433)", omsetTahun: "Rp 142.500.000", status: "Layanan 24 Jam"
+        },
+        {
+          id: "unit-keuangan", kode: "U04", nama: "Unit Jasa Keuangan & BUMDes Pay", kategori: "Jasa Keuangan",
+          tagline: "Pusat Layanan Transaksi Digital & Keuangan Mikro Desa", icon: "credit-card", badgeColor: "green",
+          gambar: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80",
+          deskripsiSingkat: "Layanan agen BRILink/PPOB resmi: transfer antar bank, tarik tunai, bayar PLN, PDAM, BPJS, cicilan, dan pinjaman modal usaha kelompok.",
+          deskripsiLengkap: "Memudahkan warga desa melakukan transaksi perbankan tanpa perlu menempuh jarak jauh ke kota kecamatan. Unit ini melayani transaksi harian, pembayaran tagihan rutin, pembelian token listrik, serta menyediakan skema pembiayaan mikro syariah bagi pelaku usaha kecil desa.",
+          layananUnggulan: ["Transfer Antar Bank & Tarik Tunai", "Pembayaran PLN, BPJS, Pulsa & Data", "Top-Up E-Wallet (Dana, OVO, ShopeePay)", "Program Tabungan Qurban & Pendidikan"],
+          kontakPerson: "Nurul Hidayah (0821-9876-5434)", omsetTahun: "Rp 98.000.000", status: "Buka Setiap Hari"
+        },
+        {
+          id: "unit-umkm", kode: "U05", nama: "Unit Rumah Produksi & UMKM Desa", kategori: "Ekonomi Kreatif",
+          tagline: "Sentra Oleh-oleh Khas, Kopi Batetangnga & Kerajinan", icon: "store", badgeColor: "orange",
+          gambar: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
+          deskripsiSingkat: "Mewadahi produk olahan kopi robusta Batetangnga, madu hutan alami, kripik pisang, gula aren cetak, dan cinderamata bambu.",
+          deskripsiLengkap: "Sebagai rumah inkubator bagi ibu-ibu dan pemuda pengrajin di Desa Batetangnga. BUMDes membantu standarisasi kemasan, perizinan P-IRT/Halal, pemasaran online, serta membuka galeri oleh-oleh terpadu di kawasan agrowisata desa.",
+          layananUnggulan: ["Kopi Robusta & Arabika Bubuk Khas", "Madu Hutan Liar Murni 100%", "Gula Aren Asli & Aneka Cemilan Olahan", "Hampers & Souvenir Khas Desa"],
+          kontakPerson: "Siti Rahmawati (0821-9876-5432)", omsetTahun: "Rp 65.000.000", status: "Ready Stock"
+        },
+        {
+          id: "unit-sampah", kode: "U06", nama: "Unit Pengelolaan Lingkungan & Bank Sampah", kategori: "Lingkungan Hidup",
+          tagline: "Menjaga Desa Bersih, Mengubah Sampah Menjadi Berkah", icon: "recycle", badgeColor: "green",
+          gambar: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80",
+          deskripsiSingkat: "Pengangkutan sampah rumah tangga teratur, pemilahan sampah anorganik di bank sampah, dan pembuatan pupuk kompos bernilai jual.",
+          deskripsiLengkap: "Program inovasi desa bersih dan lestari. Warga dapat menyetorkan sampah plastik/kardus yang ditukar dengan saldo tabungan emas atau uang tunai, sekaligus mengolah limbah organik menjadi pupuk yang kembali disalurkan ke unit pertanian.",
+          layananUnggulan: ["Jasa Angkut Sampah Rumah Tangga", "Tabungan Bank Sampah Terintegrasi", "Penjualan Pupuk Kompos Organik", "Edukasi Lingkungan & Daur Ulang"],
+          kontakPerson: "Mansyur Basri (0821-9876-5431)", omsetTahun: "Rp 32.000.000", status: "Berjalan Rutin"
+        }
+      ],
+      berita: [
+        {
+          id: 1, judul: "BUMDes Sipodalle Salurkan PADes Rp 77,6 Juta untuk Pembangunan Desa 2026",
+          kategori: "Laporan Publik", tanggal: "10 Agustus 2026", penulis: "Sekretariat BUMDes", durasi: "3 menit baca",
+          gambar: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+          ringkasan: "Sebagai wujud transparansi dan kontribusi nyata, BUMDes Sipodalle resmi menyerahkan Pendapatan Asli Desa (PADes) tahun buku berjalan kepada Pemerintah Desa Batetangnga.",
+          konten: "<p>Bertempat di Balai Desa Batetangnga, jajaran pengurus BUMDes Sipodalle menyerahkan Pendapatan Asli Desa (PADes) sebesar <strong>Rp 77.680.000</strong> sebagai hasil kinerja usaha semester pertama 2026. Dana ini dimanfaatkan langsung untuk infrastruktur jalan tani dan beasiswa pendidikan anak desa.</p>"
+        },
+        {
+          id: 2, judul: "Panen Raya Durian Batetangnga: BUMDes Buka Festival Agrowisata Buah Desa",
+          kategori: "Usaha Desa", tanggal: "04 Agustus 2026", penulis: "Unit Wisata", durasi: "4 menit baca",
+          gambar: "https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=800&q=80",
+          ringkasan: "Festival Agrowisata Durian Batetangnga resmi dibuka dengan promo paket petik langsung di kebun, bazar olahan durian, dan hiburan musik rakyat.",
+          konten: "<p>Musim panen durian telah tiba! Unit Wisata BUMDes Sipodalle menggelar Festival Agrowisata Durian Batetangnga 2026 yang mengundang wisatawan dari berbagai penjuru Sulawesi Barat untuk menikmati sensasi petik durian segar langsung dari pohon.</p>"
+        },
+        {
+          id: 3, judul: "Digitalisasi Pelayanan: Warga Batetangnga Kini Bayar Listrik & Air Lewat BUMDes Pay",
+          kategori: "Kegiatan Warga", tanggal: "28 Juli 2026", penulis: "Tim IT BUMDes", durasi: "2 menit baca",
+          gambar: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+          ringkasan: "Unit Jasa Keuangan BUMDes Sipodalle meluncurkan layanan loket pembayaran cepat digital untuk mempermudah warga membayar tagihan harian.",
+          konten: "<p>Kini warga desa tidak perlu jauh-jauh ke kota kecamatan. Loket BUMDes Pay melayani pembayaran token listrik, tagihan air PAMSIMAS, BPJS Kesehatan, dan transfer antar bank setiap hari dengan biaya admin sangat terjangkau.</p>"
+        }
+      ],
+      keuanganTransparansi: {
+        komposisiPendapatan: [
+          { unit: "Unit Pertanian & Saprodi", nominal: 320000000, persen: 38, warna: "#10B981" },
+          { unit: "Unit Wisata & Rekreasi", nominal: 185000000, persen: 22, warna: "#F97316" },
+          { unit: "Unit Air Bersih (PAMSIMAS)", nominal: 142500000, persen: 17, warna: "#0EA5E9" },
+          { unit: "Unit Jasa Keuangan & Digital", nominal: 98000000, persen: 12, warna: "#8B5CF6" },
+          { unit: "Unit Rumah Produksi UMKM", nominal: 65000000, persen: 8, warna: "#EC4899" },
+          { unit: "Unit Bank Sampah & Lingkungan", nominal: 32000000, persen: 4, warna: "#14B8A6" }
+        ],
+        modulLaporan: [
+          { nama: "Laporan Laba Rugi", icon: "chart-line", deskripsi: "Menampilkan akumulasi pendapatan usaha, beban operasional, dan laba bersih per periode.", badge: "Tersedia Online" },
+          { nama: "Laporan Posisi Keuangan (Neraca)", icon: "file-invoice-dollar", deskripsi: "Menampilkan rincian aset lancar, aset tetap, kewajiban, dan ekuitas modal BUMDes berimbang.", badge: "Realtime" },
+          { nama: "Laporan Arus Kas", icon: "water", deskripsi: "Arus kas masuk dan keluar dari aktivitas operasi usaha, investasi sarana aset, dan pembiayaan modal desa.", badge: "Terverifikasi" },
+          { nama: "Laporan Perubahan Ekuitas", icon: "arrow-trend-up", deskripsi: "Perkembangan modal awal penyertaan desa, akumulasi laba ditahan, dan pembagian hasil usaha.", badge: "Lengkap" },
+          { nama: "Buku Besar & Jurnal Transaksi", icon: "book-open", deskripsi: "Pencatatan akun secara kronologis dan saldo terperinci pada sistem PPAK BUMDes.", badge: "PPAK Terpadu" }
+        ]
+      },
+      testimoni: [
+        { nama: "Pak Darwis", peran: "Petani Kakao Desa Batetangnga", foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80", komentar: "Sangat terbantu dengan adanya Unit Pertanian BUMDes. Beli pupuk dan bibit berkualitas harganya jujur dan bisa antar ke kebun." },
+        { nama: "Ibu Maryam", peran: "Pelaku UMKM Kopi Khas", foto: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80", komentar: "Kopi olahan dan madu kami dipajang di galeri agrowisata BUMDes. Penjualan naik pesat dan pembayaran selalu tepat waktu." },
+        { nama: "Bapak Herman", peran: "Warga Dusun Salu Pao", foto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80", komentar: "Air bersih PAMSIMAS dari BUMDes alirannya deras dan jernih setiap hari. Bayar rekening juga gampang lewat BUMDes Pay." }
+      ]
+    };
+
+    // Controller Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      initApp();
+    });
+
+    function initApp() {
+      setupNavigation();
+      setupMobileMenu();
+      setupHeaderScroll();
+      renderAllSections();
+      handleInitialHash();
+    }
+
+    function setupNavigation() {
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetPage = link.getAttribute('data-nav');
+          if (targetPage) navigateTo(targetPage);
+        });
+      });
+      window.addEventListener('hashchange', () => {
+        const rawHash = window.location.hash.replace('#', '');
+        if (rawHash) navigateTo(rawHash, false);
+      });
+    }
+
+    function navigateTo(pageId, updateHash = true) {
+      const validPages = ['beranda', 'profil', 'berita', 'unit-usaha', 'laporan-keuangan'];
+      if (!validPages.includes(pageId)) pageId = 'beranda';
+
+      document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active-page'));
+      const targetSection = document.getElementById(pageId);
+      if (targetSection) targetSection.classList.add('active-page');
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.getAttribute('data-nav') === pageId) link.classList.add('active');
+        else link.classList.remove('active');
+      });
+
+      const navMenu = document.getElementById('navMenu');
+      if (navMenu && navMenu.classList.contains('mobile-open')) {
+        navMenu.classList.remove('mobile-open');
+      }
+
+      if (updateHash) history.pushState(null, null, `#${pageId}`);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function handleInitialHash() {
+      const rawHash = window.location.hash.replace('#', '');
+      if (rawHash) navigateTo(rawHash, false);
+      else navigateTo('beranda', false);
+    }
+
+    function setupMobileMenu() {
+      const toggleBtn = document.getElementById('mobileToggle');
+      const navMenu = document.getElementById('navMenu');
+      if (toggleBtn && navMenu) {
+        toggleBtn.addEventListener('click', () => {
+          navMenu.classList.toggle('mobile-open');
+          const icon = toggleBtn.querySelector('i');
+          if (icon) {
+            icon.className = navMenu.classList.contains('mobile-open') ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+          }
+        });
+      }
+    }
+
+    function setupHeaderScroll() {
+      const header = document.getElementById('siteHeader');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 30) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+      });
+    }
+
+    function renderAllSections() {
+      renderStatsCounters();
+      renderHomeUnitsPreview();
+      renderHomeNewsPreview();
+      renderTestimonials();
+      renderProfileData();
+      renderAllNews('Semua');
+      renderAllUnits('Semua');
+      renderFinancialTransparency();
+    }
+
+    function renderStatsCounters() {
+      const container = document.getElementById('statsCounterContainer');
+      if (!container) return;
+      const data = BUMDES_DATA.statistik;
+      const stats = [
+        { icon: 'fa-solid fa-money-bill-trend-up', color: 'green', num: data.totalOmset, label: 'Akumulasi Omset Usaha', sub: 'Tahun Buku 2026' },
+        { icon: 'fa-solid fa-hand-holding-dollar', color: 'orange', num: data.padesDisalurkan, label: 'Kontribusi PADes Batetangnga', sub: 'Mendukung Dana Desa' },
+        { icon: 'fa-solid fa-cubes-stacked', color: 'blue', num: `${data.unitUsahaAktif} Unit`, label: 'Unit Usaha Produktif Aktif', sub: 'Pertanian, Wisata, Air, dll' },
+        { icon: 'fa-solid fa-people-roof', color: 'purple', num: data.wargaTerlayani, label: 'Masyarakat & Mitra Terlayani', sub: '135+ Petani & UMKM Mitra' }
+      ];
+      container.innerHTML = stats.map(st => `
+        <div class="stat-card">
+          <div class="stat-card-icon ${st.color}"><i class="${st.icon}"></i></div>
+          <div class="stat-card-num">${st.num}</div>
+          <div class="stat-card-label">${st.label}</div>
+          <div style="font-size: 0.78rem; color: var(--neutral-400); margin-top: 4px;">${st.sub}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderHomeUnitsPreview() {
+      const container = document.getElementById('homeUnitsPreview');
+      if (!container) return;
+      const units = BUMDES_DATA.unitUsaha.slice(0, 3);
+      container.innerHTML = units.map(u => `
+        <div class="news-card">
+          <div class="news-thumb">
+            <img src="${u.gambar}" alt="${u.nama}" loading="lazy">
+            <span class="news-category-badge" style="background: var(--primary-800);">${u.kategori}</span>
+          </div>
+          <div class="news-body">
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-600); margin-bottom: 4px;">${u.kode} • ${u.status}</div>
+            <h3 class="news-title" style="font-size: 1.15rem;">${u.nama}</h3>
+            <p class="news-excerpt">${u.deskripsiSingkat}</p>
+            <div class="news-footer">
+              <button class="btn btn-outline-primary btn-sm" onclick="navigateTo('unit-usaha')">
+                Detail Unit <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDes%20Sipodalle,%20saya%20tertarik%20dengan%20layanan%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm" style="padding: 6px 12px;">
+                <i class="fa-brands fa-whatsapp"></i> Chat
+              </a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderHomeNewsPreview() {
+      const container = document.getElementById('homeNewsPreview');
+      if (!container) return;
+      const news = BUMDES_DATA.berita.slice(0, 3);
+      container.innerHTML = news.map(n => `
+        <div class="news-card">
+          <div class="news-thumb">
+            <img src="${n.gambar}" alt="${n.judul}" loading="lazy">
+            <span class="news-category-badge">${n.kategori}</span>
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span><i class="fa-regular fa-calendar"></i> ${n.tanggal}</span>
+              <span><i class="fa-regular fa-clock"></i> ${n.durasi}</span>
+            </div>
+            <h3 class="news-title">${n.judul}</h3>
+            <p class="news-excerpt">${n.ringkasan}</p>
+            <div class="news-footer">
+              <button class="read-more-btn" onclick="openNewsModal(${n.id})">
+                Baca Selengkapnya <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderTestimonials() {
+      const container = document.getElementById('testimoniContainer');
+      if (!container) return;
+      container.innerHTML = BUMDES_DATA.testimoni.map(t => `
+        <div class="testi-card">
+          <div class="testi-quote">"${t.komentar}"</div>
+          <div class="testi-user">
+            <img src="${t.foto}" alt="${t.nama}" loading="lazy">
+            <div class="testi-user-info">
+              <h4>${t.nama}</h4>
+              <span>${t.peran}</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderProfileData() {
+      const misiContainer = document.getElementById('profileMisiList');
+      if (misiContainer) {
+        misiContainer.innerHTML = BUMDES_DATA.visiMisi.misi.map(m => `
+          <li><i class="fa-solid fa-circle-check"></i><span>${m}</span></li>
+        `).join('');
+      }
+
+      const orgContainer = document.getElementById('orgStructureContainer');
+      if (orgContainer) {
+        orgContainer.innerHTML = BUMDES_DATA.pengurus.map(p => {
+          const isOrange = p.kategori === 'direksi' || p.kategori === 'penasihat';
+          return `
+            <div class="org-card ${isOrange ? 'orange' : ''}">
+              <div class="org-avatar-icon"><i class="fa-solid fa-${p.fotoIcon}"></i></div>
+              <h4>${p.nama}</h4>
+              <span class="org-role-badge">${p.jabatan}</span>
+              <p>${p.deskripsi}</p>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
+    function filterNews(category) {
+      document.querySelectorAll('#newsCategoryPills .cat-btn').forEach(btn => {
+        if (btn.getAttribute('data-cat') === category) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+      const searchVal = document.getElementById('newsSearchInput')?.value || '';
+      renderAllNews(category, searchVal);
+    }
+
+    function searchNews() {
+      const activeBtn = document.querySelector('#newsCategoryPills .cat-btn.active');
+      const category = activeBtn ? activeBtn.getAttribute('data-cat') : 'Semua';
+      const searchVal = document.getElementById('newsSearchInput')?.value || '';
+      renderAllNews(category, searchVal);
+    }
+
+    function renderAllNews(category = 'Semua', query = '') {
+      const grid = document.getElementById('allNewsGrid');
+      if (!grid) return;
+      let list = BUMDES_DATA.berita;
+      if (category !== 'Semua') {
+        list = list.filter(n => n.kategori.toLowerCase() === category.toLowerCase());
+      }
+      if (query.trim()) {
+        const q = query.toLowerCase();
+        list = list.filter(n => n.judul.toLowerCase().includes(q) || n.ringkasan.toLowerCase().includes(q));
+      }
+      grid.innerHTML = list.map(n => `
+        <div class="news-card">
+          <div class="news-thumb">
+            <img src="${n.gambar}" alt="${n.judul}" loading="lazy">
+            <span class="news-category-badge">${n.kategori}</span>
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span><i class="fa-regular fa-calendar"></i> ${n.tanggal}</span>
+              <span><i class="fa-regular fa-clock"></i> ${n.durasi}</span>
+            </div>
+            <h3 class="news-title">${n.judul}</h3>
+            <p class="news-excerpt">${n.ringkasan}</p>
+            <div class="news-footer">
+              <button class="read-more-btn" onclick="openNewsModal(${n.id})">
+                Baca Berita <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function openNewsModal(newsId) {
+      const item = BUMDES_DATA.berita.find(n => n.id === newsId);
+      if (!item) return;
+      const modalBody = document.getElementById('newsModalBody');
+      const backdrop = document.getElementById('newsModalBackdrop');
+
+      modalBody.innerHTML = `
+        <span class="news-category-badge" style="position: relative; top: 0; left: 0; display: inline-block; background: var(--primary-700); margin-bottom: 14px;">${item.kategori}</span>
+        <h2 style="font-size: 1.6rem; color: var(--neutral-900); margin-bottom: 12px; line-height: 1.35;">${item.judul}</h2>
+        <div style="display: flex; gap: 16px; font-size: 0.85rem; color: var(--neutral-500); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--neutral-200); flex-wrap: wrap;">
+          <span><i class="fa-regular fa-calendar"></i> ${item.tanggal}</span>
+          <span><i class="fa-solid fa-user-pen"></i> Penulis: ${item.penulis}</span>
+          <span><i class="fa-regular fa-clock"></i> ${item.durasi}</span>
+        </div>
+        <div style="width: 100%; height: 260px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px;">
+          <img src="${item.gambar}" alt="${item.judul}" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="font-size: 0.95rem; line-height: 1.7; color: var(--neutral-800);">
+          ${item.konten}
+        </div>
+        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--neutral-200); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span style="font-size: 0.85rem; color: var(--neutral-500);">Bagikan berita:</span>
+          <div style="display: flex; gap: 8px;">
+            <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(item.judul + ' - ' + window.location.href)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <button class="btn btn-outline-primary btn-sm" onclick="window.print()"><i class="fa-solid fa-print"></i> Cetak</button>
+          </div>
+        </div>
+      `;
+      backdrop.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNewsModal(event) {
+      if (event.target.id === 'newsModalBackdrop') closeNewsModalDirect();
+    }
+    function closeNewsModalDirect() {
+      const backdrop = document.getElementById('newsModalBackdrop');
+      if (backdrop) {
+        backdrop.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function filterUnits(category) {
+      document.querySelectorAll('#unitCategoryFilter .cat-btn').forEach(btn => {
+        if (btn.getAttribute('data-unitcat') === category) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+      renderAllUnits(category);
+    }
+
+    function filterUnitsAndNav(category) {
+      navigateTo('unit-usaha');
+      setTimeout(() => filterUnits(category), 100);
+    }
+
+    function renderAllUnits(category = 'Semua') {
+      const container = document.getElementById('unitUsahaListContainer');
+      if (!container) return;
+      let list = BUMDES_DATA.unitUsaha;
+      if (category !== 'Semua') {
+        list = list.filter(u => u.kategori.toLowerCase() === category.toLowerCase());
+      }
+      container.innerHTML = list.map(u => `
+        <div class="unit-card-full">
+          <div class="unit-image-side">
+            <img src="${u.gambar}" alt="${u.nama}" loading="lazy">
+            <div class="unit-image-overlay">
+              <div class="unit-omset-pill"><i class="fa-solid fa-chart-line text-green"></i> Estimasi Omset: ${u.omsetTahun}</div>
+            </div>
+          </div>
+          <div class="unit-content-side">
+            <div>
+              <div class="unit-header-top">
+                <span class="unit-tag ${u.badgeColor}"><i class="fa-solid fa-${u.icon}"></i> ${u.kategori}</span>
+                <div class="unit-status-badge"><i class="fa-solid fa-circle-check"></i> ${u.status}</div>
+              </div>
+              <h3 class="unit-title">${u.nama}</h3>
+              <div class="unit-tagline">${u.tagline}</div>
+              <p class="unit-desc">${u.deskripsiLengkap}</p>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--neutral-800); margin-bottom: 8px;">
+                <i class="fa-solid fa-star text-orange"></i> Produk & Layanan Unggulan:
+              </div>
+              <div class="unit-services-list">
+                ${u.layananUnggulan.map(s => `<div class="srv-item"><i class="fa-solid fa-check"></i><span>${s}</span></div>`).join('')}
+              </div>
+            </div>
+            <div class="unit-footer-actions">
+              <div class="unit-contact-info"><i class="fa-solid fa-user-gear"></i> PIC: <strong>${u.kontakPerson}</strong></div>
+              <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDes%20Sipodalle,%20saya%20ingin%20memesan%20atau%20konsultasi%20mengenai%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Hubungi / Pesan via WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function switchKeuanganTab(tabId) {
+      const btnPortal = document.getElementById('tabBtnPortal');
+      const btnTrans = document.getElementById('tabBtnTransparansi');
+      const contentPortal = document.getElementById('tabContentPortal');
+      const contentTrans = document.getElementById('tabContentTransparansi');
+
+      if (tabId === 'portal') {
+        btnPortal.classList.add('active');
+        btnTrans.classList.remove('active');
+        contentPortal.classList.add('active');
+        contentTrans.classList.remove('active');
+      } else {
+        btnPortal.classList.remove('active');
+        btnTrans.classList.add('active');
+        contentPortal.classList.remove('active');
+        contentTrans.classList.add('active');
+      }
+    }
+
+    function openAppsScriptTab() {
+      navigateTo('laporan-keuangan');
+      switchKeuanganTab('portal');
+    }
+
+    function reloadAppsScriptIframe() {
+      const iframe = document.getElementById('appsScriptIframe');
+      if (iframe) {
+        const src = iframe.src;
+        iframe.src = '';
+        setTimeout(() => { iframe.src = src; }, 150);
+      }
+    }
+
+    function toggleIframeFullscreen() {
+      const container = document.getElementById('appsScriptContainer');
+      const btn = document.getElementById('fullscreenBtn');
+      if (container) {
+        container.classList.toggle('is-fullscreen');
+        if (container.classList.contains('is-fullscreen')) {
+          btn.innerHTML = '<i class="fa-solid fa-compress"></i> Kecilkan Layar';
+          document.body.style.overflow = 'hidden';
+        } else {
+          btn.innerHTML = '<i class="fa-solid fa-expand"></i> Layar Penuh';
+          document.body.style.overflow = '';
+        }
+      }
+    }
+
+    function renderFinancialTransparency() {
+      const data = BUMDES_DATA.keuanganTransparansi;
+      if (!data) return;
+
+      const compContainer = document.getElementById('compBarsContainer');
+      if (compContainer) {
+        compContainer.innerHTML = data.komposisiPendapatan.map(c => `
+          <div class="comp-bar-item">
+            <div class="bar-label">
+              <span>${c.unit}</span>
+              <span style="color: ${c.warna}; font-weight: 700;">Rp ${(c.nominal / 1000000).toLocaleString('id-ID')} Juta (${c.persen}%)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: ${c.persen}%; background: ${c.warna};"></div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      const modulContainer = document.getElementById('modulLaporanContainer');
+      if (modulContainer) {
+        modulContainer.innerHTML = data.modulLaporan.map(m => `
+          <div class="modul-card">
+            <div class="modul-card-header">
+              <div class="modul-icon"><i class="fa-solid fa-${m.icon}"></i></div>
+              <span class="unit-tag green">${m.badge}</span>
+            </div>
+            <h4>${m.nama}</h4>
+            <p>${m.deskripsi}</p>
+            <button class="btn btn-outline-primary btn-sm" style="margin-top: 14px; width: 100%;" onclick="openAppsScriptTab()">
+              Buka di Aplikasi PPAK <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        `).join('');
+      }
+    }
+
+    function openGitHubModal() {
+      const backdrop = document.getElementById('githubModalBackdrop');
+      if (backdrop) {
+        backdrop.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+    function closeGitHubModal(event) {
+      if (event.target.id === 'githubModalBackdrop') closeGitHubModalDirect();
+    }
+    function closeGitHubModalDirect() {
+      const backdrop = document.getElementById('githubModalBackdrop');
+      if (backdrop) {
+        backdrop.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeNewsModalDirect();
+        closeGitHubModalDirect();
+      }
+    });
+  </script>
+</body>
+</html>
