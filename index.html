@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Website Resmi BUMDes Sipodalle Batetangnga Sejahtera - Pusat Ekonomi Desa Mandiri, Transparan, Layanan Unit Usaha, dan Pelaporan Keuangan Digital Realtime.">
-  <meta name="keywords" content="BUMDes, BUMDes Sipodalle, Batetangnga, Laporan Keuangan BUMDes, Unit Usaha Desa, Desa Mandiri, PPAK BUMDes">
+  <meta name="description" content="Website Resmi BUMDes Sipodalle Batetangnga Sejahtera - Pengelolaan Pasar Desa, Budidaya Ikan Nila, dan Laporan Keuangan Terpadu.">
+  <meta name="keywords" content="BUMDes, BUMDes Sipodalle, Batetangnga, Pasar Desa, Budidaya Ikan Nila, Laporan Keuangan BUMDes, PPAK BUMDes">
   <meta name="author" content="BUMDes Sipodalle Batetangnga Sejahtera">
   <title>Website Resmi BUMDes Sipodalle Batetangnga Sejahtera | Maju, Transparan & Berkelanjutan</title>
 
@@ -18,6 +18,9 @@
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- External Stylesheet (if available) -->
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- ========================================================================
        DESAIN SISTEM CSS LENGKAP & MANDIRI (HIJAU, ORANYE, PUTIH)
@@ -297,7 +300,7 @@
     .feature-card p { color: var(--neutral-600); font-size: 0.92rem; }
 
     /* Home Units Grid */
-    .home-units-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 60px; }
+    .home-units-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 60px; }
 
     /* Testimonials */
     .testimonials-wrapper {
@@ -429,6 +432,7 @@
     .unit-tag.green { background: var(--primary-100); color: var(--primary-800); }
     .unit-tag.orange { background: var(--accent-100); color: var(--accent-800); }
     .unit-tag.blue { background: #e0f2fe; color: #0369a1; }
+    .unit-tag.purple { background: #f3e8ff; color: #9333ea; }
     .unit-status-badge { font-size: 0.78rem; color: var(--primary-600); font-weight: 600; display: flex; align-items: center; gap: 5px; }
     .unit-title { font-size: 1.45rem; color: var(--neutral-900); margin-bottom: 6px; }
     .unit-tagline { font-size: 0.92rem; font-weight: 600; color: var(--accent-600); margin-bottom: 12px; }
@@ -522,26 +526,6 @@
     }
     .modul-card h4 { font-size: 1.05rem; margin-bottom: 6px; }
     .modul-card p { font-size: 0.82rem; color: var(--neutral-600); line-height: 1.5; }
-
-    /* GitHub Modal & Banner */
-    .github-banner {
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      border-radius: var(--radius-xl); padding: 36px; color: var(--white);
-      display: flex; align-items: center; justify-content: space-between; gap: 24px;
-      margin-top: 50px; box-shadow: var(--shadow-lg); border: 1px solid rgba(255, 255, 255, 0.1); flex-wrap: wrap;
-    }
-    .github-banner-left { display: flex; align-items: center; gap: 18px; }
-    .github-icon-large { font-size: 42px; color: var(--white); }
-    .github-banner-text h3 { font-size: 1.3rem; color: var(--white); margin-bottom: 4px; }
-    .github-banner-text p { color: var(--neutral-300); font-size: 0.9rem; }
-    .code-block {
-      background: #0f172a; color: #38bdf8; border-radius: var(--radius-md); padding: 14px 18px;
-      font-family: 'Consolas', 'Courier New', monospace; font-size: 0.85rem; line-height: 1.6;
-      margin: 12px 0 18px; overflow-x: auto; border: 1px solid #334155;
-    }
-    .code-block .comment { color: #64748b; }
-    .code-block .keyword { color: #f43f5e; }
-    .code-block .string { color: #34d399; }
 
     /* Modals */
     .modal-backdrop {
@@ -651,9 +635,9 @@
         <a href="#laporan-keuangan" class="btn btn-accent btn-sm" onclick="openAppsScriptTab()">
           <i class="fa-solid fa-bolt"></i> Portal Keuangan
         </a>
-        <button class="btn btn-outline-primary btn-sm" onclick="openGitHubModal()" title="Panduan & Koneksi GitHub">
-          <i class="fa-brands fa-github"></i> GitHub
-        </button>
+        <a href="https://wa.me/6282198765432" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" title="Hubungi Pengurus BUMDes">
+          <i class="fa-brands fa-whatsapp"></i> Hubungi Kami
+        </a>
       </div>
 
       <!-- Mobile Hamburger Toggle -->
@@ -682,7 +666,7 @@
                 Membangun Ekonomi Desa <span class="highlight-orange">Mandiri & Transparan</span>
               </h1>
               <p class="hero-subtitle">
-                Selamat datang di portal resmi BUMDes Sipodalle Batetangnga Sejahtera. Menggerakkan potensi agrowisata, pertanian, sarana air bersih, dan layanan digital dengan tata kelola keuangan terbuka dan akuntabel.
+                Selamat datang di portal resmi BUMDes Sipodalle Batetangnga Sejahtera. Menggerakkan pengelolaan Pasar Desa, budidaya pembesaran ikan nila segar, serta persiapan sarana air bersih dan ekowisata alam dengan laporan keuangan transparan.
               </p>
               <div class="hero-cta-group">
                 <a href="#unit-usaha" class="btn btn-accent btn-lg" onclick="navigateTo('unit-usaha')">
@@ -709,11 +693,11 @@
               <div class="preview-stat-row">
                 <div class="preview-stat-box">
                   <div class="lbl">Akumulasi Omset 2026</div>
-                  <div class="val text-green" id="heroOmsetVal">Rp 842.500.000</div>
+                  <div class="val text-green" id="heroOmsetVal">Rp 325.000.000</div>
                 </div>
                 <div class="preview-stat-box">
                   <div class="lbl">Kontribusi PADes</div>
-                  <div class="val text-orange" id="heroPADesVal">Rp 77.680.000</div>
+                  <div class="val text-orange" id="heroPADesVal">Rp 37.800.000</div>
                 </div>
               </div>
 
@@ -751,20 +735,20 @@
           <div class="feature-card">
             <div class="feature-card-icon" style="background: var(--primary-50); color: var(--primary-600); border-color: var(--primary-200);"><i class="fa-solid fa-users-gear"></i></div>
             <h3>Pemberdayaan Warga</h3>
-            <p>Menyerap tenaga kerja lokal dan bermitra dengan lebih dari 130+ petani, peternak, dan pengrajin UMKM di pelosok desa.</p>
+            <p>Mendukung perputaran ekonomi para pedagang pasar desa dan kelompok pembudidaya ikan air tawar lokal.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-card-icon" style="background: #e0f2fe; color: #0284c7; border-color: #bae6fd;"><i class="fa-solid fa-tree"></i></div>
-            <h3>Potensi Alam Berkelanjutan</h3>
-            <p>Mengembangkan ekowisata alam, agrowisata durian, dan pengelolaan air bersih lestari berbasis kearifan lokal Batetangnga.</p>
+            <div class="feature-card-icon" style="background: #e0f2fe; color: #0284c7; border-color: #bae6fd;"><i class="fa-solid fa-water"></i></div>
+            <h3>Potensi Air & Alam</h3>
+            <p>Memanfaatkan sumber air tawar bersih Batetangnga untuk budidaya ikan nila serta persiapan layanan air bersih dan wisata.</p>
           </div>
         </div>
 
-        <!-- Sorotan Unit Usaha Terpilih -->
+        <!-- Sorotan Unit Usaha -->
         <div class="section-intro">
-          <div class="section-badge"><i class="fa-solid fa-fire"></i> Layanan Unggulan</div>
-          <h2 class="section-title">Unit Usaha <span class="text-orange">Prioritas Desa</span></h2>
-          <p class="section-desc">Menyediakan berbagai kebutuhan masyarakat mulai dari saprodi pertanian, wisata, air bersih, hingga pembayaran digital.</p>
+          <div class="section-badge"><i class="fa-solid fa-fire"></i> Sektor Usaha</div>
+          <h2 class="section-title">Unit Usaha <span class="text-orange">BUMDes Sipodalle</span></h2>
+          <p class="section-desc">2 unit usaha aktif beroperasi dan 2 unit strategis dalam tahap persiapan pengembangan desa.</p>
         </div>
 
         <div class="home-units-grid" id="homeUnitsPreview">
@@ -786,25 +770,11 @@
         <div class="testimonials-wrapper" style="margin-top: 70px;">
           <div class="section-intro" style="margin-bottom: 35px;">
             <div class="section-badge"><i class="fa-solid fa-comments"></i> Suara Warga</div>
-            <h2 class="section-title">Apa Kata Masyarakat & Mitra Usaha?</h2>
+            <h2 class="section-title">Apa Kata Masyarakat & Pedagang?</h2>
           </div>
           <div class="testimonials-grid" id="testimoniContainer">
             <!-- Rendered dynamically -->
           </div>
-        </div>
-
-        <!-- GitHub Connect Banner in Home -->
-        <div class="github-banner">
-          <div class="github-banner-left">
-            <div class="github-icon-large"><i class="fa-brands fa-github"></i></div>
-            <div class="github-banner-text">
-              <h3>Siap Dihubungkan ke GitHub & Onlinekan Gratis!</h3>
-              <p>Source code website ini telah siap disinkronkan ke akun GitHub Anda dan dapat di-hosting via GitHub Pages.</p>
-            </div>
-          </div>
-          <button class="btn btn-outline-white" onclick="openGitHubModal()">
-            <i class="fa-solid fa-book-bookmark"></i> Buka Panduan GitHub
-          </button>
         </div>
 
       </div>
@@ -895,7 +865,6 @@
             <button class="cat-btn" data-cat="Laporan Publik" onclick="filterNews('Laporan Publik')">Laporan Publik</button>
             <button class="cat-btn" data-cat="Usaha Desa" onclick="filterNews('Usaha Desa')">Usaha Desa</button>
             <button class="cat-btn" data-cat="Kegiatan Warga" onclick="filterNews('Kegiatan Warga')">Kegiatan Warga</button>
-            <button class="cat-btn" data-cat="Pengumuman Resmi" onclick="filterNews('Pengumuman Resmi')">Pengumuman</button>
           </div>
           <div class="search-input-box">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -920,18 +889,16 @@
         <div class="section-intro">
           <div class="section-badge"><i class="fa-solid fa-store"></i> Sektor Bisnis</div>
           <h2 class="section-title">Unit Usaha & <span class="text-orange">Layanan Desa</span></h2>
-          <p class="section-desc">Jelajahi berbagai unit bisnis produktif BUMDes Sipodalle yang siap melayani kebutuhan warga, wisatawan, dan mitra usaha.</p>
+          <p class="section-desc">2 Unit usaha yang aktif melayani masyarakat serta 2 unit strategis yang sedang dalam tahap persiapan.</p>
         </div>
 
         <!-- Filter Unit Category -->
         <div class="unit-filter-pills" id="unitCategoryFilter">
           <button class="cat-btn active" data-unitcat="Semua" onclick="filterUnits('Semua')">Semua Unit</button>
-          <button class="cat-btn" data-unitcat="Pertanian" onclick="filterUnits('Pertanian')">Pertanian & Saprodi</button>
-          <button class="cat-btn" data-unitcat="Pariwisata" onclick="filterUnits('Pariwisata')">Ekowisata & Rekreasi</button>
-          <button class="cat-btn" data-unitcat="Layanan Publik" onclick="filterUnits('Layanan Publik')">Air Bersih (PAMSIMAS)</button>
-          <button class="cat-btn" data-unitcat="Jasa Keuangan" onclick="filterUnits('Jasa Keuangan')">Jasa Keuangan & PPOB</button>
-          <button class="cat-btn" data-unitcat="Ekonomi Kreatif" onclick="filterUnits('Ekonomi Kreatif')">UMKM & Kopi Khas</button>
-          <button class="cat-btn" data-unitcat="Lingkungan Hidup" onclick="filterUnits('Lingkungan Hidup')">Bank Sampah Desa</button>
+          <button class="cat-btn" data-unitcat="Pasar Desa" onclick="filterUnits('Pasar Desa')">Pengelolaan Pasar Desa (Aktif)</button>
+          <button class="cat-btn" data-unitcat="Budidaya Perikanan" onclick="filterUnits('Budidaya Perikanan')">Budidaya Ikan Nila (Aktif)</button>
+          <button class="cat-btn" data-unitcat="Air Bersih" onclick="filterUnits('Air Bersih')">Air Bersih PAMSIMAS (Rencana)</button>
+          <button class="cat-btn" data-unitcat="Wisata" onclick="filterUnits('Wisata')">Ekowisata Alam (Rencana)</button>
         </div>
 
         <!-- List of Business Units -->
@@ -1007,7 +974,7 @@
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
               <div>
                 <h3 style="font-size: 1.4rem; color: var(--primary-900);">Ringkasan Kinerja Keuangan BUMDes</h3>
-                <p style="font-size: 0.9rem; color: var(--neutral-500);">Data Konsolidasi Seluruh Unit Usaha Tahun Buku 2026</p>
+                <p style="font-size: 0.9rem; color: var(--neutral-500);">Data Konsolidasi Unit Usaha Tahun Buku 2026</p>
               </div>
               <span class="hero-status-pill" style="background: var(--primary-100); color: var(--primary-800); border-color: var(--primary-400);">
                 <i class="fa-solid fa-circle-check"></i> Terverifikasi Badan Pengawas
@@ -1018,19 +985,19 @@
             <div class="financial-metric-row">
               <div class="fin-card">
                 <div class="lbl">TOTAL PENDAPATAN USAHA</div>
-                <div class="amt text-green" id="finTotalPendapatan">Rp 842.500.000</div>
+                <div class="amt text-green" id="finTotalPendapatan">Rp 325.000.000</div>
               </div>
               <div class="fin-card">
                 <div class="lbl">TOTAL BEBAN OPERASIONAL</div>
-                <div class="amt" style="color: #dc2626;" id="finTotalBeban">Rp 648.300.000</div>
+                <div class="amt" style="color: #dc2626;" id="finTotalBeban">Rp 230.500.000</div>
               </div>
               <div class="fin-card highlight">
                 <div class="lbl">LABA BERSIH TAHUN BERJALAN</div>
-                <div class="amt text-green" id="finLabaBersih">Rp 194.200.000</div>
+                <div class="amt text-green" id="finLabaBersih">Rp 94.500.000</div>
               </div>
               <div class="fin-card orange">
                 <div class="lbl">ALOKASI PADES (KAS DESA)</div>
-                <div class="amt text-orange" id="finPADes">Rp 77.680.000</div>
+                <div class="amt text-orange" id="finPADes">Rp 37.800.000</div>
               </div>
             </div>
 
@@ -1038,7 +1005,7 @@
             <div class="composition-section">
               <div>
                 <h4 style="font-size: 1.15rem; margin-bottom: 6px; color: var(--neutral-900);">Kontribusi Pendapatan per Unit Usaha</h4>
-                <p style="font-size: 0.85rem; color: var(--neutral-500); margin-bottom: 20px;">Persentase kontribusi masing-masing unit bisnis terhadap total pendapatan BUMDes.</p>
+                <p style="font-size: 0.85rem; color: var(--neutral-500); margin-bottom: 20px;">Persentase kontribusi perolehan omset usaha dari unit-unit produktif.</p>
                 <div class="comp-bars-list" id="compBarsContainer">
                   <!-- Rendered dynamically -->
                 </div>
@@ -1088,52 +1055,6 @@
   </div>
 
   <!-- ========================================================================
-       MODAL: PANDUAN KONEKSI & DEPLOYMENT GITHUB
-       ======================================================================== -->
-  <div class="modal-backdrop" id="githubModalBackdrop" onclick="closeGitHubModal(event)">
-    <div class="modal-window" style="max-width: 680px;" id="githubModalWindow">
-      <button class="modal-close-btn" onclick="closeGitHubModalDirect()"><i class="fa-solid fa-xmark"></i></button>
-      <div class="modal-body-content">
-        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 18px;">
-          <div style="width: 48px; height: 48px; border-radius: 50%; background: #0f172a; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px;">
-            <i class="fa-brands fa-github"></i>
-          </div>
-          <div>
-            <h3 style="font-size: 1.3rem; margin-bottom: 2px;">Panduan Koneksi ke GitHub Anda</h3>
-            <p style="font-size: 0.85rem; color: var(--neutral-500);">Langkah mudah menyambungkan project ini ke repository GitHub pribadi & online gratis via GitHub Pages.</p>
-          </div>
-        </div>
-
-        <div style="font-size: 0.92rem; color: var(--neutral-700); line-height: 1.6;">
-          <p><strong>Langkah 1:</strong> Buat repository baru di akun GitHub Anda (misal: <code>bumdes-sipodalle</code>).</p>
-          <p style="margin-top: 10px;"><strong>Langkah 2:</strong> Buka terminal PowerShell di folder project ini, lalu jalankan perintah berikut:</p>
-
-          <div class="code-block">
-            <span class="comment"># 1. Hubungkan remote origin</span><br>
-            <span class="keyword">git</span> remote add origin <span class="string">https://github.com/USERNAME-ANDA/bumdes-sipodalle.git</span><br>
-            <span class="keyword">git</span> branch -M main<br>
-            <span class="keyword">git</span> push -u origin main
-          </div>
-
-          <p><strong>Langkah 3 (Aktifkan Website Online):</strong></p>
-          <ul style="padding-left: 20px; margin-top: 6px; font-size: 0.88rem;">
-            <li>Buka repository Anda di <strong>GitHub.com</strong></li>
-            <li>Klik menu <strong>Settings</strong> &gt; <strong>Pages</strong></li>
-            <li>Pada bagian <em>Build and deployment / Branch</em>, pilih <strong>main</strong> lalu simpan (Save)</li>
-            <li>Website BUMDes Anda akan langsung online dan bisa diakses gratis di <code>https://username.github.io/bumdes-sipodalle</code>!</li>
-          </ul>
-        </div>
-
-        <div style="margin-top: 24px; text-align: right;">
-          <button class="btn btn-primary" onclick="closeGitHubModalDirect()">
-            <i class="fa-solid fa-check"></i> Mengerti & Tutup
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================================
        SITE FOOTER
        ======================================================================== -->
   <footer class="site-footer">
@@ -1152,7 +1073,7 @@
             </div>
           </div>
           <p>
-            Badan Usaha Milik Desa Batetangnga, Kec. Binuang, Kab. Polewali Mandar. Mengabdi untuk kemandirian ekonomi, kesejahteraan petani, UMKM, dan transparansi publik.
+            Badan Usaha Milik Desa Batetangnga, Kec. Binuang, Kab. Polewali Mandar. Mengabdi untuk kemandirian ekonomi, pengelolaan pasar desa, budidaya perikanan, dan transparansi publik.
           </p>
           <div class="footer-socials">
             <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -1178,11 +1099,10 @@
         <div class="footer-col">
           <h4>Unit Usaha</h4>
           <ul class="footer-links">
-            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Pertanian')"><i class="fa-solid fa-seedling"></i> Pertanian & Saprodi</a></li>
-            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Pariwisata')"><i class="fa-solid fa-mountain-sun"></i> Wisata Batetangnga</a></li>
-            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Layanan Publik')"><i class="fa-solid fa-faucet-drip"></i> Air Bersih (PAMSIMAS)</a></li>
-            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Jasa Keuangan')"><i class="fa-solid fa-credit-card"></i> BUMDes Pay & Digital</a></li>
-            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Ekonomi Kreatif')"><i class="fa-solid fa-store"></i> UMKM & Kopi Desa</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Pasar Desa')"><i class="fa-solid fa-shop"></i> Pengelolaan Pasar Desa</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Budidaya Perikanan')"><i class="fa-solid fa-fish"></i> Budidaya Ikan Nila</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Air Bersih')"><i class="fa-solid fa-faucet-drip"></i> Air Bersih (Rencana)</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Wisata')"><i class="fa-solid fa-mountain-sun"></i> Ekowisata Alam (Rencana)</a></li>
           </ul>
         </div>
 
@@ -1216,10 +1136,8 @@
         <div>
           &copy; 2026 BUMDes Sipodalle Batetangnga Sejahtera. Hak Cipta Dilindungi Undang-Undang.
         </div>
-        <div style="display: flex; gap: 16px; align-items: center;">
-          <a href="#" onclick="openGitHubModal(); return false;" style="color: var(--primary-400); display: flex; align-items: center; gap: 6px;">
-            <i class="fa-brands fa-github"></i> Terhubung dengan GitHub
-          </a>
+        <div>
+          <span style="color: var(--primary-400); font-weight: 600;"><i class="fa-solid fa-shield-halved"></i> Tata Kelola Transparan & Akuntabel</span>
         </div>
       </div>
     </div>
@@ -1242,130 +1160,109 @@
         appsScriptUrl: "https://script.google.com/macros/s/AKfycbyWAjcU3O2Z6rjZjg3gZsyrpj9YA93npKDt2mlCxDqnG85Sr3zRmYRQLKRb64YtZQw9VA/exec"
       },
       statistik: {
-        totalOmset: "Rp 842.500.000",
-        padesDisalurkan: "Rp 77.680.000",
-        unitUsahaAktif: 6,
-        wargaTerlayani: "1.420 KK"
+        totalOmset: "Rp 325.000.000",
+        padesDisalurkan: "Rp 37.800.000",
+        unitUsahaAktif: "2 Aktif (2 Rencana)",
+        wargaTerlayani: "950+ KK"
       },
       visiMisi: {
         misi: [
-          "Mengoptimalkan pengelolaan potensi dan aset desa melalui unit usaha yang produktif dan inovatif.",
-          "Meningkatkan pendapatan asli desa (PADes) guna mendukung pembangunan infrastruktur dan pemberdayaan masyarakat.",
-          "Menciptakan lapangan kerja seluas-luasnya dan memperkuat kemitraan dengan petani, pekebun, dan pelaku UMKM lokal.",
-          "Menerapkan tata kelola keuangan yang akuntabel, transparan, dan terdigitalisasi berbasis aplikasi modern.",
-          "Melestarikan lingkungan hidup dan potensi agrowisata berbasis kearifan lokal."
+          "Mengoptimalkan pengelolaan Pasar Desa sebagai pusat perdagangan yang tertib, bersih, dan berkeadilan.",
+          "Mengembangkan sektor perikanan produktif melalui budidaya dan pembesaran ikan nila bernilai ekonomi tinggi.",
+          "Mempersiapkan sarana infrastruktur air bersih (PAMSIMAS) dan destinasi ekowisata alam desa berkelanjutan.",
+          "Meningkatkan pendapatan asli desa (PADes) guna mendukung pembangunan fasilitas desa dan pemberdayaan warga.",
+          "Menerapkan tata kelola keuangan yang akuntabel dan transparan berbasis aplikasi laporan akuntansi digital (PPAK BUMDes)."
         ]
       },
       pengurus: [
         { nama: "H. Muhammad Ridwan, S.Sos", jabatan: "Penasihat / Kepala Desa", kategori: "penasihat", fotoIcon: "user-tie", deskripsi: "Mengarahkan kebijakan strategis BUMDes dan menjamin keselarasan dengan program desa." },
         { nama: "Drs. Syamsuddin, M.Si", jabatan: "Ketua Badan Pengawas", kategori: "pengawas", fotoIcon: "shield-halved", deskripsi: "Mengawasi jalannya operasional, kepatuhan hukum, dan tata kelola keuangan BUMDes." },
-        { nama: "Andi Faisal Pratama, S.E.", jabatan: "Direktur Utama BUMDes", kategori: "direksi", fotoIcon: "user-gear", deskripsi: "Memimpin operasional seluruh unit usaha, ekspansi kemitraan, dan inovasi pelayanan." },
-        { nama: "Nurul Hidayah, S.Ak.", jabatan: "Bendahara & Akuntan", kategori: "direksi", fotoIcon: "calculator", deskripsi: "Mengelola pembukuan, jurnal transaksi, dan penyusunan laporan keuangan PPAK terintegrasi." },
-        { nama: "Rahmat Hidayat, S.Kom.", jabatan: "Sekretaris & IT", kategori: "direksi", fotoIcon: "laptop-code", deskripsi: "Mengelola administrasi persuratan, arsip dokumen, serta sistem informasi dan digitalisasi." },
-        { nama: "Mansyur Basri", jabatan: "Manajer Unit Pertanian", kategori: "manajer", fotoIcon: "seedling", deskripsi: "Memimpin distribusi pupuk, sarana pertanian, dan serapan hasil panen petani binaan." },
-        { nama: "Siti Rahmawati", jabatan: "Manajer Unit Wisata & UMKM", kategori: "manajer", fotoIcon: "mountain-sun", deskripsi: "Mengelola kawasan agrowisata Batetangnga, galeri produk UMKM, dan promosi kuliner desa." },
-        { nama: "Hasbullah, S.T.", jabatan: "Manajer Unit Air Bersih", kategori: "manajer", fotoIcon: "faucet-drip", deskripsi: "Menjamin ketersediaan, pemeliharaan pipa, dan distribusi air bersih bagi 1.400+ keluarga." }
+        { nama: "Andi Faisal Pratama, S.E.", jabatan: "Direktur Utama BUMDes", kategori: "direksi", fotoIcon: "user-gear", deskripsi: "Memimpin operasional unit pasar desa, budidaya ikan nila, serta persiapan unit baru." },
+        { nama: "Nurul Hidayah, S.Ak.", jabatan: "Bendahara & Akuntan", kategori: "direksi", fotoIcon: "calculator", deskripsi: "Mengelola pembukuan, pencatatan jurnal, dan penyusunan laporan keuangan PPAK terintegrasi." },
+        { nama: "Rahmat Hidayat, S.Kom.", jabatan: "Sekretaris & Administrasi", kategori: "direksi", fotoIcon: "laptop-code", deskripsi: "Mengelola administrasi persuratan, data pedagang pasar, kemitraan budidaya, dan arsip." },
+        { nama: "Mansyur Basri", jabatan: "Pengelola Unit Pasar Desa", kategori: "manajer", fotoIcon: "shop", deskripsi: "Mengkoordinasikan penataan lapak pasar, retribusi, kebersihan, dan ketertiban pedagang." },
+        { nama: "Muhammad Ilham", jabatan: "Pengelola Unit Budidaya Ikan Nila", kategori: "manajer", fotoIcon: "fish", deskripsi: "Mengelola operasional kolam pembesaran ikan nila, ketersediaan pakan, dan distribusi hasil panen." }
       ],
       unitUsaha: [
         {
-          id: "unit-pertanian", kode: "U01", nama: "Unit Pertanian & Saprodi Desa", kategori: "Pertanian",
-          tagline: "Penyedia Pupuk, Bibit Unggul & Serapan Hasil Bumi", icon: "seedling", badgeColor: "green",
-          gambar: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80",
-          deskripsiSingkat: "Melayani kebutuhan pupuk non-subsidi, bibit berkualitas, pestisida ramah lingkungan, serta menampung hasil panen petani dengan harga adil.",
-          deskripsiLengkap: "Unit Pertanian & Saprodi didirikan untuk memotong rantai tengkulak dan mempermudah akses petani Desa Batetangnga terhadap sarana produksi pertanian berkualitas. Kami bermitra dengan kelompok tani lokal untuk distribusi pupuk, bibit kakao, bibit durian montong, padi gogo, serta menyediakan layanan konsultasi budidaya.",
-          layananUnggulan: ["Pupuk Organik Padat & Cair", "Bibit Durian Khas Batetangnga", "Sewa Mesin Pertanian", "Tampung Biji Kakao & Kopi Petani"],
-          kontakPerson: "Mansyur Basri (0821-9876-5431)", omsetTahun: "Rp 320.000.000", status: "Aktif & Beroperasi"
+          id: "unit-pasar", kode: "U01", nama: "Unit Pengelolaan Pasar Desa", kategori: "Pasar Desa",
+          tagline: "Pusat Perdagangan Rakyat, Penataan Lapak & Fasilitas Kios Desa", icon: "shop", badgeColor: "green",
+          gambar: "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80",
+          deskripsiSingkat: "Mengelola fasilitas pasar tradisional desa, penataan lapak pedagang harian & mingguan, sewa kios permanen, serta pemeliharaan kebersihan dan ketertiban pasar.",
+          deskripsiLengkap: "Unit Pengelolaan Pasar Desa Batetangnga hadir untuk menciptakan pusat transaksi ekonomi yang tertib, nyaman, dan higienis bagi para pedagang dan pembeli lokal. Unit ini mengelola retribusi lapak, penyewaan kios BUMDes, fasilitas sanitasi pasar, serta program ketertiban timbangan pedagang.",
+          layananUnggulan: ["Sewa Kios & Los Pasar Permanen BUMDes", "Pengelolaan Lapak Pedagang Harian & Mingguan", "Penyediaan Fasilitas Kebersihan & Keamanan Pasar", "Fasilitasi Promosi Komoditas Hasil Bumi Petani"],
+          kontakPerson: "Mansyur Basri (0821-9876-5431)", omsetTahun: "Rp 180.000.000", status: "Aktif & Beroperasi", isActive: true
         },
         {
-          id: "unit-wisata", kode: "U02", nama: "Unit Ekowisata & Rekreasi Alam", kategori: "Pariwisata",
-          tagline: "Pesona Alam Asri, Agrowisata & Kuliner Khas Batetangnga", icon: "mountain-sun", badgeColor: "orange",
-          gambar: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-          deskripsiSingkat: "Pengelolaan destinasi pemandian alam alami, agrowisata durian/buah lokal, spot foto instagramable, gazebo keluarga, dan camping ground.",
-          deskripsiLengkap: "Unit Wisata mengelola potensi alam Desa Batetangnga yang terkenal dengan aliran sungai jernih, kebun buah durian, dan panorama perbukitan sejuk. Kami menyediakan fasilitas rekreasi keluarga yang lengkap, ramah anak, serta menyajikan kuliner tradisional khas Sulawesi Barat.",
-          layananUnggulan: ["Tiket Wisata Sungai & Permandian Alam", "Sewa Gazebo & Tenda Camping", "Paket Wisata Petik Buah Durian", "Penyewaan Area Outbound & Gathering"],
-          kontakPerson: "Siti Rahmawati (0821-9876-5432)", omsetTahun: "Rp 185.000.000", status: "Aktif & Ramai Pengunjung"
+          id: "unit-ikan-nila", kode: "U02", nama: "Unit Usaha Budidaya (Pembesaran) Ikan Nila", kategori: "Budidaya Perikanan",
+          tagline: "Penyedia Ikan Nila Segar Berkualitas, Bibit Unggul & Konsumsi", icon: "fish", badgeColor: "orange",
+          gambar: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+          deskripsiSingkat: "Usaha pembesaran ikan nila air tawar dengan sistem kolam terpadu yang menghasilkan ikan nila konsumsi segar bermutu tinggi serta penyediaan benih unggul.",
+          deskripsiLengkap: "Memanfaatkan potensi aliran air tawar alami Batetangnga yang bersih dan melimpah. Unit Budidaya Ikan Nila mengelola kolam-kolam pembesaran secara modern dengan pakan bernutrisi tinggi untuk memenuhi kebutuhan konsumsi rumah tangga, warung kuliner, rumah makan, dan pasar lokal.",
+          layananUnggulan: ["Penjualan Ikan Nila Segar Konsumsi (Kiloan / Partai)", "Penyediaan Benih & Bibit Ikan Nila Unggul", "Pasokan Rutin Ikan Segar untuk Rumah Makan & Pesta", "Konsultasi & Kemitraan Budidaya Kolam Ikan Air Tawar"],
+          kontakPerson: "Muhammad Ilham (0821-9876-5432)", omsetTahun: "Rp 145.000.000", status: "Aktif & Panen Rutin", isActive: true
         },
         {
-          id: "unit-pamsimas", kode: "U03", nama: "Unit Pengelolaan Air Bersih (PAMSIMAS)", kategori: "Layanan Publik",
-          tagline: "Air Bersih Mengalir 24 Jam untuk Kesejahteraan Warga", icon: "faucet-drip", badgeColor: "blue",
+          id: "unit-pamsimas", kode: "U03", nama: "Unit Pengelolaan Air Bersih (PAMSIMAS)", kategori: "Air Bersih",
+          tagline: "Penyaluran Air Bersih Sumber Pegunungan ke Rumah Warga", icon: "faucet-drip", badgeColor: "blue",
           gambar: "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80",
-          deskripsiSingkat: "Penyaluran air bersih sumber mata air pegunungan langsung ke rumah-rumah warga dengan tarif terjangkau dan kualitas higienis.",
-          deskripsiLengkap: "Unit PAMSIMAS mengelola jaringan transmisi air bersih dari sumber mata air alami Batetangnga menuju lebih dari 1.400 sambungan rumah (SR). Didukung pemeliharaan berkala, uji kualitas air, dan sistem pencatatan meteran digital demi keadilan pemakaian.",
-          layananUnggulan: ["Sambungan Baru Air Bersih ke Rumah", "Pemeliharaan & Perbaikan Pipa Jaringan", "Pembayaran Rekening Air Bulanan", "Penyediaan Air Tangki Kebutuhan Khusus"],
-          kontakPerson: "Hasbullah, S.T. (0821-9876-5433)", omsetTahun: "Rp 142.500.000", status: "Layanan 24 Jam"
+          deskripsiSingkat: "Rencana strategis penyaluran air bersih perpipaan dari mata air pegunungan alami langsung ke sambungan rumah (SR) warga desa.",
+          deskripsiLengkap: "Unit ini sedang dalam tahap persiapan infrastruktur, pemetaan jaringan pipa transmisi, dan instalasi tandon distribusi induk untuk menjangkau seluruh dusun di Desa Batetangnga.",
+          layananUnggulan: ["Rencana Sambungan Rumah (SR) Air Bersih Perpipaan", "Pemeliharaan & Pembangunan Jaringan Pipa Desa", "Uji Higienitas & Kualitas Air Bersih Berkala", "Sistem Meteran Pemakaian Air Transparan"],
+          kontakPerson: "Tim Teknis Air Bersih (0821-9876-5433)", omsetTahun: "Tahap Persiapan", status: "Rencana / Segera Hadir (Belum Aktif)", isActive: false
         },
         {
-          id: "unit-keuangan", kode: "U04", nama: "Unit Jasa Keuangan & BUMDes Pay", kategori: "Jasa Keuangan",
-          tagline: "Pusat Layanan Transaksi Digital & Keuangan Mikro Desa", icon: "credit-card", badgeColor: "green",
-          gambar: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80",
-          deskripsiSingkat: "Layanan agen BRILink/PPOB resmi: transfer antar bank, tarik tunai, bayar PLN, PDAM, BPJS, cicilan, dan pinjaman modal usaha kelompok.",
-          deskripsiLengkap: "Memudahkan warga desa melakukan transaksi perbankan tanpa perlu menempuh jarak jauh ke kota kecamatan. Unit ini melayani transaksi harian, pembayaran tagihan rutin, pembelian token listrik, serta menyediakan skema pembiayaan mikro syariah bagi pelaku usaha kecil desa.",
-          layananUnggulan: ["Transfer Antar Bank & Tarik Tunai", "Pembayaran PLN, BPJS, Pulsa & Data", "Top-Up E-Wallet (Dana, OVO, ShopeePay)", "Program Tabungan Qurban & Pendidikan"],
-          kontakPerson: "Nurul Hidayah (0821-9876-5434)", omsetTahun: "Rp 98.000.000", status: "Buka Setiap Hari"
-        },
-        {
-          id: "unit-umkm", kode: "U05", nama: "Unit Rumah Produksi & UMKM Desa", kategori: "Ekonomi Kreatif",
-          tagline: "Sentra Oleh-oleh Khas, Kopi Batetangnga & Kerajinan", icon: "store", badgeColor: "orange",
-          gambar: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
-          deskripsiSingkat: "Mewadahi produk olahan kopi robusta Batetangnga, madu hutan alami, kripik pisang, gula aren cetak, dan cinderamata bambu.",
-          deskripsiLengkap: "Sebagai rumah inkubator bagi ibu-ibu dan pemuda pengrajin di Desa Batetangnga. BUMDes membantu standarisasi kemasan, perizinan P-IRT/Halal, pemasaran online, serta membuka galeri oleh-oleh terpadu di kawasan agrowisata desa.",
-          layananUnggulan: ["Kopi Robusta & Arabika Bubuk Khas", "Madu Hutan Liar Murni 100%", "Gula Aren Asli & Aneka Cemilan Olahan", "Hampers & Souvenir Khas Desa"],
-          kontakPerson: "Siti Rahmawati (0821-9876-5432)", omsetTahun: "Rp 65.000.000", status: "Ready Stock"
-        },
-        {
-          id: "unit-sampah", kode: "U06", nama: "Unit Pengelolaan Lingkungan & Bank Sampah", kategori: "Lingkungan Hidup",
-          tagline: "Menjaga Desa Bersih, Mengubah Sampah Menjadi Berkah", icon: "recycle", badgeColor: "green",
-          gambar: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80",
-          deskripsiSingkat: "Pengangkutan sampah rumah tangga teratur, pemilahan sampah anorganik di bank sampah, dan pembuatan pupuk kompos bernilai jual.",
-          deskripsiLengkap: "Program inovasi desa bersih dan lestari. Warga dapat menyetorkan sampah plastik/kardus yang ditukar dengan saldo tabungan emas atau uang tunai, sekaligus mengolah limbah organik menjadi pupuk yang kembali disalurkan ke unit pertanian.",
-          layananUnggulan: ["Jasa Angkut Sampah Rumah Tangga", "Tabungan Bank Sampah Terintegrasi", "Penjualan Pupuk Kompos Organik", "Edukasi Lingkungan & Daur Ulang"],
-          kontakPerson: "Mansyur Basri (0821-9876-5431)", omsetTahun: "Rp 32.000.000", status: "Berjalan Rutin"
+          id: "unit-wisata", kode: "U04", nama: "Unit Ekowisata & Rekreasi Alam", kategori: "Wisata",
+          tagline: "Pengembangan Destinasi Wisata Alam Asri Batetangnga", icon: "mountain-sun", badgeColor: "purple",
+          gambar: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          deskripsiSingkat: "Rencana pengembangan kawasan rekreasi alam pemandian sungai jernih, spot agrowisata buah lokal, dan gazebo keluarga.",
+          deskripsiLengkap: "Unit Wisata Alam dalam proses penataan masterplan destinasi desa untuk mengoptimalkan potensi keindahan sungai alami, kebun buah lokal, dan panorama pegunungan Batetangnga.",
+          layananUnggulan: ["Masterplan Kawasan Wisata Sungai & Permandian Alam", "Rencana Gazebo Santai & Area Camping Ground", "Paket Agrowisata Buah Lokal Musiman", "Kerjasama Pengelolaan Bersama Kelompok Sadar Wisata"],
+          kontakPerson: "Pengembangan Wisata (0821-9876-5434)", omsetTahun: "Tahap Perencanaan", status: "Rencana / Pengembangan (Belum Aktif)", isActive: false
         }
       ],
       berita: [
         {
-          id: 1, judul: "BUMDes Sipodalle Salurkan PADes Rp 77,6 Juta untuk Pembangunan Desa 2026",
+          id: 1, judul: "BUMDes Sipodalle Salurkan PADes Rp 37,8 Juta dari Hasil Pasar Desa & Budidaya Ikan Nila",
           kategori: "Laporan Publik", tanggal: "10 Agustus 2026", penulis: "Sekretariat BUMDes", durasi: "3 menit baca",
           gambar: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
-          ringkasan: "Sebagai wujud transparansi dan kontribusi nyata, BUMDes Sipodalle resmi menyerahkan Pendapatan Asli Desa (PADes) tahun buku berjalan kepada Pemerintah Desa Batetangnga.",
-          konten: "<p>Bertempat di Balai Desa Batetangnga, jajaran pengurus BUMDes Sipodalle menyerahkan Pendapatan Asli Desa (PADes) sebesar <strong>Rp 77.680.000</strong> sebagai hasil kinerja usaha semester pertama 2026. Dana ini dimanfaatkan langsung untuk infrastruktur jalan tani dan beasiswa pendidikan anak desa.</p>"
+          ringkasan: "BUMDes Sipodalle resmi menyerahkan Pendapatan Asli Desa (PADes) hasil operasional pengelolaan pasar dan panen budidaya ikan nila tahun buku berjalan.",
+          konten: "<p>Bertempat di Balai Desa Batetangnga, pengurus BUMDes Sipodalle menyerahkan kontribusi Pendapatan Asli Desa (PADes) sebesar <strong>Rp 37.800.000</strong>. Pendapatan ini bersumber dari optimalisasi penataan los/kios Pasar Desa Batetangnga dan keberhasilan panen raya kolam pembesaran ikan nila air tawar.</p>"
         },
         {
-          id: 2, judul: "Panen Raya Durian Batetangnga: BUMDes Buka Festival Agrowisata Buah Desa",
-          kategori: "Usaha Desa", tanggal: "04 Agustus 2026", penulis: "Unit Wisata", durasi: "4 menit baca",
-          gambar: "https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=800&q=80",
-          ringkasan: "Festival Agrowisata Durian Batetangnga resmi dibuka dengan promo paket petik langsung di kebun, bazar olahan durian, dan hiburan musik rakyat.",
-          konten: "<p>Musim panen durian telah tiba! Unit Wisata BUMDes Sipodalle menggelar Festival Agrowisata Durian Batetangnga 2026 yang mengundang wisatawan dari berbagai penjuru Sulawesi Barat untuk menikmati sensasi petik durian segar langsung dari pohon.</p>"
+          id: 2, judul: "Panen Raya Ikan Nila Segar: BUMDes Pasok Kebutuhan Rumah Makan & Warga Sekitar",
+          kategori: "Usaha Desa", tanggal: "04 Agustus 2026", penulis: "Unit Budidaya Ikan", durasi: "3 menit baca",
+          gambar: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+          ringkasan: "Unit Budidaya Ikan Nila BUMDes Sipodalle sukses memanen 2,5 ton ikan nila konsumsi segar berbobot rata-rata 3-4 ekor per kilogram.",
+          konten: "<p>Unit Usaha Budidaya (Pembesaran) Ikan Nila BUMDes Sipodalle melaksanakan panen raya siklus ketiga. Ikan nila yang dibudidayakan menggunakan air pegunungan jernih ini memiliki daging gurih, tidak berbau lumpur, dan sangat diminati oleh pedagang pasar serta pelaku usaha kuliner lokal.</p>"
         },
         {
-          id: 3, judul: "Digitalisasi Pelayanan: Warga Batetangnga Kini Bayar Listrik & Air Lewat BUMDes Pay",
-          kategori: "Kegiatan Warga", tanggal: "28 Juli 2026", penulis: "Tim IT BUMDes", durasi: "2 menit baca",
-          gambar: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
-          ringkasan: "Unit Jasa Keuangan BUMDes Sipodalle meluncurkan layanan loket pembayaran cepat digital untuk mempermudah warga membayar tagihan harian.",
-          konten: "<p>Kini warga desa tidak perlu jauh-jauh ke kota kecamatan. Loket BUMDes Pay melayani pembayaran token listrik, tagihan air PAMSIMAS, BPJS Kesehatan, dan transfer antar bank setiap hari dengan biaya admin sangat terjangkau.</p>"
+          id: 3, judul: "Penataan Lapak & Fasilitas Kebersihan Pasar Desa Batetangnga Semakin Nyaman",
+          kategori: "Kegiatan Warga", tanggal: "28 Juli 2026", penulis: "Pengelola Pasar", durasi: "2 menit baca",
+          gambar: "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80",
+          ringkasan: "Pengelola Pasar Desa BUMDes melakukan pembenahan tata letak lapak pedagang basah dan kering serta pemeliharaan saluran drainase pasar.",
+          konten: "<p>Demi kenyamanan pengunjung dan pedagang, BUMDes Sipodalle terus meningkatkan fasilitas Pasar Desa Batetangnga. Pembenahan meliputi zonasi komoditas pedagang, penyediaan tempat pembuangan sampah teratur, serta penerangan area pasar untuk pedagang subuh.</p>"
         }
       ],
       keuanganTransparansi: {
         komposisiPendapatan: [
-          { unit: "Unit Pertanian & Saprodi", nominal: 320000000, persen: 38, warna: "#10B981" },
-          { unit: "Unit Wisata & Rekreasi", nominal: 185000000, persen: 22, warna: "#F97316" },
-          { unit: "Unit Air Bersih (PAMSIMAS)", nominal: 142500000, persen: 17, warna: "#0EA5E9" },
-          { unit: "Unit Jasa Keuangan & Digital", nominal: 98000000, persen: 12, warna: "#8B5CF6" },
-          { unit: "Unit Rumah Produksi UMKM", nominal: 65000000, persen: 8, warna: "#EC4899" },
-          { unit: "Unit Bank Sampah & Lingkungan", nominal: 32000000, persen: 4, warna: "#14B8A6" }
+          { unit: "Unit Pengelolaan Pasar Desa (Aktif)", nominal: 180000000, persen: 55, warna: "#10B981" },
+          { unit: "Unit Budidaya Ikan Nila (Aktif)", nominal: 145000000, persen: 45, warna: "#F97316" },
+          { unit: "Unit Air Bersih PAMSIMAS (Tahap Persiapan)", nominal: 0, persen: 0, warna: "#0EA5E9" },
+          { unit: "Unit Ekowisata Alam (Tahap Perencanaan)", nominal: 0, persen: 0, warna: "#8B5CF6" }
         ],
         modulLaporan: [
-          { nama: "Laporan Laba Rugi", icon: "chart-line", deskripsi: "Menampilkan akumulasi pendapatan usaha, beban operasional, dan laba bersih per periode.", badge: "Tersedia Online" },
-          { nama: "Laporan Posisi Keuangan (Neraca)", icon: "file-invoice-dollar", deskripsi: "Menampilkan rincian aset lancar, aset tetap, kewajiban, dan ekuitas modal BUMDes berimbang.", badge: "Realtime" },
-          { nama: "Laporan Arus Kas", icon: "water", deskripsi: "Arus kas masuk dan keluar dari aktivitas operasi usaha, investasi sarana aset, dan pembiayaan modal desa.", badge: "Terverifikasi" },
+          { nama: "Laporan Laba Rugi", icon: "chart-line", deskripsi: "Menampilkan akumulasi pendapatan retribusi pasar, hasil penjualan ikan nila, beban operasional, dan laba bersih.", badge: "Tersedia Online" },
+          { nama: "Laporan Posisi Keuangan (Neraca)", icon: "file-invoice-dollar", deskripsi: "Menampilkan rincian aset lancar, aset tetap (kios pasar, kolam ikan), kewajiban, dan ekuitas modal BUMDes berimbang.", badge: "Realtime" },
+          { nama: "Laporan Arus Kas", icon: "water", deskripsi: "Arus kas masuk dan keluar dari operasional pasar, budidaya ikan nila, dan penyertaan modal desa.", badge: "Terverifikasi" },
           { nama: "Laporan Perubahan Ekuitas", icon: "arrow-trend-up", deskripsi: "Perkembangan modal awal penyertaan desa, akumulasi laba ditahan, dan pembagian hasil usaha.", badge: "Lengkap" },
           { nama: "Buku Besar & Jurnal Transaksi", icon: "book-open", deskripsi: "Pencatatan akun secara kronologis dan saldo terperinci pada sistem PPAK BUMDes.", badge: "PPAK Terpadu" }
         ]
       },
       testimoni: [
-        { nama: "Pak Darwis", peran: "Petani Kakao Desa Batetangnga", foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80", komentar: "Sangat terbantu dengan adanya Unit Pertanian BUMDes. Beli pupuk dan bibit berkualitas harganya jujur dan bisa antar ke kebun." },
-        { nama: "Ibu Maryam", peran: "Pelaku UMKM Kopi Khas", foto: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80", komentar: "Kopi olahan dan madu kami dipajang di galeri agrowisata BUMDes. Penjualan naik pesat dan pembayaran selalu tepat waktu." },
-        { nama: "Bapak Herman", peran: "Warga Dusun Salu Pao", foto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80", komentar: "Air bersih PAMSIMAS dari BUMDes alirannya deras dan jernih setiap hari. Bayar rekening juga gampang lewat BUMDes Pay." }
+        { nama: "Ibu Maryam", peran: "Pedagang di Pasar Desa Batetangnga", foto: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80", komentar: "Pasar sekarang lebih tertib dan bersih sejak dikelola BUMDes. Tempat jualan nyaman, biaya retribusi jelas dan transparan." },
+        { nama: "Pak Darwis", peran: "Pemilik Rumah Makan Ikan Bakar", foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80", komentar: "Ikan nila dari kolam BUMDes Sipodalle segar sekali dan kualitasnya bagus, dagingnya manis karena air kolamnya jernih dari pegunungan." },
+        { nama: "Bapak Herman", peran: "Tokoh Masyarakat Batetangnga", foto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80", komentar: "Kami sangat mendukung BUMDes, hasil pasar dan ikan nila sudah nyata menyumbang PADes, semoga rencana air bersih dan wisata alam segera terwujud." }
       ]
     };
 
@@ -1464,8 +1361,8 @@
       const stats = [
         { icon: 'fa-solid fa-money-bill-trend-up', color: 'green', num: data.totalOmset, label: 'Akumulasi Omset Usaha', sub: 'Tahun Buku 2026' },
         { icon: 'fa-solid fa-hand-holding-dollar', color: 'orange', num: data.padesDisalurkan, label: 'Kontribusi PADes Batetangnga', sub: 'Mendukung Dana Desa' },
-        { icon: 'fa-solid fa-cubes-stacked', color: 'blue', num: `${data.unitUsahaAktif} Unit`, label: 'Unit Usaha Produktif Aktif', sub: 'Pertanian, Wisata, Air, dll' },
-        { icon: 'fa-solid fa-people-roof', color: 'purple', num: data.wargaTerlayani, label: 'Masyarakat & Mitra Terlayani', sub: '135+ Petani & UMKM Mitra' }
+        { icon: 'fa-solid fa-cubes-stacked', color: 'blue', num: '2 Unit Aktif', label: 'Pasar Desa & Budidaya Ikan Nila', sub: '2 Unit Dalam Rencana' },
+        { icon: 'fa-solid fa-people-roof', color: 'purple', num: data.wargaTerlayani, label: 'Masyarakat & Pedagang Terlayani', sub: '85+ Mitra Pelaku Usaha' }
       ];
       container.innerHTML = stats.map(st => `
         <div class="stat-card">
@@ -1480,28 +1377,35 @@
     function renderHomeUnitsPreview() {
       const container = document.getElementById('homeUnitsPreview');
       if (!container) return;
-      const units = BUMDES_DATA.unitUsaha.slice(0, 3);
-      container.innerHTML = units.map(u => `
-        <div class="news-card">
-          <div class="news-thumb">
-            <img src="${u.gambar}" alt="${u.nama}" loading="lazy">
-            <span class="news-category-badge" style="background: var(--primary-800);">${u.kategori}</span>
-          </div>
-          <div class="news-body">
-            <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-600); margin-bottom: 4px;">${u.kode} • ${u.status}</div>
-            <h3 class="news-title" style="font-size: 1.15rem;">${u.nama}</h3>
-            <p class="news-excerpt">${u.deskripsiSingkat}</p>
-            <div class="news-footer">
-              <button class="btn btn-outline-primary btn-sm" onclick="navigateTo('unit-usaha')">
-                Detail Unit <i class="fa-solid fa-arrow-right"></i>
-              </button>
-              <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDes%20Sipodalle,%20saya%20tertarik%20dengan%20layanan%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm" style="padding: 6px 12px;">
-                <i class="fa-brands fa-whatsapp"></i> Chat
-              </a>
+      const units = BUMDES_DATA.unitUsaha;
+      container.innerHTML = units.map(u => {
+        const isPlan = !u.isActive;
+        return `
+          <div class="news-card">
+            <div class="news-thumb">
+              <img src="${u.gambar}" alt="${u.nama}" loading="lazy">
+              <span class="news-category-badge" style="background: ${isPlan ? '#475569' : 'var(--primary-800)'};">
+                ${isPlan ? 'Rencana' : 'Unit Aktif'}
+              </span>
+            </div>
+            <div class="news-body">
+              <div style="font-size: 0.8rem; font-weight: 700; color: ${isPlan ? 'var(--neutral-500)' : 'var(--accent-600)'}; margin-bottom: 4px;">
+                ${u.kode} • ${u.status}
+              </div>
+              <h3 class="news-title" style="font-size: 1.15rem;">${u.nama}</h3>
+              <p class="news-excerpt">${u.deskripsiSingkat}</p>
+              <div class="news-footer">
+                <button class="btn btn-outline-primary btn-sm" onclick="navigateTo('unit-usaha')">
+                  Detail Unit <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDes%20Sipodalle,%20saya%20tertarik%20mengenai%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm" style="padding: 6px 12px;">
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
     }
 
     function renderHomeNewsPreview() {
@@ -1685,41 +1589,54 @@
       if (!container) return;
       let list = BUMDES_DATA.unitUsaha;
       if (category !== 'Semua') {
-        list = list.filter(u => u.kategori.toLowerCase() === category.toLowerCase());
+        list = list.filter(u => u.kategori.toLowerCase().includes(category.toLowerCase()));
       }
-      container.innerHTML = list.map(u => `
-        <div class="unit-card-full">
-          <div class="unit-image-side">
-            <img src="${u.gambar}" alt="${u.nama}" loading="lazy">
-            <div class="unit-image-overlay">
-              <div class="unit-omset-pill"><i class="fa-solid fa-chart-line text-green"></i> Estimasi Omset: ${u.omsetTahun}</div>
+      container.innerHTML = list.map(u => {
+        const isPlan = !u.isActive;
+        return `
+          <div class="unit-card-full" style="${isPlan ? 'opacity: 0.94; border-style: dashed;' : ''}">
+            <div class="unit-image-side">
+              <img src="${u.gambar}" alt="${u.nama}" loading="lazy">
+              <div class="unit-image-overlay">
+                <div class="unit-omset-pill" style="${isPlan ? 'background: rgba(15, 23, 42, 0.85); color: white;' : ''}">
+                  <i class="fa-solid ${isPlan ? 'fa-hourglass-half' : 'fa-chart-line text-green'}"></i> 
+                  ${isPlan ? 'Status: ' + u.omsetTahun : 'Estimasi Omset: ' + u.omsetTahun}
+                </div>
+              </div>
+            </div>
+            <div class="unit-content-side">
+              <div>
+                <div class="unit-header-top">
+                  <span class="unit-tag ${u.badgeColor}"><i class="fa-solid fa-${u.icon}"></i> ${u.kategori}</span>
+                  <div class="unit-status-badge" style="color: ${isPlan ? '#0284c7' : 'var(--primary-600)'};">
+                    <i class="fa-solid ${isPlan ? 'fa-clock' : 'fa-circle-check'}"></i> ${u.status}
+                  </div>
+                </div>
+                <h3 class="unit-title">${u.nama}</h3>
+                <div class="unit-tagline">${u.tagline}</div>
+                <p class="unit-desc">${u.deskripsiLengkap}</p>
+                <div style="font-size: 0.85rem; font-weight: 700; color: var(--neutral-800); margin-bottom: 8px;">
+                  <i class="fa-solid fa-star text-orange"></i> ${isPlan ? 'Rencana Program & Fasilitas:' : 'Produk & Layanan Unggulan:'}
+                </div>
+                <div class="unit-services-list">
+                  ${u.layananUnggulan.map(s => `
+                    <div class="srv-item">
+                      <i class="fa-solid ${isPlan ? 'fa-circle-dot' : 'fa-check'}" style="color: ${isPlan ? '#0284c7' : 'var(--primary-600)'};"></i>
+                      <span>${s}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+              <div class="unit-footer-actions">
+                <div class="unit-contact-info"><i class="fa-solid fa-user-gear"></i> PIC: <strong>${u.kontakPerson}</strong></div>
+                <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDes%20Sipodalle,%20saya%20ingin%20bertanya%20mengenai%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn ${isPlan ? 'btn-outline-primary' : 'btn-accent'} btn-sm">
+                  <i class="fa-brands fa-whatsapp"></i> ${isPlan ? 'Tanya Rencana / Kemitraan' : 'Hubungi / Pesan via WhatsApp'}
+                </a>
+              </div>
             </div>
           </div>
-          <div class="unit-content-side">
-            <div>
-              <div class="unit-header-top">
-                <span class="unit-tag ${u.badgeColor}"><i class="fa-solid fa-${u.icon}"></i> ${u.kategori}</span>
-                <div class="unit-status-badge"><i class="fa-solid fa-circle-check"></i> ${u.status}</div>
-              </div>
-              <h3 class="unit-title">${u.nama}</h3>
-              <div class="unit-tagline">${u.tagline}</div>
-              <p class="unit-desc">${u.deskripsiLengkap}</p>
-              <div style="font-size: 0.85rem; font-weight: 700; color: var(--neutral-800); margin-bottom: 8px;">
-                <i class="fa-solid fa-star text-orange"></i> Produk & Layanan Unggulan:
-              </div>
-              <div class="unit-services-list">
-                ${u.layananUnggulan.map(s => `<div class="srv-item"><i class="fa-solid fa-check"></i><span>${s}</span></div>`).join('')}
-              </div>
-            </div>
-            <div class="unit-footer-actions">
-              <div class="unit-contact-info"><i class="fa-solid fa-user-gear"></i> PIC: <strong>${u.kontakPerson}</strong></div>
-              <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDes%20Sipodalle,%20saya%20ingin%20memesan%20atau%20konsultasi%20mengenai%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
-                <i class="fa-brands fa-whatsapp"></i> Hubungi / Pesan via WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
     }
 
     function switchKeuanganTab(tabId) {
@@ -1780,7 +1697,9 @@
           <div class="comp-bar-item">
             <div class="bar-label">
               <span>${c.unit}</span>
-              <span style="color: ${c.warna}; font-weight: 700;">Rp ${(c.nominal / 1000000).toLocaleString('id-ID')} Juta (${c.persen}%)</span>
+              <span style="color: ${c.warna}; font-weight: 700;">
+                ${c.nominal > 0 ? 'Rp ' + (c.nominal / 1000000).toLocaleString('id-ID') + ' Jt (' + c.persen + '%)' : 'Tahap Persiapan'}
+              </span>
             </div>
             <div class="progress-track">
               <div class="progress-fill" style="width: ${c.persen}%; background: ${c.warna};"></div>
@@ -1807,28 +1726,9 @@
       }
     }
 
-    function openGitHubModal() {
-      const backdrop = document.getElementById('githubModalBackdrop');
-      if (backdrop) {
-        backdrop.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      }
-    }
-    function closeGitHubModal(event) {
-      if (event.target.id === 'githubModalBackdrop') closeGitHubModalDirect();
-    }
-    function closeGitHubModalDirect() {
-      const backdrop = document.getElementById('githubModalBackdrop');
-      if (backdrop) {
-        backdrop.classList.remove('open');
-        document.body.style.overflow = '';
-      }
-    }
-
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeNewsModalDirect();
-        closeGitHubModalDirect();
       }
     });
   </script>
