@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <meta name="theme-color" content="#047857">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="description"
-    content="Website Resmi BUMDes Sipodalle Batetangnga Sejahtera - Responsif Otomatis Desktop & Mobile. Pengelolaan Pasar Desa, Budidaya Ikan Nila, dan Laporan Keuangan Terpadu.">
-  <meta name="keywords"
-    content="BUMDes, BUMDes Sipodalle, Batetangnga, Pasar Desa, Budidaya Ikan Nila, Laporan Keuangan BUMDes, PPAK BUMDes">
-  <meta name="author" content="BUMDes Sipodalle Batetangnga Sejahtera">
-  <title>BUMDes Sipodalle Batetangnga Sejahtera | Portal Resmi Desa Mandiri</title>
+  <meta name="description" content="Website Resmi BUMDesa Sipodalle Batetangnga Sejahtera. Pengelolaan Pasar Desa, Budidaya Ikan Nila, dan Laporan Keuangan Terpadu.">
+  <meta name="keywords" content="BUMDes, BUMDesa Sipodalle, Batetangnga, Pasar Desa, Budidaya Ikan Nila, Laporan Keuangan BUMDes, PPAK BUMDes">
+  <meta name="author" content="BUMDesa Sipodalle Batetangnga Sejahtera">
+  <title>Website Resmi BUMDesa Sipodalle Batetangnga Sejahtera | Desa Mandiri & Transparan</title>
 
   <!-- Favicon Icon -->
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏢</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏢</text></svg>">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Font Awesome 6.5.1 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -32,11 +26,11 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- ========================================================================
-       SISTEM DESAIN RESPONSIF OTOMATIS (DESKTOP & MOBILE FIRST)
+       DESAIN SISTEM CSS LENGKAP & MANDIRI (RESPONSIF DESKTOP & MOBILE)
        ======================================================================== -->
   <style>
     :root {
-      /* Brand Color Palette */
+      /* Brand Green Palette */
       --primary-900: #064e3b;
       --primary-800: #065f46;
       --primary-700: #047857;
@@ -45,8 +39,9 @@
       --primary-400: #34d399;
       --primary-200: #a7f3d0;
       --primary-100: #d1fae5;
-      --primary-50: #ecfdf5;
+      --primary-50:  #ecfdf5;
 
+      /* Brand Orange Palette */
       --accent-900: #7c2d12;
       --accent-800: #9a3412;
       --accent-700: #c2410c;
@@ -55,8 +50,9 @@
       --accent-400: #fb923c;
       --accent-200: #fed7aa;
       --accent-100: #ffedd5;
-      --accent-50: #fff7ed;
+      --accent-50:  #fff7ed;
 
+      /* Neutral Palette */
       --neutral-900: #0f172a;
       --neutral-800: #1e293b;
       --neutral-700: #334155;
@@ -66,13 +62,15 @@
       --neutral-300: #cbd5e1;
       --neutral-200: #e2e8f0;
       --neutral-100: #f1f5f9;
-      --neutral-50: #f8fafc;
+      --neutral-50:  #f8fafc;
       --white: #ffffff;
 
+      /* Gradients */
       --grad-primary: linear-gradient(135deg, #065f46 0%, #059669 50%, #10b981 100%);
       --grad-accent: linear-gradient(135deg, #ea580c 0%, #f97316 60%, #fb923c 100%);
       --grad-hero: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #0f172a 100%);
 
+      /* Shadows */
       --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.04);
       --shadow-md: 0 8px 20px rgba(15, 23, 42, 0.07);
       --shadow-lg: 0 16px 36px rgba(15, 23, 42, 0.10);
@@ -80,6 +78,7 @@
       --shadow-green: 0 8px 24px rgba(16, 185, 129, 0.28);
       --shadow-orange: 0 8px 24px rgba(234, 88, 12, 0.28);
 
+      /* Radius */
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 20px;
@@ -89,20 +88,8 @@
       --bottom-nav-height: 64px;
     }
 
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-      -webkit-tap-highlight-color: transparent;
-    }
-
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; -webkit-tap-highlight-color: transparent; }
     body {
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       color: var(--neutral-800);
@@ -111,38 +98,15 @@
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h1, h2, h3, h4, h5, h6 {
       font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
       font-weight: 700;
       color: var(--neutral-900);
       line-height: 1.25;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      transition: all 0.25s ease;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    button,
-    input,
-    select,
-    textarea {
-      font-family: inherit;
-      font-size: inherit;
-    }
+    a { color: inherit; text-decoration: none; transition: all 0.25s ease; }
+    img { max-width: 100%; height: auto; display: block; }
+    button, input, select, textarea { font-family: inherit; font-size: inherit; }
 
     .container {
       width: 100%;
@@ -153,14 +117,9 @@
       padding-right: 20px;
     }
 
-    /* ========================================================================
-       DESKTOP & MOBILE TOP HEADER
-       ======================================================================== */
+    /* Header */
     .site-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+      position: fixed; top: 0; left: 0; right: 0;
       height: var(--nav-height);
       background: rgba(255, 255, 255, 0.94);
       backdrop-filter: blur(14px);
@@ -169,1944 +128,561 @@
       z-index: 1000;
       transition: all 0.3s ease;
     }
-
     .site-header.scrolled {
       background: rgba(255, 255, 255, 0.98);
       box-shadow: var(--shadow-md);
       height: 66px;
     }
-
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100%;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-    }
-
+    .navbar { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+    
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
     .brand-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-md);
+      width: 44px; height: 44px; border-radius: var(--radius-md);
       background: var(--grad-primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 20px;
-      box-shadow: var(--shadow-green);
-      position: relative;
-      overflow: hidden;
-      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--white); font-size: 20px;
+      box-shadow: var(--shadow-green); position: relative; overflow: hidden; flex-shrink: 0;
     }
-
     .brand-icon::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 14px;
-      height: 14px;
-      background: var(--accent-500);
-      border-radius: 0 0 0 100%;
+      content: ''; position: absolute; top: 0; right: 0; width: 14px; height: 14px;
+      background: var(--accent-500); border-radius: 0 0 0 100%;
     }
-
-    .brand-text h1 {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: var(--primary-900);
-      margin-bottom: -3px;
-    }
-
-    .brand-text span {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: var(--accent-600);
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-    }
+    .brand-text h1 { font-size: 1.15rem; font-weight: 800; color: var(--primary-900); margin-bottom: -3px; }
+    .brand-text span { font-size: 0.72rem; font-weight: 700; color: var(--accent-600); text-transform: uppercase; letter-spacing: 0.6px; }
 
     /* Desktop Navigation */
-    .nav-menu {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      list-style: none;
-    }
-
+    .nav-menu { display: flex; align-items: center; gap: 6px; list-style: none; }
     .nav-link {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding: 8px 16px;
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--neutral-700);
-      border-radius: var(--radius-full);
-      transition: all 0.2s ease;
-      cursor: pointer;
+      display: flex; align-items: center; gap: 7px;
+      padding: 8px 16px; font-size: 0.92rem; font-weight: 600; color: var(--neutral-700);
+      border-radius: var(--radius-full); transition: all 0.2s ease; cursor: pointer;
     }
+    .nav-link i { font-size: 0.95rem; color: var(--neutral-400); transition: color 0.2s ease; }
+    .nav-link:hover { color: var(--primary-700); background: var(--primary-50); }
+    .nav-link:hover i { color: var(--primary-600); }
+    .nav-link.active { color: var(--primary-900); background: var(--primary-100); font-weight: 700; }
+    .nav-link.active i { color: var(--primary-700); }
 
-    .nav-link i {
-      font-size: 0.95rem;
-      color: var(--neutral-400);
-      transition: color 0.2s ease;
-    }
-
-    .nav-link:hover {
-      color: var(--primary-700);
-      background: var(--primary-50);
-    }
-
-    .nav-link:hover i {
-      color: var(--primary-600);
-    }
-
-    .nav-link.active {
-      color: var(--primary-900);
-      background: var(--primary-100);
-      font-weight: 700;
-    }
-
-    .nav-link.active i {
-      color: var(--primary-700);
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
 
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 10px 20px;
-      border-radius: var(--radius-full);
-      font-size: 0.9rem;
-      font-weight: 700;
-      cursor: pointer;
-      border: none;
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-      text-align: center;
-      white-space: nowrap;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 10px 20px; border-radius: var(--radius-full);
+      font-size: 0.9rem; font-weight: 700; cursor: pointer; border: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); text-align: center; white-space: nowrap;
     }
-
-    .btn-primary {
-      background: var(--grad-primary);
-      color: var(--white);
-      box-shadow: var(--shadow-green);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(16, 185, 129, 0.4);
-    }
-
-    .btn-accent {
-      background: var(--grad-accent);
-      color: var(--white);
-      box-shadow: var(--shadow-orange);
-    }
-
-    .btn-accent:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(234, 88, 12, 0.4);
-    }
-
-    .btn-outline-white {
-      background: rgba(255, 255, 255, 0.15);
-      color: var(--white);
-      border: 1.5px solid rgba(255, 255, 255, 0.4);
-      backdrop-filter: blur(8px);
-    }
-
-    .btn-outline-white:hover {
-      background: var(--white);
-      color: var(--primary-900);
-    }
-
-    .btn-outline-primary {
-      background: var(--white);
-      color: var(--primary-700);
-      border: 1.5px solid var(--primary-500);
-    }
-
-    .btn-outline-primary:hover {
-      background: var(--primary-50);
-    }
-
-    .btn-sm {
-      padding: 6px 14px;
-      font-size: 0.82rem;
-    }
-
-    .btn-lg {
-      padding: 13px 26px;
-      font-size: 1rem;
-    }
+    .btn-primary { background: var(--grad-primary); color: var(--white); box-shadow: var(--shadow-green); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(16, 185, 129, 0.4); }
+    .btn-accent { background: var(--grad-accent); color: var(--white); box-shadow: var(--shadow-orange); }
+    .btn-accent:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(234, 88, 12, 0.4); }
+    .btn-outline-white { background: rgba(255, 255, 255, 0.15); color: var(--white); border: 1.5px solid rgba(255, 255, 255, 0.4); backdrop-filter: blur(8px); }
+    .btn-outline-white:hover { background: var(--white); color: var(--primary-900); }
+    .btn-outline-primary { background: var(--white); color: var(--primary-700); border: 1.5px solid var(--primary-500); }
+    .btn-outline-primary:hover { background: var(--primary-50); }
+    .btn-sm { padding: 6px 14px; font-size: 0.82rem; }
+    .btn-lg { padding: 13px 26px; font-size: 1rem; }
 
     .mobile-toggle {
-      display: none;
-      width: 42px;
-      height: 42px;
-      border-radius: var(--radius-md);
-      border: 1.5px solid var(--neutral-200);
-      background: var(--white);
-      color: var(--neutral-800);
-      font-size: 18px;
-      cursor: pointer;
-      align-items: center;
-      justify-content: center;
+      display: none; width: 42px; height: 42px; border-radius: var(--radius-md);
+      border: 1.5px solid var(--neutral-200); background: var(--white); color: var(--neutral-800);
+      font-size: 18px; cursor: pointer; align-items: center; justify-content: center;
     }
 
-    /* ========================================================================
-       MOBILE BOTTOM APP BAR (HANYA MUNCUL DI HP / MOBILE)
-       ======================================================================== */
+    /* Mobile Bottom App Bar */
     .mobile-bottom-nav {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: var(--bottom-nav-height);
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-top: 1px solid var(--neutral-200);
-      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
-      z-index: 1100;
-      justify-content: space-around;
-      align-items: center;
-      padding: 0 6px;
+      display: none; position: fixed; bottom: 0; left: 0; right: 0;
+      height: var(--bottom-nav-height); background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid var(--neutral-200); box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+      z-index: 1100; justify-content: space-around; align-items: center; padding: 0 6px;
     }
-
     .bottom-nav-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      height: 100%;
-      color: var(--neutral-500);
-      font-size: 0.68rem;
-      font-weight: 600;
-      gap: 3px;
-      transition: all 0.2s ease;
-      cursor: pointer;
-      position: relative;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      flex: 1; height: 100%; color: var(--neutral-500); font-size: 0.68rem; font-weight: 600;
+      gap: 3px; transition: all 0.2s ease; cursor: pointer; position: relative;
     }
-
-    .bottom-nav-item i {
-      font-size: 1.15rem;
-      transition: all 0.2s ease;
-    }
-
-    .bottom-nav-item.active {
-      color: var(--primary-700);
-      font-weight: 800;
-    }
-
-    .bottom-nav-item.active i {
-      transform: translateY(-2px);
-      color: var(--primary-600);
-    }
-
+    .bottom-nav-item i { font-size: 1.15rem; transition: all 0.2s ease; }
+    .bottom-nav-item.active { color: var(--primary-700); font-weight: 800; }
+    .bottom-nav-item.active i { transform: translateY(-2px); color: var(--primary-600); }
     .bottom-nav-item.active::after {
-      content: '';
-      position: absolute;
-      top: 4px;
-      width: 20px;
-      height: 3px;
-      border-radius: var(--radius-full);
-      background: var(--primary-600);
+      content: ''; position: absolute; top: 4px; width: 20px; height: 3px;
+      border-radius: var(--radius-full); background: var(--primary-600);
     }
 
-    /* ========================================================================
-       SPA PAGE SECTIONS
-       ======================================================================== */
+    /* SPA Page Sections */
     .page-section {
-      display: none;
-      padding-top: calc(var(--nav-height) + 24px);
-      padding-bottom: 70px;
-      min-height: 100vh;
-      animation: fadeIn 0.3s ease;
+      display: none; padding-top: calc(var(--nav-height) + 24px);
+      padding-bottom: 70px; min-height: 100vh; animation: fadeIn 0.3s ease;
     }
-
-    .page-section.active-page {
-      display: block;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(6px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+    .page-section.active-page { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
     /* Section Headers */
-    .section-intro {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 44px;
-    }
-
+    .section-intro { text-align: center; max-width: 720px; margin: 0 auto 44px; }
     .section-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 5px 14px;
-      border-radius: var(--radius-full);
-      background: var(--accent-100);
-      color: var(--accent-700);
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.7px;
-      margin-bottom: 12px;
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 5px 14px; border-radius: var(--radius-full);
+      background: var(--accent-100); color: var(--accent-700);
+      font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; margin-bottom: 12px;
     }
-
-    .section-badge.green {
-      background: var(--primary-100);
-      color: var(--primary-800);
-    }
-
-    .section-title {
-      font-size: 2.2rem;
-      color: var(--neutral-900);
-      margin-bottom: 12px;
-    }
-
-    .section-title span.text-green {
-      color: var(--primary-600);
-    }
-
-    .section-title span.text-orange {
-      color: var(--accent-600);
-    }
-
-    .section-desc {
-      font-size: 1rem;
-      color: var(--neutral-600);
-    }
+    .section-badge.green { background: var(--primary-100); color: var(--primary-800); }
+    .section-title { font-size: 2.2rem; color: var(--neutral-900); margin-bottom: 12px; }
+    .section-title span.text-green { color: var(--primary-600); }
+    .section-title span.text-orange { color: var(--accent-600); }
+    .section-desc { font-size: 1rem; color: var(--neutral-600); }
 
     /* Hero */
     .hero-wrapper {
-      position: relative;
-      border-radius: var(--radius-xl);
-      background: var(--grad-hero);
-      color: var(--white);
-      padding: 60px 36px;
-      overflow: hidden;
-      margin-bottom: 50px;
-      box-shadow: var(--shadow-xl);
+      position: relative; border-radius: var(--radius-xl);
+      background: var(--grad-hero); color: var(--white);
+      padding: 60px 36px; overflow: hidden; margin-bottom: 50px; box-shadow: var(--shadow-xl);
     }
-
     .hero-bg-pattern {
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       background-image: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.25) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.25) 0%, transparent 45%);
+                        radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.25) 0%, transparent 45%);
       pointer-events: none;
     }
-
     .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 36px;
-      align-items: center;
-      position: relative;
-      z-index: 2;
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 36px;
+      align-items: center; position: relative; z-index: 2;
     }
-
     .hero-badge-top {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      border-radius: var(--radius-full);
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--primary-200);
-      margin-bottom: 16px;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 14px; border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.25); font-size: 0.82rem; font-weight: 600;
+      color: var(--primary-200); margin-bottom: 16px;
     }
-
-    .hero-title {
-      font-size: 2.7rem;
-      font-weight: 800;
-      line-height: 1.18;
-      margin-bottom: 16px;
-      color: var(--white);
-    }
-
-    .hero-title .highlight-orange {
-      color: var(--accent-400);
-    }
-
-    .hero-subtitle {
-      font-size: 1.05rem;
-      color: var(--neutral-200);
-      margin-bottom: 28px;
-      max-width: 560px;
-      line-height: 1.6;
-    }
-
-    .hero-cta-group {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
+    .hero-title { font-size: 2.7rem; font-weight: 800; line-height: 1.18; margin-bottom: 16px; color: var(--white); }
+    .hero-title .highlight-orange { color: var(--accent-400); }
+    .hero-subtitle { font-size: 1.05rem; color: var(--neutral-200); margin-bottom: 28px; max-width: 560px; line-height: 1.6; }
+    .hero-cta-group { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 
     .hero-visual-card {
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1.5px solid rgba(255, 255, 255, 0.25);
-      border-radius: var(--radius-lg);
-      padding: 26px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+      background: rgba(255, 255, 255, 0.12); backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px); border: 1.5px solid rgba(255, 255, 255, 0.25);
+      border-radius: var(--radius-lg); padding: 26px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
     }
-
     .hero-app-preview-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-bottom: 14px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-      margin-bottom: 18px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); margin-bottom: 18px;
     }
-
     .hero-status-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 10px;
-      border-radius: var(--radius-full);
-      background: rgba(16, 185, 129, 0.25);
-      border: 1px solid var(--primary-400);
-      color: var(--primary-200);
-      font-size: 0.78rem;
-      font-weight: 700;
+      display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px;
+      border-radius: var(--radius-full); background: rgba(16, 185, 129, 0.25);
+      border: 1px solid var(--primary-400); color: var(--primary-200); font-size: 0.78rem; font-weight: 700;
     }
-
     .hero-status-pill .pulse-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--primary-400);
-      box-shadow: 0 0 10px var(--primary-400);
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--primary-400); box-shadow: 0 0 10px var(--primary-400);
       animation: pulse 1.6s infinite;
     }
+    @keyframes pulse { 0% { transform: scale(0.9); opacity: 0.8; } 50% { transform: scale(1.3); opacity: 1; } 100% { transform: scale(0.9); opacity: 0.8; } }
 
-    @keyframes pulse {
-      0% {
-        transform: scale(0.9);
-        opacity: 0.8;
-      }
-
-      50% {
-        transform: scale(1.3);
-        opacity: 1;
-      }
-
-      100% {
-        transform: scale(0.9);
-        opacity: 0.8;
-      }
-    }
-
-    .preview-stat-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-bottom: 18px;
-    }
-
+    .preview-stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
     .preview-stat-box {
-      background: rgba(0, 0, 0, 0.22);
-      border-radius: var(--radius-md);
-      padding: 12px 14px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(0, 0, 0, 0.22); border-radius: var(--radius-md);
+      padding: 12px 14px; border: 1px solid rgba(255, 255, 255, 0.08);
     }
-
-    .preview-stat-box .lbl {
-      font-size: 0.75rem;
-      color: var(--neutral-300);
-      margin-bottom: 4px;
-    }
-
-    .preview-stat-box .val {
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: var(--white);
-    }
+    .preview-stat-box .lbl { font-size: 0.75rem; color: var(--neutral-300); margin-bottom: 4px; }
+    .preview-stat-box .val { font-size: 1.2rem; font-weight: 800; color: var(--white); }
 
     .hero-transparency-card {
       background: linear-gradient(135deg, rgba(234, 88, 12, 0.3) 0%, rgba(6, 78, 59, 0.4) 100%);
-      border-radius: var(--radius-md);
-      padding: 14px 16px;
-      border: 1px solid rgba(249, 115, 22, 0.3);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
+      border-radius: var(--radius-md); padding: 14px 16px;
+      border: 1px solid rgba(249, 115, 22, 0.3); display: flex; align-items: center; justify-content: space-between; gap: 12px;
     }
 
     /* Stats Grid */
-    .stats-counter-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-bottom: 60px;
-    }
-
+    .stats-counter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 60px; }
     .stat-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 24px 20px;
-      border: 1px solid var(--neutral-200);
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+      background: var(--white); border-radius: var(--radius-lg); padding: 24px 20px;
+      border: 1px solid var(--neutral-200); box-shadow: var(--shadow-sm); transition: all 0.3s ease;
     }
-
-    .stat-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--primary-400);
-    }
-
+    .stat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--primary-400); }
     .stat-card-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      margin-bottom: 14px;
+      width: 46px; height: 46px; border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 14px;
     }
-
-    .stat-card-icon.green {
-      background: var(--primary-100);
-      color: var(--primary-700);
-    }
-
-    .stat-card-icon.orange {
-      background: var(--accent-100);
-      color: var(--accent-700);
-    }
-
-    .stat-card-icon.blue {
-      background: #e0f2fe;
-      color: #0284c7;
-    }
-
-    .stat-card-icon.purple {
-      background: #f3e8ff;
-      color: #9333ea;
-    }
-
-    .stat-card-num {
-      font-size: 1.7rem;
-      font-weight: 800;
-      color: var(--neutral-900);
-      margin-bottom: 4px;
-      letter-spacing: -0.5px;
-    }
-
-    .stat-card-label {
-      font-size: 0.86rem;
-      color: var(--neutral-500);
-      font-weight: 600;
-    }
+    .stat-card-icon.green { background: var(--primary-100); color: var(--primary-700); }
+    .stat-card-icon.orange { background: var(--accent-100); color: var(--accent-700); }
+    .stat-card-icon.blue { background: #e0f2fe; color: #0284c7; }
+    .stat-card-icon.purple { background: #f3e8ff; color: #9333ea; }
+    .stat-card-num { font-size: 1.7rem; font-weight: 800; color: var(--neutral-900); margin-bottom: 4px; letter-spacing: -0.5px; }
+    .stat-card-label { font-size: 0.86rem; color: var(--neutral-500); font-weight: 600; }
 
     /* Features Grid */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-bottom: 60px;
-    }
-
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 60px; }
     .feature-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 28px 22px;
-      border: 1px solid var(--neutral-200);
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+      background: var(--white); border-radius: var(--radius-lg); padding: 28px 22px;
+      border: 1px solid var(--neutral-200); box-shadow: var(--shadow-sm); transition: all 0.3s ease;
     }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--accent-400);
-    }
-
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--accent-400); }
     .feature-card-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: var(--radius-md);
-      background: var(--accent-50);
-      color: var(--accent-600);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      margin-bottom: 18px;
-      border: 1px solid var(--accent-200);
+      width: 50px; height: 50px; border-radius: var(--radius-md);
+      background: var(--accent-50); color: var(--accent-600);
+      display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 18px; border: 1px solid var(--accent-200);
     }
-
-    .feature-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      color: var(--neutral-600);
-      font-size: 0.92rem;
-    }
+    .feature-card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .feature-card p { color: var(--neutral-600); font-size: 0.92rem; }
 
     /* Home Units Grid */
-    .home-units-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      margin-bottom: 60px;
-    }
+    .home-units-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 60px; }
 
     /* Testimonials */
     .testimonials-wrapper {
       background: linear-gradient(180deg, var(--primary-50) 0%, var(--neutral-50) 100%);
-      border-radius: var(--radius-xl);
-      padding: 44px 26px;
-      border: 1px solid var(--primary-100);
-      margin-bottom: 50px;
+      border-radius: var(--radius-xl); padding: 44px 26px; border: 1px solid var(--primary-100); margin-bottom: 50px;
     }
-
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .testi-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--neutral-200);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      background: var(--white); border-radius: var(--radius-lg); padding: 24px;
+      box-shadow: var(--shadow-sm); border: 1px solid var(--neutral-200); display: flex; flex-direction: column; justify-content: space-between;
     }
-
-    .testi-quote {
-      font-size: 0.92rem;
-      color: var(--neutral-700);
-      font-style: italic;
-      margin-bottom: 18px;
-      line-height: 1.6;
-    }
-
-    .testi-user {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .testi-user img {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid var(--primary-500);
-    }
-
-    .testi-user-info h4 {
-      font-size: 0.92rem;
-      font-weight: 700;
-      margin-bottom: 2px;
-    }
-
-    .testi-user-info span {
-      font-size: 0.78rem;
-      color: var(--neutral-500);
-    }
+    .testi-quote { font-size: 0.92rem; color: var(--neutral-700); font-style: italic; margin-bottom: 18px; line-height: 1.6; }
+    .testi-user { display: flex; align-items: center; gap: 12px; }
+    .testi-user img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-500); }
+    .testi-user-info h4 { font-size: 0.92rem; font-weight: 700; margin-bottom: 2px; }
+    .testi-user-info span { font-size: 0.78rem; color: var(--neutral-500); }
 
     /* Profile Section */
     .profile-overview-card {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--neutral-200);
-      box-shadow: var(--shadow-md);
-      padding: 36px;
-      margin-bottom: 44px;
+      background: var(--white); border-radius: var(--radius-xl); border: 1px solid var(--neutral-200);
+      box-shadow: var(--shadow-md); padding: 36px; margin-bottom: 44px;
     }
-
-    .profile-grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 36px;
-      align-items: center;
-    }
-
-    .profile-text h2 {
-      font-size: 1.9rem;
-      margin-bottom: 14px;
-      color: var(--primary-900);
-    }
-
-    .profile-text p {
-      color: var(--neutral-700);
-      margin-bottom: 14px;
-      line-height: 1.65;
-      font-size: 0.95rem;
-    }
-
+    .profile-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; }
+    .profile-text h2 { font-size: 1.9rem; margin-bottom: 14px; color: var(--primary-900); }
+    .profile-text p { color: var(--neutral-700); margin-bottom: 14px; line-height: 1.65; font-size: 0.95rem; }
     .legalitas-box {
-      background: var(--primary-50);
-      border-radius: var(--radius-md);
-      padding: 18px;
-      border-left: 4px solid var(--primary-600);
-      margin-top: 20px;
+      background: var(--primary-50); border-radius: var(--radius-md); padding: 18px;
+      border-left: 4px solid var(--primary-600); margin-top: 20px;
     }
+    .legalitas-box h4 { font-size: 0.92rem; color: var(--primary-900); margin-bottom: 8px; }
+    .legalitas-box p { font-size: 0.85rem; margin-bottom: 4px; color: var(--neutral-700); }
 
-    .legalitas-box h4 {
-      font-size: 0.92rem;
-      color: var(--primary-900);
-      margin-bottom: 8px;
-    }
-
-    .legalitas-box p {
-      font-size: 0.85rem;
-      margin-bottom: 4px;
-      color: var(--neutral-700);
-    }
-
-    .visi-misi-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 22px;
-      margin-bottom: 50px;
-    }
-
+    .visi-misi-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 22px; margin-bottom: 50px; }
     .visi-card {
-      background: var(--grad-hero);
-      color: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      box-shadow: var(--shadow-md);
+      background: var(--grad-hero); color: var(--white); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-md);
     }
+    .visi-card h3 { color: var(--accent-400); font-size: 1.4rem; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+    .visi-card p { font-size: 1.05rem; line-height: 1.65; color: var(--neutral-100); }
+    .misi-card { background: var(--white); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--neutral-200); box-shadow: var(--shadow-sm); }
+    .misi-card h3 { color: var(--primary-800); font-size: 1.4rem; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+    .misi-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .misi-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--neutral-700); }
+    .misi-list li i { color: var(--primary-600); font-size: 0.95rem; margin-top: 3px; flex-shrink: 0; }
 
-    .visi-card h3 {
-      color: var(--accent-400);
-      font-size: 1.4rem;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .visi-card p {
-      font-size: 1.05rem;
-      line-height: 1.65;
-      color: var(--neutral-100);
-    }
-
-    .misi-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      border: 1px solid var(--neutral-200);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .misi-card h3 {
-      color: var(--primary-800);
-      font-size: 1.4rem;
-      margin-bottom: 18px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .misi-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .misi-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 0.92rem;
-      color: var(--neutral-700);
-    }
-
-    .misi-list li i {
-      color: var(--primary-600);
-      font-size: 0.95rem;
-      margin-top: 3px;
-      flex-shrink: 0;
-    }
-
-    .org-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-bottom: 50px;
-    }
-
+    /* Struktur Organisasi 10 Personil */
+    .org-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 50px; }
     .org-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--neutral-200);
-      padding: 22px 18px;
-      text-align: center;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+      background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--neutral-200);
+      padding: 22px 18px; text-align: center; box-shadow: var(--shadow-sm); transition: all 0.3s ease;
     }
-
-    .org-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--primary-400);
-    }
-
+    .org-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--primary-400); }
     .org-avatar-icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: var(--primary-50);
-      border: 2px solid var(--primary-200);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      color: var(--primary-700);
-      margin: 0 auto 12px;
+      width: 58px; height: 58px; border-radius: 50%; background: var(--primary-50); border: 2px solid var(--primary-200);
+      display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--primary-700); margin: 0 auto 12px;
     }
-
-    .org-card.orange .org-avatar-icon {
-      background: var(--accent-50);
-      border-color: var(--accent-200);
-      color: var(--accent-700);
-    }
-
-    .org-card h4 {
-      font-size: 1rem;
-      margin-bottom: 4px;
-      color: var(--neutral-900);
-    }
-
+    .org-card.orange .org-avatar-icon { background: var(--accent-50); border-color: var(--accent-200); color: var(--accent-700); }
+    .org-card.blue .org-avatar-icon { background: #e0f2fe; border-color: #bae6fd; color: #0284c7; }
+    .org-card h4 { font-size: 1.02rem; margin-bottom: 4px; color: var(--neutral-900); font-weight: 800; }
     .org-role-badge {
-      display: inline-block;
-      padding: 3px 10px;
-      border-radius: var(--radius-full);
-      background: var(--primary-100);
-      color: var(--primary-800);
-      font-size: 0.75rem;
-      font-weight: 700;
-      margin-bottom: 10px;
+      display: inline-block; padding: 3px 12px; border-radius: var(--radius-full);
+      background: var(--primary-100); color: var(--primary-800); font-size: 0.78rem; font-weight: 700; margin-bottom: 10px;
     }
+    .org-card.orange .org-role-badge { background: var(--accent-100); color: var(--accent-800); }
+    .org-card.blue .org-role-badge { background: #e0f2fe; color: #0369a1; }
+    .org-card p { font-size: 0.82rem; color: var(--neutral-600); line-height: 1.5; }
 
-    .org-card.orange .org-role-badge {
-      background: var(--accent-100);
-      color: var(--accent-800);
-    }
-
-    .org-card p {
-      font-size: 0.82rem;
-      color: var(--neutral-600);
-    }
-
-    /* Berita */
+    /* Berita Section & In-Page Reader */
     .filter-search-bar {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 14px 20px;
-      border: 1px solid var(--neutral-200);
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 35px;
-      flex-wrap: wrap;
+      background: var(--white); border-radius: var(--radius-lg); padding: 14px 20px;
+      border: 1px solid var(--neutral-200); box-shadow: var(--shadow-sm);
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 35px; flex-wrap: wrap;
     }
-
-    .category-pills {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
+    .category-pills { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .cat-btn {
-      padding: 7px 16px;
-      border-radius: var(--radius-full);
-      background: var(--neutral-100);
-      color: var(--neutral-700);
-      font-size: 0.85rem;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      transition: all 0.2s ease;
+      padding: 7px 16px; border-radius: var(--radius-full); background: var(--neutral-100);
+      color: var(--neutral-700); font-size: 0.85rem; font-weight: 600; border: none; cursor: pointer; transition: all 0.2s ease;
     }
+    .cat-btn:hover { background: var(--primary-100); color: var(--primary-800); }
+    .cat-btn.active { background: var(--primary-700); color: var(--white); box-shadow: 0 4px 10px rgba(4, 120, 87, 0.25); }
 
-    .cat-btn:hover {
-      background: var(--primary-100);
-      color: var(--primary-800);
-    }
-
-    .cat-btn.active {
-      background: var(--primary-700);
-      color: var(--white);
-      box-shadow: 0 4px 10px rgba(4, 120, 87, 0.25);
-    }
-
-    .search-input-box {
-      position: relative;
-      min-width: 250px;
-    }
-
-    .search-input-box i {
-      position: absolute;
-      left: 14px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--neutral-400);
-    }
-
+    .search-input-box { position: relative; min-width: 250px; }
+    .search-input-box i { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--neutral-400); }
     .search-input-box input {
-      width: 100%;
-      padding: 8px 14px 8px 36px;
-      border-radius: var(--radius-full);
-      border: 1.5px solid var(--neutral-200);
-      outline: none;
-      font-size: 0.88rem;
-      background: var(--neutral-50);
-      transition: all 0.2s ease;
+      width: 100%; padding: 8px 14px 8px 36px; border-radius: var(--radius-full);
+      border: 1.5px solid var(--neutral-200); outline: none; font-size: 0.88rem; background: var(--neutral-50); transition: all 0.2s ease;
     }
+    .search-input-box input:focus { border-color: var(--primary-500); background: var(--white); box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15); }
 
-    .search-input-box input:focus {
-      border-color: var(--primary-500);
-      background: var(--white);
-      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
-    }
-
-    .news-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
+    .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .news-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--neutral-200);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
+      background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--neutral-200);
+      overflow: hidden; box-shadow: var(--shadow-sm); transition: all 0.3s ease; display: flex; flex-direction: column;
     }
-
-    .news-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-      border-color: var(--primary-300);
-    }
-
-    .news-thumb {
-      height: 190px;
-      position: relative;
-      overflow: hidden;
-      background: var(--neutral-200);
-    }
-
-    .news-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-    }
-
-    .news-card:hover .news-thumb img {
-      transform: scale(1.05);
-    }
-
+    .news-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--primary-300); }
+    .news-thumb { height: 190px; position: relative; overflow: hidden; background: var(--neutral-200); }
+    .news-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+    .news-card:hover .news-thumb img { transform: scale(1.05); }
     .news-category-badge {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      padding: 4px 10px;
-      border-radius: var(--radius-full);
-      background: rgba(15, 23, 42, 0.8);
-      backdrop-filter: blur(4px);
-      color: var(--white);
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
+      position: absolute; top: 12px; left: 12px; padding: 4px 10px; border-radius: var(--radius-full);
+      background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(4px); color: var(--white); font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
     }
+    .news-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+    .news-meta { display: flex; align-items: center; gap: 12px; font-size: 0.78rem; color: var(--neutral-400); margin-bottom: 8px; }
+    .news-meta span { display: flex; align-items: center; gap: 5px; }
+    .news-title { font-size: 1.1rem; margin-bottom: 8px; line-height: 1.4; color: var(--neutral-900); }
+    .news-excerpt { font-size: 0.88rem; color: var(--neutral-600); margin-bottom: 16px; flex: 1; line-height: 1.55; }
+    .news-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--neutral-100); }
+    .read-more-btn { font-size: 0.85rem; font-weight: 700; color: var(--primary-700); display: flex; align-items: center; gap: 5px; background: none; border: none; cursor: pointer; }
+    .read-more-btn:hover { color: var(--accent-600); transform: translateX(3px); }
 
-    .news-body {
-      padding: 20px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
+    /* In-Page Article Reader (Tanpa Modal) */
+    .article-reader-wrapper {
+      background: var(--white); border-radius: var(--radius-xl); padding: 40px;
+      border: 1px solid var(--neutral-200); box-shadow: var(--shadow-md); max-width: 960px; margin: 0 auto;
+      animation: fadeIn 0.35s ease;
     }
-
-    .news-meta {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 0.78rem;
-      color: var(--neutral-400);
-      margin-bottom: 8px;
+    .back-to-list-btn { margin-bottom: 24px; }
+    .article-header { margin-bottom: 22px; }
+    .article-badge {
+      display: inline-flex; padding: 4px 14px; border-radius: var(--radius-full);
+      background: var(--primary-100); color: var(--primary-800); font-weight: 700; font-size: 0.8rem;
+      text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.5px;
     }
-
-    .news-meta span {
-      display: flex;
-      align-items: center;
-      gap: 5px;
+    .article-title { font-size: 2.2rem; font-weight: 800; color: var(--neutral-900); line-height: 1.25; margin-bottom: 14px; }
+    .article-meta-bar {
+      display: flex; gap: 20px; font-size: 0.88rem; color: var(--neutral-500);
+      padding-bottom: 18px; border-bottom: 1px solid var(--neutral-200); margin-bottom: 24px; flex-wrap: wrap;
     }
-
-    .news-title {
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-      line-height: 1.4;
-      color: var(--neutral-900);
+    .article-meta-bar span { display: flex; align-items: center; gap: 6px; }
+    .article-featured-img { width: 100%; max-height: 440px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 28px; background: var(--neutral-200); }
+    .article-featured-img img { width: 100%; height: 100%; object-fit: cover; }
+    .article-body-text { font-size: 1.05rem; line-height: 1.85; color: var(--neutral-800); }
+    .article-body-text p { margin-bottom: 18px; }
+    .article-share-box {
+      margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--neutral-200);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;
     }
-
-    .news-excerpt {
-      font-size: 0.88rem;
-      color: var(--neutral-600);
-      margin-bottom: 16px;
-      flex: 1;
-      line-height: 1.55;
-    }
-
-    .news-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 12px;
-      border-top: 1px solid var(--neutral-100);
-    }
-
-    .read-more-btn {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--primary-700);
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-
-    .read-more-btn:hover {
-      color: var(--accent-600);
-      transform: translateX(3px);
-    }
+    .share-left { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 0.88rem; color: var(--neutral-600); }
 
     /* Unit Usaha */
-    .unit-filter-pills {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 35px;
-    }
-
+    .unit-filter-pills { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 35px; }
     .unit-card-full {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--neutral-200);
-      box-shadow: var(--shadow-md);
-      overflow: hidden;
-      margin-bottom: 30px;
-      transition: all 0.3s ease;
-      display: grid;
-      grid-template-columns: 360px 1fr;
+      background: var(--white); border-radius: var(--radius-xl); border: 1px solid var(--neutral-200);
+      box-shadow: var(--shadow-md); overflow: hidden; margin-bottom: 30px; transition: all 0.3s ease;
+      display: grid; grid-template-columns: 360px 1fr;
     }
-
-    .unit-card-full:hover {
-      box-shadow: var(--shadow-xl);
-      border-color: var(--primary-400);
-    }
-
-    .unit-image-side {
-      position: relative;
-      min-height: 260px;
-      background: var(--neutral-200);
-    }
-
-    .unit-image-side img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
+    .unit-card-full:hover { box-shadow: var(--shadow-xl); border-color: var(--primary-400); }
+    .unit-image-side { position: relative; min-height: 260px; background: var(--neutral-200); }
+    .unit-image-side img { width: 100%; height: 100%; object-fit: cover; }
     .unit-image-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.75) 100%);
-      display: flex;
-      align-items: flex-end;
-      padding: 20px;
+      position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.75) 100%);
+      display: flex; align-items: flex-end; padding: 20px;
     }
-
     .unit-omset-pill {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(8px);
-      padding: 5px 12px;
-      border-radius: var(--radius-full);
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--neutral-900);
+      background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(8px);
+      padding: 5px 12px; border-radius: var(--radius-full); font-size: 0.78rem; font-weight: 700; color: var(--neutral-900);
     }
-
-    .unit-content-side {
-      padding: 28px 32px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .unit-header-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 6px;
-    }
-
-    .unit-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 10px;
-      border-radius: var(--radius-full);
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    .unit-tag.green {
-      background: var(--primary-100);
-      color: var(--primary-800);
-    }
-
-    .unit-tag.orange {
-      background: var(--accent-100);
-      color: var(--accent-800);
-    }
-
-    .unit-tag.blue {
-      background: #e0f2fe;
-      color: #0369a1;
-    }
-
-    .unit-tag.purple {
-      background: #f3e8ff;
-      color: #9333ea;
-    }
-
-    .unit-status-badge {
-      font-size: 0.78rem;
-      color: var(--primary-600);
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .unit-title {
-      font-size: 1.45rem;
-      color: var(--neutral-900);
-      margin-bottom: 6px;
-    }
-
-    .unit-tagline {
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--accent-600);
-      margin-bottom: 12px;
-    }
-
-    .unit-desc {
-      font-size: 0.9rem;
-      color: var(--neutral-600);
-      margin-bottom: 18px;
-      line-height: 1.55;
-    }
-
+    .unit-content-side { padding: 28px 32px; display: flex; flex-direction: column; justify-content: space-between; }
+    .unit-header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+    .unit-tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+    .unit-tag.green { background: var(--primary-100); color: var(--primary-800); }
+    .unit-tag.orange { background: var(--accent-100); color: var(--accent-800); }
+    .unit-tag.blue { background: #e0f2fe; color: #0369a1; }
+    .unit-tag.purple { background: #f3e8ff; color: #9333ea; }
+    .unit-status-badge { font-size: 0.78rem; color: var(--primary-600); font-weight: 600; display: flex; align-items: center; gap: 5px; }
+    .unit-title { font-size: 1.45rem; color: var(--neutral-900); margin-bottom: 6px; }
+    .unit-tagline { font-size: 0.92rem; font-weight: 600; color: var(--accent-600); margin-bottom: 12px; }
+    .unit-desc { font-size: 0.9rem; color: var(--neutral-600); margin-bottom: 18px; line-height: 1.55; }
     .unit-services-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-bottom: 20px;
-      background: var(--neutral-50);
-      padding: 14px;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--neutral-200);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px;
+      background: var(--neutral-50); padding: 14px; border-radius: var(--radius-md); border: 1px solid var(--neutral-200);
     }
-
-    .unit-services-list .srv-item {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      font-size: 0.84rem;
-      color: var(--neutral-700);
-      font-weight: 500;
-    }
-
-    .unit-services-list .srv-item i {
-      color: var(--primary-600);
-      font-size: 0.85rem;
-    }
-
+    .unit-services-list .srv-item { display: flex; align-items: center; gap: 7px; font-size: 0.84rem; color: var(--neutral-700); font-weight: 500; }
+    .unit-services-list .srv-item i { color: var(--primary-600); font-size: 0.85rem; }
     .unit-footer-actions {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      padding-top: 14px;
-      border-top: 1px solid var(--neutral-200);
-      flex-wrap: wrap;
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      padding-top: 14px; border-top: 1px solid var(--neutral-200); flex-wrap: wrap;
     }
-
-    .unit-contact-info {
-      font-size: 0.82rem;
-      color: var(--neutral-500);
-    }
-
-    .unit-contact-info strong {
-      color: var(--neutral-800);
-    }
+    .unit-contact-info { font-size: 0.82rem; color: var(--neutral-500); }
+    .unit-contact-info strong { color: var(--neutral-800); }
 
     /* Laporan Keuangan */
-    .keuangan-tabs-nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 30px;
-    }
-
+    .keuangan-tabs-nav { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 30px; }
     .keuangan-tab-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 11px 22px;
-      border-radius: var(--radius-full);
-      background: var(--white);
-      border: 1.5px solid var(--neutral-300);
-      color: var(--neutral-700);
-      font-weight: 700;
-      font-size: 0.92rem;
-      cursor: pointer;
-      transition: all 0.25s ease;
+      display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px;
+      border-radius: var(--radius-full); background: var(--white); border: 1.5px solid var(--neutral-300);
+      color: var(--neutral-700); font-weight: 700; font-size: 0.92rem; cursor: pointer; transition: all 0.25s ease;
     }
-
-    .keuangan-tab-btn.active {
-      background: var(--grad-primary);
-      color: var(--white);
-      border-color: transparent;
-      box-shadow: var(--shadow-green);
-    }
-
-    .keuangan-tab-content {
-      display: none;
-    }
-
-    .keuangan-tab-content.active {
-      display: block;
-    }
+    .keuangan-tab-btn.active { background: var(--grad-primary); color: var(--white); border-color: transparent; box-shadow: var(--shadow-green); }
+    .keuangan-tab-content { display: none; }
+    .keuangan-tab-content.active { display: block; }
 
     .apps-script-container {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--neutral-200);
-      box-shadow: var(--shadow-lg);
-      overflow: hidden;
-      margin-bottom: 36px;
+      background: var(--white); border-radius: var(--radius-xl); border: 1px solid var(--neutral-200);
+      box-shadow: var(--shadow-lg); overflow: hidden; margin-bottom: 36px;
     }
-
     .apps-script-toolbar {
-      background: var(--neutral-900);
-      color: var(--white);
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      flex-wrap: wrap;
+      background: var(--neutral-900); color: var(--white); padding: 12px 20px;
+      display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;
     }
-
-    .app-title-badge {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .app-indicator-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--primary-400);
-      box-shadow: 0 0 8px var(--primary-400);
-    }
-
-    .app-title-badge span {
-      font-size: 0.88rem;
-      font-weight: 700;
-    }
-
-    .app-toolbar-buttons {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
+    .app-title-badge { display: flex; align-items: center; gap: 8px; }
+    .app-indicator-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--primary-400); box-shadow: 0 0 8px var(--primary-400); }
+    .app-title-badge span { font-size: 0.88rem; font-weight: 700; }
+    .app-toolbar-buttons { display: flex; align-items: center; gap: 8px; }
     .tool-btn {
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: var(--white);
-      padding: 6px 12px;
-      border-radius: var(--radius-sm);
-      font-size: 0.78rem;
-      font-weight: 600;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.2s ease;
+      background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--white); padding: 6px 12px; border-radius: var(--radius-sm); font-size: 0.78rem; font-weight: 600;
+      cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;
     }
-
-    .tool-btn:hover {
-      background: rgba(255, 255, 255, 0.25);
-    }
-
-    .iframe-wrapper {
-      position: relative;
-      width: 100%;
-      height: 800px;
-      background: var(--neutral-100);
-      overflow: hidden;
-    }
-
-    .iframe-wrapper iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
+    .tool-btn:hover { background: rgba(255, 255, 255, 0.25); }
+    .iframe-wrapper { position: relative; width: 100%; height: 800px; background: var(--neutral-100); overflow: hidden; }
+    .iframe-wrapper iframe { width: 100%; height: 100%; border: none; display: block; }
 
     .apps-script-container.is-fullscreen {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 99999;
-      border-radius: 0;
-      margin: 0;
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh;
+      z-index: 99999; border-radius: 0; margin: 0;
     }
-
-    .apps-script-container.is-fullscreen .iframe-wrapper {
-      height: calc(100vh - 54px);
-    }
+    .apps-script-container.is-fullscreen .iframe-wrapper { height: calc(100vh - 54px); }
 
     .transparency-dashboard {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--neutral-200);
-      box-shadow: var(--shadow-md);
-      padding: 32px;
-      margin-bottom: 36px;
+      background: var(--white); border-radius: var(--radius-xl); border: 1px solid var(--neutral-200);
+      box-shadow: var(--shadow-md); padding: 32px; margin-bottom: 36px;
     }
+    .financial-metric-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
+    .fin-card { padding: 20px; border-radius: var(--radius-lg); border: 1.5px solid var(--neutral-200); background: var(--neutral-50); }
+    .fin-card.highlight { background: var(--primary-50); border-color: var(--primary-300); }
+    .fin-card.orange { background: var(--accent-50); border-color: var(--accent-300); }
+    .fin-card .lbl { font-size: 0.78rem; color: var(--neutral-500); font-weight: 600; margin-bottom: 5px; }
+    .fin-card .amt { font-size: 1.45rem; font-weight: 800; color: var(--neutral-900); letter-spacing: -0.4px; }
+    .fin-card.highlight .amt { color: var(--primary-800); }
+    .fin-card.orange .amt { color: var(--accent-700); }
 
-    .financial-metric-row {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-bottom: 32px;
-    }
+    .composition-section { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 32px; align-items: center; margin-bottom: 36px; }
+    .comp-bars-list { display: flex; flex-direction: column; gap: 14px; }
+    .comp-bar-item .bar-label { display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; }
+    .progress-track { height: 9px; border-radius: var(--radius-full); background: var(--neutral-200); overflow: hidden; }
+    .progress-fill { height: 100%; border-radius: var(--radius-full); transition: width 0.8s ease; }
 
-    .fin-card {
-      padding: 20px;
-      border-radius: var(--radius-lg);
-      border: 1.5px solid var(--neutral-200);
-      background: var(--neutral-50);
-    }
+    .allocation-box { background: var(--neutral-900); color: var(--white); border-radius: var(--radius-lg); padding: 26px; }
+    .allocation-box h4 { color: var(--primary-300); font-size: 1.15rem; margin-bottom: 14px; }
+    .alloc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .alloc-list li { display: flex; justify-content: space-between; font-size: 0.85rem; border-bottom: 1px dashed rgba(255, 255, 255, 0.15); padding-bottom: 6px; }
+    .alloc-list li span:last-child { font-weight: 700; color: var(--accent-400); }
 
-    .fin-card.highlight {
-      background: var(--primary-50);
-      border-color: var(--primary-300);
-    }
-
-    .fin-card.orange {
-      background: var(--accent-50);
-      border-color: var(--accent-300);
-    }
-
-    .fin-card .lbl {
-      font-size: 0.78rem;
-      color: var(--neutral-500);
-      font-weight: 600;
-      margin-bottom: 5px;
-    }
-
-    .fin-card .amt {
-      font-size: 1.45rem;
-      font-weight: 800;
-      color: var(--neutral-900);
-      letter-spacing: -0.4px;
-    }
-
-    .fin-card.highlight .amt {
-      color: var(--primary-800);
-    }
-
-    .fin-card.orange .amt {
-      color: var(--accent-700);
-    }
-
-    .composition-section {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 32px;
-      align-items: center;
-      margin-bottom: 36px;
-    }
-
-    .comp-bars-list {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .comp-bar-item .bar-label {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 5px;
-    }
-
-    .progress-track {
-      height: 9px;
-      border-radius: var(--radius-full);
-      background: var(--neutral-200);
-      overflow: hidden;
-    }
-
-    .progress-fill {
-      height: 100%;
-      border-radius: var(--radius-full);
-      transition: width 0.8s ease;
-    }
-
-    .allocation-box {
-      background: var(--neutral-900);
-      color: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 26px;
-    }
-
-    .allocation-box h4 {
-      color: var(--primary-300);
-      font-size: 1.15rem;
-      margin-bottom: 14px;
-    }
-
-    .alloc-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .alloc-list li {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
-      padding-bottom: 6px;
-    }
-
-    .alloc-list li span:last-child {
-      font-weight: 700;
-      color: var(--accent-400);
-    }
-
-    .modul-laporan-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
+    .modul-laporan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .modul-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--neutral-200);
-      padding: 22px;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+      background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--neutral-200);
+      padding: 22px; box-shadow: var(--shadow-sm); transition: all 0.3s ease;
     }
-
-    .modul-card:hover {
-      transform: translateY(-3px);
-      border-color: var(--primary-400);
-      box-shadow: var(--shadow-md);
-    }
-
-    .modul-card-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 10px;
-    }
-
+    .modul-card:hover { transform: translateY(-3px); border-color: var(--primary-400); box-shadow: var(--shadow-md); }
+    .modul-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
     .modul-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: var(--radius-md);
-      background: var(--primary-100);
-      color: var(--primary-700);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
+      width: 40px; height: 40px; border-radius: var(--radius-md); background: var(--primary-100); color: var(--primary-700);
+      display: flex; align-items: center; justify-content: center; font-size: 18px;
     }
-
-    .modul-card h4 {
-      font-size: 1.05rem;
-      margin-bottom: 6px;
-    }
-
-    .modul-card p {
-      font-size: 0.82rem;
-      color: var(--neutral-600);
-      line-height: 1.5;
-    }
-
-    /* Modals */
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.65);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      z-index: 2000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-
-    .modal-backdrop.open {
-      display: flex;
-      opacity: 1;
-    }
-
-    .modal-window {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      max-width: 700px;
-      width: 100%;
-      max-height: 88vh;
-      overflow-y: auto;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
-      transform: translateY(16px);
-      transition: transform 0.25s ease;
-      position: relative;
-    }
-
-    .modal-backdrop.open .modal-window {
-      transform: translateY(0);
-    }
-
-    .modal-close-btn {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: var(--neutral-100);
-      border: none;
-      color: var(--neutral-600);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      z-index: 10;
-      transition: all 0.2s ease;
-    }
-
-    .modal-close-btn:hover {
-      background: var(--accent-100);
-      color: var(--accent-700);
-    }
-
-    .modal-body-content {
-      padding: 32px;
-    }
+    .modul-card h4 { font-size: 1.05rem; margin-bottom: 6px; }
+    .modul-card p { font-size: 0.82rem; color: var(--neutral-600); line-height: 1.5; }
 
     /* Footer */
-    .site-footer {
-      background: var(--neutral-900);
-      color: var(--neutral-300);
-      padding: 60px 0 26px;
-      border-top: 4px solid var(--primary-500);
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-      gap: 36px;
-      margin-bottom: 44px;
-    }
-
-    .footer-brand h3 {
-      font-size: 1.3rem;
-      color: var(--white);
-      margin-bottom: 10px;
-    }
-
-    .footer-brand p {
-      font-size: 0.88rem;
-      color: var(--neutral-400);
-      margin-bottom: 18px;
-      line-height: 1.55;
-    }
-
-    .footer-socials {
-      display: flex;
-      gap: 10px;
-    }
-
+    .site-footer { background: var(--neutral-900); color: var(--neutral-300); padding: 60px 0 26px; border-top: 4px solid var(--primary-500); }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 36px; margin-bottom: 44px; }
+    .footer-brand h3 { font-size: 1.3rem; color: var(--white); margin-bottom: 10px; }
+    .footer-brand p { font-size: 0.88rem; color: var(--neutral-400); margin-bottom: 18px; line-height: 1.55; }
+    .footer-socials { display: flex; gap: 10px; }
     .social-link {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 15px;
-      transition: all 0.2s ease;
+      width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 255, 255, 0.1);
+      display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 15px; transition: all 0.2s ease;
     }
-
-    .social-link:hover {
-      background: var(--primary-500);
-      transform: translateY(-2px);
-    }
-
-    .footer-col h4 {
-      font-size: 1rem;
-      color: var(--white);
-      margin-bottom: 18px;
-      position: relative;
-      padding-bottom: 7px;
-    }
-
-    .footer-col h4::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 28px;
-      height: 2px;
-      background: var(--accent-500);
-    }
-
-    .footer-links {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 9px;
-    }
-
-    .footer-links a {
-      color: var(--neutral-400);
-      font-size: 0.86rem;
-      display: flex;
-      align-items: center;
-      gap: 7px;
-    }
-
-    .footer-links a:hover {
-      color: var(--primary-400);
-      transform: translateX(4px);
-    }
-
-    .footer-contact-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .footer-contact-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 0.85rem;
-      color: var(--neutral-400);
-    }
-
-    .footer-contact-list li i {
-      color: var(--primary-400);
-      margin-top: 3px;
-    }
-
+    .social-link:hover { background: var(--primary-500); transform: translateY(-2px); }
+    .footer-col h4 { font-size: 1rem; color: var(--white); margin-bottom: 18px; position: relative; padding-bottom: 7px; }
+    .footer-col h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 28px; height: 2px; background: var(--accent-500); }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .footer-links a { color: var(--neutral-400); font-size: 0.86rem; display: flex; align-items: center; gap: 7px; }
+    .footer-links a:hover { color: var(--primary-400); transform: translateX(4px); }
+    .footer-contact-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-contact-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; color: var(--neutral-400); }
+    .footer-contact-list li i { color: var(--primary-400); margin-top: 3px; }
     .footer-bottom {
-      padding-top: 22px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.82rem;
-      color: var(--neutral-500);
-      flex-wrap: wrap;
-      gap: 14px;
+      padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex; align-items: center; justify-content: space-between; font-size: 0.82rem; color: var(--neutral-500); flex-wrap: wrap; gap: 14px;
     }
 
     /* ========================================================================
        MEDIA QUERIES (DESKTOP VS TABLET VS MOBILE AUTOMATIC SWITCH)
        ======================================================================== */
     @media (max-width: 1024px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .stats-counter-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .home-units-grid,
-      .news-grid,
-      .features-grid,
-      .testimonials-grid,
-      .modul-laporan-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .org-grid,
-      .financial-metric-row {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .unit-card-full {
-        grid-template-columns: 1fr;
-      }
-
-      .composition-section {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .hero-grid { grid-template-columns: 1fr; }
+      .stats-counter-grid { grid-template-columns: repeat(2, 1fr); }
+      .home-units-grid, .news-grid, .features-grid, .testimonials-grid, .modul-laporan-grid { grid-template-columns: repeat(2, 1fr); }
+      .org-grid, .financial-metric-row { grid-template-columns: repeat(2, 1fr); }
+      .unit-card-full { grid-template-columns: 1fr; }
+      .composition-section { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 768px) {
+      .mobile-toggle { display: flex; }
+      .mobile-bottom-nav { display: flex; }
 
-      /* Show Mobile Elements */
-      .mobile-toggle {
-        display: flex;
-      }
-
-      .mobile-bottom-nav {
-        display: flex;
-      }
-
-      /* Top Navbar Drawer Mode on Mobile */
       .nav-menu {
-        position: fixed;
-        top: var(--nav-height);
-        left: 0;
-        right: 0;
-        background: var(--white);
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: var(--shadow-lg);
-        border-bottom: 1px solid var(--neutral-200);
-        transform: translateY(-120%);
-        opacity: 0;
-        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        pointer-events: none;
-        z-index: 999;
+        position: fixed; top: var(--nav-height); left: 0; right: 0; background: var(--white);
+        flex-direction: column; padding: 20px; box-shadow: var(--shadow-lg); border-bottom: 1px solid var(--neutral-200);
+        transform: translateY(-120%); opacity: 0; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        pointer-events: none; z-index: 999;
       }
+      .nav-menu.mobile-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+      .nav-link { width: 100%; padding: 12px 18px; font-size: 1rem; border-radius: var(--radius-md); }
+      .nav-actions { display: none; }
 
-      .nav-menu.mobile-open {
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      .nav-link {
-        width: 100%;
-        padding: 12px 18px;
-        font-size: 1rem;
-        border-radius: var(--radius-md);
-      }
-
-      .nav-actions {
-        display: none;
-      }
-
-      /* Layout Padding Adjustment for Mobile Bottom Bar */
       .page-section {
         padding-top: calc(var(--nav-height) + 14px);
         padding-bottom: calc(var(--bottom-nav-height) + 40px);
       }
+      .site-footer { padding-bottom: calc(var(--bottom-nav-height) + 30px); }
 
-      .site-footer {
-        padding-bottom: calc(var(--bottom-nav-height) + 30px);
-      }
+      .hero-wrapper { padding: 36px 20px; border-radius: var(--radius-lg); margin-bottom: 35px; }
+      .hero-title { font-size: 1.85rem; }
+      .hero-subtitle { font-size: 0.95rem; margin-bottom: 22px; }
+      .hero-cta-group { flex-direction: column; width: 100%; }
+      .hero-cta-group .btn { width: 100%; }
 
-      /* Mobile Hero Adjustments */
-      .hero-wrapper {
-        padding: 36px 20px;
-        border-radius: var(--radius-lg);
-        margin-bottom: 35px;
-      }
+      .section-title { font-size: 1.65rem; }
+      .section-intro { margin-bottom: 30px; }
 
-      .hero-title {
-        font-size: 1.85rem;
-      }
-
-      .hero-subtitle {
-        font-size: 0.95rem;
-        margin-bottom: 22px;
-      }
-
-      .hero-cta-group {
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .hero-cta-group .btn {
-        width: 100%;
-      }
-
-      .section-title {
-        font-size: 1.65rem;
-      }
-
-      .section-intro {
-        margin-bottom: 30px;
-      }
-
-      /* Grids to 1 Column */
-      .home-units-grid,
-      .news-grid,
-      .features-grid,
-      .testimonials-grid,
-      .modul-laporan-grid,
-      .org-grid,
-      .stats-counter-grid,
-      .financial-metric-row,
-      .visi-misi-grid,
-      .profile-grid-2 {
+      .home-units-grid, .news-grid, .features-grid, .testimonials-grid, .modul-laporan-grid, .org-grid, .stats-counter-grid, .financial-metric-row, .visi-misi-grid, .profile-grid-2 {
         grid-template-columns: 1fr;
         gap: 16px;
       }
+      .footer-grid { grid-template-columns: 1fr; gap: 26px; }
 
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 26px;
+      .unit-filter-pills, .category-pills {
+        justify-content: flex-start; overflow-x: auto; padding-bottom: 8px;
+        flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none;
       }
+      .unit-filter-pills::-webkit-scrollbar, .category-pills::-webkit-scrollbar { display: none; }
+      .cat-btn { flex-shrink: 0; padding: 8px 16px; }
 
-      /* Touch Friendly Horizontal Scrolling Filter Pills */
-      .unit-filter-pills,
-      .category-pills {
-        justify-content: flex-start;
-        overflow-x: auto;
-        padding-bottom: 8px;
-        flex-wrap: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
+      .search-input-box { width: 100%; min-width: 100%; margin-top: 10px; }
 
-      .unit-filter-pills::-webkit-scrollbar,
-      .category-pills::-webkit-scrollbar {
-        display: none;
-      }
+      .article-reader-wrapper { padding: 24px 18px; }
+      .article-title { font-size: 1.6rem; }
+      .article-share-box { flex-direction: column; align-items: flex-start; }
+      .share-left { width: 100%; }
+      .share-left .btn { width: 100%; }
 
-      .cat-btn {
-        flex-shrink: 0;
-        padding: 8px 16px;
-      }
-
-      .search-input-box {
-        width: 100%;
-        min-width: 100%;
-        margin-top: 10px;
-      }
-
-      /* Apps Script Iframe on Mobile */
-      .iframe-wrapper {
-        height: 560px;
-      }
-
-      .unit-content-side {
-        padding: 20px 18px;
-      }
-
-      .unit-services-list {
-        grid-template-columns: 1fr;
-      }
-
-      .profile-overview-card {
-        padding: 22px 18px;
-      }
-
-      .visi-card,
-      .misi-card {
-        padding: 24px 18px;
-      }
-
-      .transparency-dashboard {
-        padding: 22px 16px;
-      }
+      .iframe-wrapper { height: 560px; }
+      .unit-content-side { padding: 20px 18px; }
+      .unit-services-list { grid-template-columns: 1fr; }
+      .profile-overview-card { padding: 22px 18px; }
+      .visi-card, .misi-card { padding: 24px 18px; }
+      .transparency-dashboard { padding: 22px 16px; }
     }
   </style>
 </head>
-
 <body>
 
   <!-- ========================================================================
@@ -2120,21 +696,18 @@
           <i class="fa-solid fa-building-columns"></i>
         </div>
         <div class="brand-text">
-          <h1>BUMDes Sipodalle</h1>
+          <h1>BUMDesa Sipodalle</h1>
           <span>Batetangnga Sejahtera</span>
         </div>
       </a>
 
       <!-- Desktop Nav Menu -->
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#beranda" class="nav-link active" data-nav="beranda"><i class="fa-solid fa-house"></i> Beranda</a>
-        </li>
+        <li><a href="#beranda" class="nav-link active" data-nav="beranda"><i class="fa-solid fa-house"></i> Beranda</a></li>
         <li><a href="#profil" class="nav-link" data-nav="profil"><i class="fa-solid fa-circle-info"></i> Profil</a></li>
         <li><a href="#berita" class="nav-link" data-nav="berita"><i class="fa-solid fa-newspaper"></i> Berita</a></li>
-        <li><a href="#unit-usaha" class="nav-link" data-nav="unit-usaha"><i class="fa-solid fa-boxes-stacked"></i> Unit
-            Usaha</a></li>
-        <li><a href="#laporan-keuangan" class="nav-link" data-nav="laporan-keuangan"><i
-              class="fa-solid fa-chart-pie"></i> Laporan Keuangan</a></li>
+        <li><a href="#unit-usaha" class="nav-link" data-nav="unit-usaha"><i class="fa-solid fa-boxes-stacked"></i> Unit Usaha</a></li>
+        <li><a href="#laporan-keuangan" class="nav-link" data-nav="laporan-keuangan"><i class="fa-solid fa-chart-pie"></i> Laporan Keuangan</a></li>
       </ul>
 
       <!-- Desktop Actions -->
@@ -2142,8 +715,7 @@
         <a href="#laporan-keuangan" class="btn btn-accent btn-sm" onclick="openAppsScriptTab()">
           <i class="fa-solid fa-bolt"></i> Portal Keuangan
         </a>
-        <a href="https://wa.me/6282198765432" target="_blank" rel="noopener noreferrer"
-          class="btn btn-outline-primary btn-sm" title="Hubungi Pengurus BUMDes">
+        <a href="https://wa.me/6281342686336" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" title="Hubungi Pengurus BUMDesa">
           <i class="fa-brands fa-whatsapp"></i> Hubungi Kami
         </a>
       </div>
@@ -2175,8 +747,7 @@
       <i class="fa-solid fa-boxes-stacked"></i>
       <span>Unit Usaha</span>
     </a>
-    <a href="#laporan-keuangan" class="bottom-nav-item" data-bottom-nav="laporan-keuangan"
-      onclick="navigateTo('laporan-keuangan')">
+    <a href="#laporan-keuangan" class="bottom-nav-item" data-bottom-nav="laporan-keuangan" onclick="navigateTo('laporan-keuangan')">
       <i class="fa-solid fa-chart-pie"></i>
       <span>Keuangan</span>
     </a>
@@ -2188,7 +759,7 @@
          ====================================================================== -->
     <section id="beranda" class="page-section active-page">
       <div class="container">
-
+        
         <!-- Hero Banner Section -->
         <div class="hero-wrapper">
           <div class="hero-bg-pattern"></div>
@@ -2201,16 +772,13 @@
                 Membangun Ekonomi Desa <span class="highlight-orange">Mandiri & Transparan</span>
               </h1>
               <p class="hero-subtitle">
-                Selamat datang di portal resmi BUMDes Sipodalle Batetangnga Sejahtera. Menggerakkan pengelolaan Pasar
-                Desa, budidaya pembesaran ikan nila segar, serta persiapan sarana air bersih dan ekowisata alam dengan
-                laporan keuangan transparan.
+                Selamat datang di portal resmi BUMDesa Sipodalle Batetangnga Sejahtera. Menggerakkan pengelolaan Pasar Desa, budidaya pembesaran ikan nila segar, serta persiapan sarana air bersih dan ekowisata alam dengan laporan keuangan transparan.
               </p>
               <div class="hero-cta-group">
                 <a href="#unit-usaha" class="btn btn-accent btn-lg" onclick="navigateTo('unit-usaha')">
                   <i class="fa-solid fa-shop"></i> Jelajahi Unit Usaha
                 </a>
-                <a href="#laporan-keuangan" class="btn btn-outline-white btn-lg"
-                  onclick="navigateTo('laporan-keuangan')">
+                <a href="#laporan-keuangan" class="btn btn-outline-white btn-lg" onclick="navigateTo('laporan-keuangan')">
                   <i class="fa-solid fa-file-invoice-dollar"></i> Pantau Laporan Keuangan
                 </a>
               </div>
@@ -2220,8 +788,7 @@
             <div class="hero-visual-card">
               <div class="hero-app-preview-header">
                 <div>
-                  <div style="font-size: 0.78rem; color: var(--neutral-300); font-weight: 600;">SISTEM AKUNTANSI
-                    TERINTEGRASI</div>
+                  <div style="font-size: 0.78rem; color: var(--neutral-300); font-weight: 600;">SISTEM AKUNTANSI TERINTEGRASI</div>
                   <div style="font-size: 1.1rem; font-weight: 800; color: var(--white);">PPAK BUMDes Live</div>
                 </div>
                 <div class="hero-status-pill">
@@ -2243,8 +810,7 @@
               <div class="hero-transparency-card">
                 <div>
                   <div style="font-size: 0.85rem; font-weight: 700; color: var(--white);">Laporan Keuangan Terbuka</div>
-                  <div style="font-size: 0.78rem; color: var(--neutral-200);">Tersambung langsung ke Google Apps Script
-                    Spreadsheet.</div>
+                  <div style="font-size: 0.78rem; color: var(--neutral-200);">Tersambung langsung ke Google Apps Script Spreadsheet.</div>
                 </div>
                 <a href="#laporan-keuangan" class="btn btn-primary btn-sm" onclick="navigateTo('laporan-keuangan')">
                   Lihat <i class="fa-solid fa-arrow-right"></i>
@@ -2259,43 +825,36 @@
           <!-- Rendered dynamically -->
         </div>
 
-        <!-- 3 Pilar Keunggulan BUMDes -->
+        <!-- 3 Pilar Keunggulan BUMDesa -->
         <div class="section-intro">
           <div class="section-badge green"><i class="fa-solid fa-award"></i> Komitmen Kami</div>
-          <h2 class="section-title">Nilai Utama <span class="text-green">BUMDes Sipodalle</span></h2>
-          <p class="section-desc">Mewujudkan tata kelola usaha desa yang modern, profesional, dan memberikan dampak
-            langsung bagi kesejahteraan warga.</p>
+          <h2 class="section-title">Nilai Utama <span class="text-green">BUMDesa Sipodalle</span></h2>
+          <p class="section-desc">Mewujudkan tata kelola usaha desa yang modern, profesional, dan memberikan dampak langsung bagi kesejahteraan warga.</p>
         </div>
 
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
             <h3>Transparansi Penuh</h3>
-            <p>Setiap transaksi jurnal, laba rugi, dan neraca dapat diakses secara terbuka melalui sistem pelaporan PPAK
-              digital terintegrasi.</p>
+            <p>Setiap transaksi jurnal, laba rugi, dan neraca dapat diakses secara terbuka melalui sistem pelaporan PPAK digital terintegrasi.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-card-icon"
-              style="background: var(--primary-50); color: var(--primary-600); border-color: var(--primary-200);"><i
-                class="fa-solid fa-users-gear"></i></div>
+            <div class="feature-card-icon" style="background: var(--primary-50); color: var(--primary-600); border-color: var(--primary-200);"><i class="fa-solid fa-users-gear"></i></div>
             <h3>Pemberdayaan Warga</h3>
-            <p>Mendukung perputaran ekonomi para pedagang pasar desa dan kelompok pembudidaya ikan air tawar lokal.</p>
+            <p>Mendukung perputaran ekonomi para pedagang pasar desa dan kelompok pembudidaya ikan air tawar Dusun Kanang.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-card-icon" style="background: #e0f2fe; color: #0284c7; border-color: #bae6fd;"><i
-                class="fa-solid fa-water"></i></div>
+            <div class="feature-card-icon" style="background: #e0f2fe; color: #0284c7; border-color: #bae6fd;"><i class="fa-solid fa-water"></i></div>
             <h3>Potensi Air & Alam</h3>
-            <p>Memanfaatkan sumber air tawar bersih Batetangnga untuk budidaya ikan nila serta persiapan layanan air
-              bersih dan wisata.</p>
+            <p>Memanfaatkan sumber air tawar bersih Batetangnga untuk budidaya ikan nila serta persiapan layanan air bersih dan wisata.</p>
           </div>
         </div>
 
         <!-- Sorotan Unit Usaha -->
         <div class="section-intro">
           <div class="section-badge"><i class="fa-solid fa-fire"></i> Sektor Usaha</div>
-          <h2 class="section-title">Unit Usaha <span class="text-orange">BUMDes Sipodalle</span></h2>
-          <p class="section-desc">2 unit usaha aktif beroperasi dan 2 unit strategis dalam tahap persiapan pengembangan
-            desa.</p>
+          <h2 class="section-title">Unit Usaha <span class="text-orange">BUMDesa Sipodalle</span></h2>
+          <p class="section-desc">2 unit usaha aktif beroperasi dan 2 unit strategis dalam tahap persiapan pengembangan desa.</p>
         </div>
 
         <div class="home-units-grid" id="homeUnitsPreview">
@@ -2305,9 +864,8 @@
         <!-- Berita Terkini Preview -->
         <div class="section-intro">
           <div class="section-badge green"><i class="fa-solid fa-bullhorn"></i> Kabar Terkini</div>
-          <h2 class="section-title">Informasi & <span class="text-green">Kegiatan BUMDes</span></h2>
-          <p class="section-desc">Ikuti perkembangan program, penyaluran PADes, dan kegiatan ekonomi produktif
-            masyarakat.</p>
+          <h2 class="section-title">Informasi & <span class="text-green">Kegiatan BUMDesa</span></h2>
+          <p class="section-desc">Ikuti perkembangan program, penyaluran PADes, dan kegiatan ekonomi produktif masyarakat.</p>
         </div>
 
         <div class="news-grid" id="homeNewsPreview">
@@ -2329,16 +887,15 @@
     </section>
 
     <!-- ======================================================================
-         HALAMAN 2: PROFIL BUMDES
+         HALAMAN 2: PROFIL BUMDESA
          ====================================================================== -->
     <section id="profil" class="page-section">
       <div class="container">
-
+        
         <div class="section-intro">
           <div class="section-badge green"><i class="fa-solid fa-landmark"></i> Tentang Kami</div>
-          <h2 class="section-title">Profil <span class="text-green">BUMDes Sipodalle</span></h2>
-          <p class="section-desc">Mengenal lebih dekat sejarah, visi misi, legalitas hukum, dan struktur kepengurusan
-            BUM Desa Batetangnga Sejahtera.</p>
+          <h2 class="section-title">Profil <span class="text-green">BUMDesa Sipodalle</span></h2>
+          <p class="section-desc">Mengenal lebih dekat sejarah, visi misi, legalitas hukum, dan susunan 10 personil kepengurusan BUM Desa Batetangnga Sejahtera.</p>
         </div>
 
         <!-- Profile Overview Card -->
@@ -2347,25 +904,20 @@
             <div class="profile-text">
               <h2>Mewujudkan Kemandirian Desa Lewat Usaha Berkelanjutan</h2>
               <p>
-                <strong>BUM Desa Sipodalle Batetangnga Sejahtera</strong> didirikan secara resmi pada tahun 2019 atas
-                kesepakatan Musyawarah Desa (Musdes) sebagai wujud komitmen pemerintah desa bersama seluruh warga untuk
-                mendayagunakan seluruh potensi ekonomi, kelembagaan, serta sumber daya alam desa.
+                <strong>BUM Desa Sipodalle Batetangnga Sejahtera</strong> didirikan secara resmi pada tahun 2019 atas kesepakatan Musyawarah Desa (Musdes) sebagai wujud komitmen pemerintah desa bersama seluruh warga untuk mendayagunakan potensi ekonomi, kelembagaan, serta sumber daya alam desa.
               </p>
               <p>
-                Nama <em>"Sipodalle"</em> berakar dari kearifan lokal Mandar yang bermakna saling memberi rezeki,
-                bergotong royong, dan membagi kemakmuran bersama demi kemajuan seluruh lapisan masyarakat Batetangnga.
+                Nama <em>"Sipodalle"</em> berakar dari kearifan lokal Mandar yang bermakna saling memberi rezeki, bergotong royong, dan membagi kemakmuran bersama demi kemajuan seluruh lapisan masyarakat Batetangnga.
               </p>
               <div class="legalitas-box">
                 <h4><i class="fa-solid fa-shield-check"></i> Dasar Hukum & Legalitas Resmi:</h4>
                 <p><strong>Nomor Registrasi Kemenkumham:</strong> AHU-01289.AH.01.33.TAHUN 2021</p>
                 <p><strong>Peraturan Desa (Perdes):</strong> Perdes Batetangnga No. 04 Tahun 2019</p>
-                <p><strong>Status Badan Hukum:</strong> Terdaftar Resmi di Kemendesa PDTT RI</p>
+                <p><strong>Alamat Kantor:</strong> Jl. Tanai Dusun Kanang, Batetangnga, Kec. Binuang (Kode Pos 91312)</p>
               </div>
             </div>
             <div class="profile-image-wrap">
-              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
-                alt="Pemandangan Alam Desa Batetangnga"
-                style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); width: 100%; height: 380px; object-fit: cover;">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Pemandangan Alam Desa Batetangnga" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); width: 100%; height: 380px; object-fit: cover;">
             </div>
           </div>
         </div>
@@ -2373,10 +925,9 @@
         <!-- Visi & Misi -->
         <div class="visi-misi-grid">
           <div class="visi-card">
-            <h3><i class="fa-solid fa-compass"></i> Visi BUMDes</h3>
+            <h3><i class="fa-solid fa-compass"></i> Visi BUMDesa</h3>
             <p id="profileVisiText">
-              "Terwujudnya BUMDes Sipodalle sebagai pilar kemandirian ekonomi Desa Batetangnga yang berdaya saing,
-              transparan, berkeadilan, dan berkelanjutan menuju kesejahteraan masyarakat desa."
+              "Terwujudnya BUMDesa Sipodalle sebagai pilar kemandirian ekonomi Desa Batetangnga yang berdaya saing, transparan, berkeadilan, dan berkelanjutan menuju kesejahteraan masyarakat desa."
             </p>
           </div>
           <div class="misi-card">
@@ -2387,53 +938,59 @@
           </div>
         </div>
 
-        <!-- Struktur Organisasi -->
+        <!-- Struktur Organisasi 10 Personil -->
         <div class="section-intro" style="margin-top: 60px;">
           <div class="section-badge"><i class="fa-solid fa-sitemap"></i> Tata Kelola</div>
-          <h2 class="section-title">Struktur <span class="text-orange">Kepengurusan</span></h2>
-          <p class="section-desc">Didukung oleh sumber daya manusia berintegritas dan berdedikasi tinggi untuk kemajuan
-            desa.</p>
+          <h2 class="section-title">Struktur <span class="text-orange">Kepengurusan BUMDesa</span></h2>
+          <p class="section-desc">Susunan 10 personil pengurus, pengawas, dan pengelola unit usaha BUMDesa Sipodalle Batetangnga Sejahtera.</p>
         </div>
 
         <div class="org-grid" id="orgStructureContainer">
-          <!-- Rendered dynamically -->
+          <!-- Rendered dynamically (10 personil) -->
         </div>
 
       </div>
     </section>
 
     <!-- ======================================================================
-         HALAMAN 3: BERITA & PENGUMUMAN
+         HALAMAN 3: BERITA & PENGUMUMAN (IN-PAGE READER - TANPA MODAL)
          ====================================================================== -->
     <section id="berita" class="page-section">
       <div class="container">
+        
+        <!-- SUB-VIEW 1: DAFTAR BERITA (GRID VIEW) -->
+        <div id="newsListView">
+          <div class="section-intro">
+            <div class="section-badge green"><i class="fa-solid fa-newspaper"></i> Pusat Informasi</div>
+            <h2 class="section-title">Berita & <span class="text-green">Pengumuman Desa</span></h2>
+            <p class="section-desc">Publikasi transparansi, agenda kegiatan, pengumuman resmi, dan perkembangan usaha BUMDesa Sipodalle.</p>
+          </div>
 
-        <div class="section-intro">
-          <div class="section-badge green"><i class="fa-solid fa-newspaper"></i> Pusat Informasi</div>
-          <h2 class="section-title">Berita & <span class="text-green">Pengumuman Desa</span></h2>
-          <p class="section-desc">Publikasi transparansi, agenda kegiatan, pengumuman resmi, dan perkembangan usaha
-            BUMDes Sipodalle.</p>
+          <!-- Filter & Search Bar -->
+          <div class="filter-search-bar">
+            <div class="category-pills" id="newsCategoryPills">
+              <button class="cat-btn active" data-cat="Semua" onclick="filterNews('Semua')">Semua</button>
+              <button class="cat-btn" data-cat="Laporan Publik" onclick="filterNews('Laporan Publik')">Laporan Publik</button>
+              <button class="cat-btn" data-cat="Usaha Desa" onclick="filterNews('Usaha Desa')">Usaha Desa</button>
+              <button class="cat-btn" data-cat="Kegiatan Warga" onclick="filterNews('Kegiatan Warga')">Kegiatan Warga</button>
+            </div>
+            <div class="search-input-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="newsSearchInput" placeholder="Cari berita / informasi..." onkeyup="searchNews()">
+            </div>
+          </div>
+
+          <!-- News Cards Grid -->
+          <div class="news-grid" id="allNewsGrid">
+            <!-- Rendered dynamically -->
+          </div>
         </div>
 
-        <!-- Filter & Search Bar -->
-        <div class="filter-search-bar">
-          <div class="category-pills" id="newsCategoryPills">
-            <button class="cat-btn active" data-cat="Semua" onclick="filterNews('Semua')">Semua</button>
-            <button class="cat-btn" data-cat="Laporan Publik" onclick="filterNews('Laporan Publik')">Laporan
-              Publik</button>
-            <button class="cat-btn" data-cat="Usaha Desa" onclick="filterNews('Usaha Desa')">Usaha Desa</button>
-            <button class="cat-btn" data-cat="Kegiatan Warga" onclick="filterNews('Kegiatan Warga')">Kegiatan
-              Warga</button>
+        <!-- SUB-VIEW 2: DETAIL ARTIKEL LENGKAP (IN-PAGE READER - TANPA MODAL) -->
+        <div id="newsDetailView" style="display: none;">
+          <div id="newsDetailContent">
+            <!-- Injected dynamically when user reads an article -->
           </div>
-          <div class="search-input-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="newsSearchInput" placeholder="Cari berita / informasi..." onkeyup="searchNews()">
-          </div>
-        </div>
-
-        <!-- News Cards Grid -->
-        <div class="news-grid" id="allNewsGrid">
-          <!-- Rendered dynamically -->
         </div>
 
       </div>
@@ -2444,25 +1001,20 @@
          ====================================================================== -->
     <section id="unit-usaha" class="page-section">
       <div class="container">
-
+        
         <div class="section-intro">
           <div class="section-badge"><i class="fa-solid fa-store"></i> Sektor Bisnis</div>
           <h2 class="section-title">Unit Usaha & <span class="text-orange">Layanan Desa</span></h2>
-          <p class="section-desc">2 Unit usaha yang aktif melayani masyarakat serta 2 unit strategis yang sedang dalam
-            tahap persiapan.</p>
+          <p class="section-desc">2 Unit usaha yang aktif melayani masyarakat serta 2 unit strategis yang sedang dalam tahap persiapan.</p>
         </div>
 
         <!-- Filter Unit Category (Auto Swipeable on Mobile) -->
         <div class="unit-filter-pills" id="unitCategoryFilter">
           <button class="cat-btn active" data-unitcat="Semua" onclick="filterUnits('Semua')">Semua Unit</button>
-          <button class="cat-btn" data-unitcat="Pasar Desa" onclick="filterUnits('Pasar Desa')">Pengelolaan Pasar Desa
-            (Aktif)</button>
-          <button class="cat-btn" data-unitcat="Budidaya Perikanan" onclick="filterUnits('Budidaya Perikanan')">Budidaya
-            Ikan Nila (Aktif)</button>
-          <button class="cat-btn" data-unitcat="Air Bersih" onclick="filterUnits('Air Bersih')">Air Bersih PAMSIMAS
-            (Rencana)</button>
-          <button class="cat-btn" data-unitcat="Wisata" onclick="filterUnits('Wisata')">Ekowisata Alam
-            (Rencana)</button>
+          <button class="cat-btn" data-unitcat="Pasar Desa" onclick="filterUnits('Pasar Desa')">Pengelolaan Pasar Desa (Aktif)</button>
+          <button class="cat-btn" data-unitcat="Budidaya Perikanan" onclick="filterUnits('Budidaya Perikanan')">Budidaya Ikan Nila (Aktif)</button>
+          <button class="cat-btn" data-unitcat="Air Bersih" onclick="filterUnits('Air Bersih')">Air Bersih PAMSIMAS (Rencana)</button>
+          <button class="cat-btn" data-unitcat="Wisata" onclick="filterUnits('Wisata')">Ekowisata Alam (Rencana)</button>
         </div>
 
         <!-- List of Business Units -->
@@ -2478,12 +1030,11 @@
          ====================================================================== -->
     <section id="laporan-keuangan" class="page-section">
       <div class="container">
-
+        
         <div class="section-intro">
           <div class="section-badge green"><i class="fa-solid fa-scale-balanced"></i> Transparansi Finansial</div>
           <h2 class="section-title">Laporan Keuangan <span class="text-green">& Aplikasi PPAK</span></h2>
-          <p class="section-desc">Akses langsung aplikasi pelaporan akuntansi BUMDes Sipodalle yang tersambung secara
-            live dengan Google Apps Script.</p>
+          <p class="section-desc">Akses langsung aplikasi pelaporan akuntansi BUMDesa Sipodalle yang tersambung secara live dengan Google Apps Script.</p>
         </div>
 
         <!-- Tab Navigasi Sub-Laporan -->
@@ -2512,9 +1063,7 @@
                 <button class="tool-btn" onclick="toggleIframeFullscreen()" id="fullscreenBtn" title="Mode Layar Penuh">
                   <i class="fa-solid fa-expand"></i> Layar Penuh
                 </button>
-                <a href="https://script.google.com/macros/s/AKfycbyWAjcU3O2Z6rjZjg3gZsyrpj9YA93npKDt2mlCxDqnG85Sr3zRmYRQLKRb64YtZQw9VA/exec"
-                  target="_blank" rel="noopener noreferrer" class="tool-btn"
-                  style="background: var(--accent-600); border-color: var(--accent-500);">
+                <a href="https://script.google.com/macros/s/AKfycbyWAjcU3O2Z6rjZjg3gZsyrpj9YA93npKDt2mlCxDqnG85Sr3zRmYRQLKRb64YtZQw9VA/exec" target="_blank" rel="noopener noreferrer" class="tool-btn" style="background: var(--accent-600); border-color: var(--accent-500);">
                   <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka di Tab Baru
                 </a>
               </div>
@@ -2522,8 +1071,9 @@
 
             <!-- Iframe Wrapper -->
             <div class="iframe-wrapper" id="iframeWrapper">
-              <iframe id="appsScriptIframe"
-                src="https://script.google.com/macros/s/AKfycbyWAjcU3O2Z6rjZjg3gZsyrpj9YA93npKDt2mlCxDqnG85Sr3zRmYRQLKRb64YtZQw9VA/exec"
+              <iframe 
+                id="appsScriptIframe"
+                src="https://script.google.com/macros/s/AKfycbyWAjcU3O2Z6rjZjg3gZsyrpj9YA93npKDt2mlCxDqnG85Sr3zRmYRQLKRb64YtZQw9VA/exec" 
                 title="Aplikasi Pelaporan PPAK BUM Desa Sipodalle Batetangnga Sejahtera"
                 allow="fullscreen; accelerometer; autoplay; clipboard-read; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 sandbox="allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
@@ -2535,16 +1085,14 @@
 
         <!-- TAB 2: RINGKASAN TRANSPARANSI PUBLIK -->
         <div id="tabContentTransparansi" class="keuangan-tab-content">
-
+          
           <div class="transparency-dashboard">
-            <div
-              style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
               <div>
-                <h3 style="font-size: 1.4rem; color: var(--primary-900);">Ringkasan Kinerja Keuangan BUMDes</h3>
+                <h3 style="font-size: 1.4rem; color: var(--primary-900);">Ringkasan Kinerja Keuangan BUMDesa</h3>
                 <p style="font-size: 0.9rem; color: var(--neutral-500);">Data Konsolidasi Unit Usaha Tahun Buku 2026</p>
               </div>
-              <span class="hero-status-pill"
-                style="background: var(--primary-100); color: var(--primary-800); border-color: var(--primary-400);">
+              <span class="hero-status-pill" style="background: var(--primary-100); color: var(--primary-800); border-color: var(--primary-400);">
                 <i class="fa-solid fa-circle-check"></i> Terverifikasi Badan Pengawas
               </span>
             </div>
@@ -2572,10 +1120,8 @@
             <!-- Composition Section & Allocation -->
             <div class="composition-section">
               <div>
-                <h4 style="font-size: 1.15rem; margin-bottom: 6px; color: var(--neutral-900);">Kontribusi Pendapatan per
-                  Unit Usaha</h4>
-                <p style="font-size: 0.85rem; color: var(--neutral-500); margin-bottom: 20px;">Persentase kontribusi
-                  perolehan omset usaha dari unit-unit produktif.</p>
+                <h4 style="font-size: 1.15rem; margin-bottom: 6px; color: var(--neutral-900);">Kontribusi Pendapatan per Unit Usaha</h4>
+                <p style="font-size: 0.85rem; color: var(--neutral-500); margin-bottom: 20px;">Persentase kontribusi perolehan omset usaha dari unit-unit produktif.</p>
                 <div class="comp-bars-list" id="compBarsContainer">
                   <!-- Rendered dynamically -->
                 </div>
@@ -2584,8 +1130,7 @@
               <!-- Porsi Pembagian Laba Bersih AD/ART -->
               <div class="allocation-box">
                 <h4><i class="fa-solid fa-pie-chart"></i> Pembagian Hasil Usaha</h4>
-                <p style="font-size: 0.82rem; color: var(--neutral-300); margin-bottom: 16px;">Sesuai Peraturan Desa &
-                  AD/ART BUMDes Batetangnga:</p>
+                <p style="font-size: 0.82rem; color: var(--neutral-300); margin-bottom: 16px;">Sesuai Peraturan Desa & AD/ART BUMDesa Batetangnga:</p>
                 <ul class="alloc-list">
                   <li><span>Pendapatan Asli Desa (PADes)</span> <span>40%</span></li>
                   <li><span>Cadangan Penambahan Modal</span> <span>30%</span></li>
@@ -2598,8 +1143,7 @@
 
             <!-- Modul Laporan yang Tersedia -->
             <div style="margin-top: 40px;">
-              <h4 style="font-size: 1.2rem; margin-bottom: 18px; color: var(--neutral-900);">Modul Laporan Keuangan
-                Standar Akuntansi BUMDes (PPAK)</h4>
+              <h4 style="font-size: 1.2rem; margin-bottom: 18px; color: var(--neutral-900);">Modul Laporan Keuangan Standar Akuntansi BUMDes (PPAK)</h4>
               <div class="modul-laporan-grid" id="modulLaporanContainer">
                 <!-- Rendered dynamically -->
               </div>
@@ -2615,24 +1159,12 @@
   </main>
 
   <!-- ========================================================================
-       MODAL: PEMBACA BERITA LENGKAP
-       ======================================================================== -->
-  <div class="modal-backdrop" id="newsModalBackdrop" onclick="closeNewsModal(event)">
-    <div class="modal-window" id="newsModalWindow">
-      <button class="modal-close-btn" onclick="closeNewsModalDirect()"><i class="fa-solid fa-xmark"></i></button>
-      <div class="modal-body-content" id="newsModalBody">
-        <!-- Injected dynamically -->
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================================
        SITE FOOTER
        ======================================================================== -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-
+        
         <!-- Col 1: Brand & Bio -->
         <div class="footer-brand">
           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
@@ -2640,22 +1172,18 @@
               <i class="fa-solid fa-building-columns"></i>
             </div>
             <div>
-              <h3 style="margin-bottom: 0; font-size: 1.15rem;">BUMDes Sipodalle</h3>
-              <span
-                style="font-size: 0.75rem; color: var(--accent-400); font-weight: 700; text-transform: uppercase;">Batetangnga
-                Sejahtera</span>
+              <h3 style="margin-bottom: 0; font-size: 1.15rem;">BUMDesa Sipodalle</h3>
+              <span style="font-size: 0.75rem; color: var(--accent-400); font-weight: 700; text-transform: uppercase;">Batetangnga Sejahtera</span>
             </div>
           </div>
           <p>
-            Badan Usaha Milik Desa Batetangnga, Kec. Binuang, Kab. Polewali Mandar. Mengabdi untuk kemandirian ekonomi,
-            pengelolaan pasar desa, budidaya perikanan, dan transparansi publik.
+            Badan Usaha Milik Desa Batetangnga, Kec. Binuang, Kab. Polewali Mandar. Mengabdi untuk kemandirian ekonomi desa, pengelolaan pasar tradisional, budidaya ikan nila, dan transparansi publik.
           </p>
           <div class="footer-socials">
             <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://wa.me/6282198765432" target="_blank" rel="noopener noreferrer" class="social-link"
-              title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/6281342686336" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
 
@@ -2663,16 +1191,11 @@
         <div class="footer-col">
           <h4>Menu Utama</h4>
           <ul class="footer-links">
-            <li><a href="#beranda" onclick="navigateTo('beranda')"><i class="fa-solid fa-chevron-right"></i> Beranda</a>
-            </li>
-            <li><a href="#profil" onclick="navigateTo('profil')"><i class="fa-solid fa-chevron-right"></i> Profil &
-                Legalitas</a></li>
-            <li><a href="#berita" onclick="navigateTo('berita')"><i class="fa-solid fa-chevron-right"></i> Berita &
-                Informasi</a></li>
-            <li><a href="#unit-usaha" onclick="navigateTo('unit-usaha')"><i class="fa-solid fa-chevron-right"></i> Unit
-                Usaha Desa</a></li>
-            <li><a href="#laporan-keuangan" onclick="navigateTo('laporan-keuangan')"><i
-                  class="fa-solid fa-chevron-right"></i> Laporan Keuangan Live</a></li>
+            <li><a href="#beranda" onclick="navigateTo('beranda')"><i class="fa-solid fa-chevron-right"></i> Beranda</a></li>
+            <li><a href="#profil" onclick="navigateTo('profil')"><i class="fa-solid fa-chevron-right"></i> Profil & Pengurus</a></li>
+            <li><a href="#berita" onclick="navigateTo('berita')"><i class="fa-solid fa-chevron-right"></i> Berita & Informasi</a></li>
+            <li><a href="#unit-usaha" onclick="navigateTo('unit-usaha')"><i class="fa-solid fa-chevron-right"></i> Unit Usaha Desa</a></li>
+            <li><a href="#laporan-keuangan" onclick="navigateTo('laporan-keuangan')"><i class="fa-solid fa-chevron-right"></i> Laporan Keuangan Live</a></li>
           </ul>
         </div>
 
@@ -2680,32 +1203,28 @@
         <div class="footer-col">
           <h4>Unit Usaha</h4>
           <ul class="footer-links">
-            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Pasar Desa')"><i class="fa-solid fa-shop"></i>
-                Pengelolaan Pasar Desa</a></li>
-            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Budidaya Perikanan')"><i class="fa-solid fa-fish"></i>
-                Budidaya Ikan Nila</a></li>
-            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Air Bersih')"><i class="fa-solid fa-faucet-drip"></i>
-                Air Bersih (Rencana)</a></li>
-            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Wisata')"><i class="fa-solid fa-mountain-sun"></i>
-                Ekowisata Alam (Rencana)</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Pasar Desa')"><i class="fa-solid fa-shop"></i> Pengelolaan Pasar Desa</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Budidaya Perikanan')"><i class="fa-solid fa-fish"></i> Budidaya Ikan Nila</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Air Bersih')"><i class="fa-solid fa-faucet-drip"></i> Air Bersih (Rencana)</a></li>
+            <li><a href="#unit-usaha" onclick="filterUnitsAndNav('Wisata')"><i class="fa-solid fa-mountain-sun"></i> Ekowisata Alam (Rencana)</a></li>
           </ul>
         </div>
 
         <!-- Col 4: Kontak & Kantor -->
         <div class="footer-col">
-          <h4>Kontak & Kantor</h4>
+          <h4>Kontak & Kantor Resmi</h4>
           <ul class="footer-contact-list">
             <li>
               <i class="fa-solid fa-location-dot"></i>
-              <span>Jl. Poros Batetangnga No. 12, Kec. Binuang, Kab. Polewali Mandar, Sulawesi Barat 91353</span>
+              <span>Jl. Tanai Dusun Kanang, Batetangnga, Kec. Binuang, Kab. Polewali Mandar, Sulawesi Barat 91312</span>
             </li>
             <li>
               <i class="fa-solid fa-phone"></i>
-              <span>+62 821-9876-5432</span>
+              <span>081342686336</span>
             </li>
             <li>
               <i class="fa-solid fa-envelope"></i>
-              <span>bumdes.sipodalle@gmail.com</span>
+              <span>bumdesasipodalle@gmail.com</span>
             </li>
             <li>
               <i class="fa-solid fa-clock"></i>
@@ -2719,11 +1238,10 @@
       <!-- Footer Bottom -->
       <div class="footer-bottom">
         <div>
-          &copy; 2026 BUMDes Sipodalle Batetangnga Sejahtera. Hak Cipta Dilindungi Undang-Undang.
+          &copy; 2026 BUMDesa Sipodalle Batetangnga Sejahtera. Hak Cipta Dilindungi Undang-Undang.
         </div>
         <div>
-          <span style="color: var(--primary-400); font-weight: 600;"><i class="fa-solid fa-shield-halved"></i> Tata
-            Kelola Transparan & Akuntabel</span>
+          <span style="color: var(--primary-400); font-weight: 600;"><i class="fa-solid fa-shield-halved"></i> Tata Kelola Transparan & Akuntabel</span>
         </div>
       </div>
     </div>
@@ -2735,20 +1253,26 @@
   <script>
     const BUMDES_DATA = {
       info: {
-        nama: "BUMDes Sipodalle",
+        nama: "BUMDesa Sipodalle",
         namaLengkap: "BUM Desa Sipodalle Batetangnga Sejahtera",
         slogan: "Membangun Ekonomi Desa Mandiri, Transparan, dan Berkelanjutan",
         desa: "Desa Batetangnga",
+        dusun: "Dusun Kanang",
         kecamatan: "Binuang",
         kabupaten: "Polewali Mandar",
         provinsi: "Sulawesi Barat",
-        whatsapp: "6282198765432",
+        kodePos: "91312",
+        email: "bumdesasipodalle@gmail.com",
+        telepon: "081342686336",
+        whatsapp: "6281342686336",
+        alamat: "Jl. Tanai Dusun Kanang, Batetangnga, Kec. Binuang, Kab. Polewali Mandar, Sulawesi Barat Kode Pos 91312",
         appsScriptUrl: "https://script.google.com/macros/s/AKfycbyWAjcU3O2Z6rjZjg3gZsyrpj9YA93npKDt2mlCxDqnG85Sr3zRmYRQLKRb64YtZQw9VA/exec"
       },
       statistik: {
         totalOmset: "Rp 325.000.000",
         padesDisalurkan: "Rp 37.800.000",
         unitUsahaAktif: "2 Aktif (2 Rencana)",
+        pengurusTotal: "10 Personil",
         wargaTerlayani: "950+ KK"
       },
       visiMisi: {
@@ -2761,13 +1285,16 @@
         ]
       },
       pengurus: [
-        { nama: "H. Muhammad Ridwan, S.Sos", jabatan: "Penasihat / Kepala Desa", kategori: "penasihat", fotoIcon: "user-tie", deskripsi: "Mengarahkan kebijakan strategis BUMDes dan menjamin keselarasan dengan program desa." },
-        { nama: "Drs. Syamsuddin, M.Si", jabatan: "Ketua Badan Pengawas", kategori: "pengawas", fotoIcon: "shield-halved", deskripsi: "Mengawasi jalannya operasional, kepatuhan hukum, dan tata kelola keuangan BUMDes." },
-        { nama: "Andi Faisal Pratama, S.E.", jabatan: "Direktur Utama BUMDes", kategori: "direksi", fotoIcon: "user-gear", deskripsi: "Memimpin operasional unit pasar desa, budidaya ikan nila, serta persiapan unit baru." },
-        { nama: "Nurul Hidayah, S.Ak.", jabatan: "Bendahara & Akuntan", kategori: "direksi", fotoIcon: "calculator", deskripsi: "Mengelola pembukuan, pencatatan jurnal, dan penyusunan laporan keuangan PPAK terintegrasi." },
-        { nama: "Rahmat Hidayat, S.Kom.", jabatan: "Sekretaris & Administrasi", kategori: "direksi", fotoIcon: "laptop-code", deskripsi: "Mengelola administrasi persuratan, data pedagang pasar, kemitraan budidaya, dan arsip." },
-        { nama: "Mansyur Basri", jabatan: "Pengelola Unit Pasar Desa", kategori: "manajer", fotoIcon: "shop", deskripsi: "Mengkoordinasikan penataan lapak pasar, retribusi, kebersihan, dan ketertiban pedagang." },
-        { nama: "Muhammad Ilham", jabatan: "Pengelola Unit Budidaya Ikan Nila", kategori: "manajer", fotoIcon: "fish", deskripsi: "Mengelola operasional kolam pembesaran ikan nila, ketersediaan pakan, dan distribusi hasil panen." }
+        { nama: "SUMAILA DAMANG", jabatan: "Penasehat", kategori: "penasihat", fotoIcon: "user-tie", deskripsi: "Mengarahkan kebijakan strategis BUMDes dan menjamin keselarasan dengan program pembangunan desa Batetangnga." },
+        { nama: "HARISI", jabatan: "Pengawas", kategori: "pengawas", fotoIcon: "shield-halved", deskripsi: "Mengawasi jalannya operasional, kepatuhan hukum, dan transparansi laporan keuangan BUMDes secara berkala." },
+        { nama: "BUSTAMIN B", jabatan: "Direktur", kategori: "direksi", fotoIcon: "user-gear", deskripsi: "Memimpin seluruh roda operasional BUMDes, pengembangan unit usaha pasar dan budidaya ikan nila, serta kemitraan strategis." },
+        { nama: "MUH. IRFAN", jabatan: "Sekretaris", kategori: "direksi", fotoIcon: "file-lines", deskripsi: "Mengelola administrasi persuratan, pengarsipan dokumen, pendataan pedagang pasar, dan korespondensi resmi." },
+        { nama: "MASYHUDDIN S", jabatan: "Bendahara", kategori: "direksi", fotoIcon: "calculator", deskripsi: "Mengelola arus kas keuangan, pencatatan transaksi pembukuan, dan penyusunan laporan keuangan PPAK terintegrasi." },
+        { nama: "ALZAHABI", jabatan: "Unit Pasar", kategori: "unit", fotoIcon: "shop", deskripsi: "Bertanggung jawab atas pengelolaan retribusi los/kios, ketertiban, dan kebersihan fasilitas Pasar Desa Batetangnga." },
+        { nama: "MUH. ALQURTUBI", jabatan: "Unit Ikan", kategori: "unit", fotoIcon: "fish", deskripsi: "Bertanggung jawab atas teknis pemeliharaan kolam pembesaran ikan nila, pakan, panen, dan distribusi penjualan ikan segar." },
+        { nama: "MUHAMMAD IQBAL", jabatan: "Bagian Administrasi & Umum", kategori: "staf", fotoIcon: "clipboard-list", deskripsi: "Mendukung pelayanan operasional kantor harian, inventaris perlengkapan, dan administrasi umum BUMDes." },
+        { nama: "MUH. ALFAIDUL RAJAB", jabatan: "Bagian Pemasaran", kategori: "staf", fotoIcon: "bullhorn", deskripsi: "Mengkoordinasikan promosi produk ikan nila, pemasaran los pasar, serta publikasi program usaha ke masyarakat." },
+        { nama: "BAHRIL RAIS", jabatan: "Bagian Operasional", kategori: "staf", fotoIcon: "gears", deskripsi: "Mengawal teknis lapangan, logistik sarana operasional unit usaha, dan pemeliharaan aset fisik BUMDes." }
       ],
       unitUsaha: [
         {
@@ -2777,7 +1304,7 @@
           deskripsiSingkat: "Mengelola fasilitas pasar tradisional desa, penataan lapak pedagang harian & mingguan, sewa kios permanen, serta pemeliharaan kebersihan dan ketertiban pasar.",
           deskripsiLengkap: "Unit Pengelolaan Pasar Desa Batetangnga hadir untuk menciptakan pusat transaksi ekonomi yang tertib, nyaman, dan higienis bagi para pedagang dan pembeli lokal. Unit ini mengelola retribusi lapak, penyewaan kios BUMDes, fasilitas sanitasi pasar, serta program ketertiban timbangan pedagang.",
           layananUnggulan: ["Sewa Kios & Los Pasar Permanen BUMDes", "Pengelolaan Lapak Pedagang Harian & Mingguan", "Penyediaan Fasilitas Kebersihan & Keamanan Pasar", "Fasilitasi Promosi Komoditas Hasil Bumi Petani"],
-          kontakPerson: "Mansyur Basri (0821-9876-5431)", omsetTahun: "Rp 180.000.000", status: "Aktif & Beroperasi", isActive: true
+          kontakPerson: "ALZAHABI (0813-4268-6336)", omsetTahun: "Rp 180.000.000", status: "Aktif & Beroperasi", isActive: true
         },
         {
           id: "unit-ikan-nila", kode: "U02", nama: "Unit Usaha Budidaya (Pembesaran) Ikan Nila", kategori: "Budidaya Perikanan",
@@ -2786,7 +1313,7 @@
           deskripsiSingkat: "Usaha pembesaran ikan nila air tawar dengan sistem kolam terpadu yang menghasilkan ikan nila konsumsi segar bermutu tinggi serta penyediaan benih unggul.",
           deskripsiLengkap: "Memanfaatkan potensi aliran air tawar alami Batetangnga yang bersih dan melimpah. Unit Budidaya Ikan Nila mengelola kolam-kolam pembesaran secara modern dengan pakan bernutrisi tinggi untuk memenuhi kebutuhan konsumsi rumah tangga, warung kuliner, rumah makan, dan pasar lokal.",
           layananUnggulan: ["Penjualan Ikan Nila Segar Konsumsi (Kiloan / Partai)", "Penyediaan Benih & Bibit Ikan Nila Unggul", "Pasokan Rutin Ikan Segar untuk Rumah Makan & Pesta", "Konsultasi & Kemitraan Budidaya Kolam Ikan Air Tawar"],
-          kontakPerson: "Muhammad Ilham (0821-9876-5432)", omsetTahun: "Rp 145.000.000", status: "Aktif & Panen Rutin", isActive: true
+          kontakPerson: "MUH. ALQURTUBI (0813-4268-6336)", omsetTahun: "Rp 145.000.000", status: "Aktif & Panen Rutin", isActive: true
         },
         {
           id: "unit-pamsimas", kode: "U03", nama: "Unit Pengelolaan Air Bersih (PAMSIMAS)", kategori: "Air Bersih",
@@ -2795,7 +1322,7 @@
           deskripsiSingkat: "Rencana strategis penyaluran air bersih perpipaan dari mata air pegunungan alami langsung ke sambungan rumah (SR) warga desa.",
           deskripsiLengkap: "Unit ini sedang dalam tahap persiapan infrastruktur, pemetaan jaringan pipa transmisi, dan instalasi tandon distribusi induk untuk menjangkau seluruh dusun di Desa Batetangnga.",
           layananUnggulan: ["Rencana Sambungan Rumah (SR) Air Bersih Perpipaan", "Pemeliharaan & Pembangunan Jaringan Pipa Desa", "Uji Higienitas & Kualitas Air Bersih Berkala", "Sistem Meteran Pemakaian Air Transparan"],
-          kontakPerson: "Tim Teknis Air Bersih (0821-9876-5433)", omsetTahun: "Tahap Persiapan", status: "Rencana / Segera Hadir (Belum Aktif)", isActive: false
+          kontakPerson: "Tim Teknis Air Bersih (0813-4268-6336)", omsetTahun: "Tahap Persiapan", status: "Rencana / Segera Hadir (Belum Aktif)", isActive: false
         },
         {
           id: "unit-wisata", kode: "U04", nama: "Unit Ekowisata & Rekreasi Alam", kategori: "Wisata",
@@ -2804,30 +1331,30 @@
           deskripsiSingkat: "Rencana pengembangan kawasan rekreasi alam pemandian sungai jernih, spot agrowisata buah lokal, dan gazebo keluarga.",
           deskripsiLengkap: "Unit Wisata Alam dalam proses penataan masterplan destinasi desa untuk mengoptimalkan potensi keindahan sungai alami, kebun buah lokal, dan panorama pegunungan Batetangnga.",
           layananUnggulan: ["Masterplan Kawasan Wisata Sungai & Permandian Alam", "Rencana Gazebo Santai & Area Camping Ground", "Paket Agrowisata Buah Lokal Musiman", "Kerjasama Pengelolaan Bersama Kelompok Sadar Wisata"],
-          kontakPerson: "Pengembangan Wisata (0821-9876-5434)", omsetTahun: "Tahap Perencanaan", status: "Rencana / Pengembangan (Belum Aktif)", isActive: false
+          kontakPerson: "Tim Pengembangan Wisata (0813-4268-6336)", omsetTahun: "Tahap Perencanaan", status: "Rencana / Pengembangan (Belum Aktif)", isActive: false
         }
       ],
       berita: [
         {
-          id: 1, judul: "BUMDes Sipodalle Salurkan PADes Rp 37,8 Juta dari Hasil Pasar Desa & Budidaya Ikan Nila",
-          kategori: "Laporan Publik", tanggal: "10 Agustus 2026", penulis: "Sekretariat BUMDes", durasi: "3 menit baca",
+          id: 1, judul: "BUMDesa Sipodalle Salurkan PADes Rp 37,8 Juta dari Hasil Pasar Desa & Budidaya Ikan Nila",
+          kategori: "Laporan Publik", tanggal: "10 Agustus 2026", penulis: "Sekretariat BUMDesa", durasi: "3 menit baca",
           gambar: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
-          ringkasan: "BUMDes Sipodalle resmi menyerahkan Pendapatan Asli Desa (PADes) hasil operasional pengelolaan pasar dan panen budidaya ikan nila tahun buku berjalan.",
-          konten: "<p>Bertempat di Balai Desa Batetangnga, pengurus BUMDes Sipodalle menyerahkan kontribusi Pendapatan Asli Desa (PADes) sebesar <strong>Rp 37.800.000</strong>. Pendapatan ini bersumber dari optimalisasi penataan los/kios Pasar Desa Batetangnga dan keberhasilan panen raya kolam pembesaran ikan nila air tawar.</p>"
+          ringkasan: "BUMDesa Sipodalle resmi menyerahkan Pendapatan Asli Desa (PADes) hasil operasional pengelolaan pasar dan panen budidaya ikan nila tahun buku berjalan.",
+          konten: `<p><strong>BATETANGNGA</strong> — Bertempat di Balai Desa Batetangnga, jajaran pengurus BUMDesa Sipodalle yang dipimpin oleh Direktur <strong>BUSTAMIN B</strong> didampingi Sekretaris <strong>MUH. IRFAN</strong> dan Bendahara <strong>MASYHUDDIN S</strong> secara resmi menyerahkan kontribusi Pendapatan Asli Desa (PADes) sebesar <strong>Rp 37.800.000</strong> kepada Pemerintah Desa.</p><p>Penyerahan ini disaksikan langsung oleh Penasehat BUMDesa <strong>SUMAILA DAMANG</strong> dan Pengawas <strong>HARISI</strong>. Dana PADes tersebut bersumber dari kinerja optimal dua unit usaha produktif BUMDesa, yaitu Unit Pasar Desa yang dikoordinasikan oleh <strong>ALZAHABI</strong> dan Unit Budidaya Ikan Nila yang dikelola oleh <strong>MUH. ALQURTUBI</strong>.</p><p>Penasehat BUMDesa menyampaikan apresiasi yang tinggi atas kerja keras seluruh pengurus dan staf. Beliau menekankan pentingnya mempertahankan transparansi pembukuan melalui aplikasi PPAK digital agar masyarakat dapat terus memantau perputaran ekonomi desa secara terbuka.</p>`
         },
         {
-          id: 2, judul: "Panen Raya Ikan Nila Segar: BUMDes Pasok Kebutuhan Rumah Makan & Warga Sekitar",
-          kategori: "Usaha Desa", tanggal: "04 Agustus 2026", penulis: "Unit Budidaya Ikan", durasi: "3 menit baca",
+          id: 2, judul: "Panen Raya Ikan Nila Segar: Unit Ikan BUMDesa Pasok Kebutuhan Rumah Makan & Warga Sekitar",
+          kategori: "Usaha Desa", tanggal: "04 Agustus 2026", penulis: "Unit Ikan BUMDesa", durasi: "3 menit baca",
           gambar: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-          ringkasan: "Unit Budidaya Ikan Nila BUMDes Sipodalle sukses memanen 2,5 ton ikan nila konsumsi segar berbobot rata-rata 3-4 ekor per kilogram.",
-          konten: "<p>Unit Usaha Budidaya (Pembesaran) Ikan Nila BUMDes Sipodalle melaksanakan panen raya siklus ketiga. Ikan nila yang dibudidayakan menggunakan air pegunungan jernih ini memiliki daging gurih, tidak berbau lumpur, dan sangat diminati oleh pedagang pasar serta pelaku usaha kuliner lokal.</p>"
+          ringkasan: "Unit Budidaya Ikan Nila BUMDesa Sipodalle sukses memanen 2,5 ton ikan nila konsumsi segar berbobot rata-rata 3-4 ekor per kilogram.",
+          konten: `<p>Unit Usaha Budidaya (Pembesaran) Ikan Nila BUMDesa Sipodalle binaan <strong>MUH. ALQURTUBI</strong> bersama Bagian Operasional <strong>BAHRIL RAIS</strong> berhasil melaksanakan panen raya siklus ketiga di Dusun Kanang, Batetangnga.</p><p>Ikan nila yang dibudidayakan memanfaatkan aliran air tawar alami pegunungan yang sangat jernih dan kaya oksigen, menghasilkan daging ikan yang padat, gurih, dan bebas bau lumpur. Bagian Pemasaran <strong>MUH. ALFAIDUL RAJAB</strong> mengonfirmasi bahwa seluruh hasil panen langsung terserap habis oleh pedagang Pasar Desa dan warung makan lokal di wilayah Kecamatan Binuang dan sekitarnya.</p>`
         },
         {
           id: 3, judul: "Penataan Lapak & Fasilitas Kebersihan Pasar Desa Batetangnga Semakin Nyaman",
-          kategori: "Kegiatan Warga", tanggal: "28 Juli 2026", penulis: "Pengelola Pasar", durasi: "2 menit baca",
+          kategori: "Kegiatan Warga", tanggal: "28 Juli 2026", penulis: "Unit Pasar BUMDesa", durasi: "2 menit baca",
           gambar: "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80",
-          ringkasan: "Pengelola Pasar Desa BUMDes melakukan pembenahan tata letak lapak pedagang basah dan kering serta pemeliharaan saluran drainase pasar.",
-          konten: "<p>Demi kenyamanan pengunjung dan pedagang, BUMDes Sipodalle terus meningkatkan fasilitas Pasar Desa Batetangnga. Pembenahan meliputi zonasi komoditas pedagang, penyediaan tempat pembuangan sampah teratur, serta penerangan area pasar untuk pedagang subuh.</p>"
+          ringkasan: "Pengelola Pasar Desa BUMDesa melakukan pembenahan tata letak lapak pedagang basah dan kering serta pemeliharaan saluran drainase pasar.",
+          konten: `<p>Demi kenyamanan pengunjung dan pedagang, Pengelola Unit Pasar <strong>ALZAHABI</strong> didukung oleh Bagian Administrasi & Umum <strong>MUHAMMAD IQBAL</strong> melakukan penataan ulang zonasi pedagang di Pasar Desa Batetangnga.</p><p>Langkah ini mencakup pemilahan area komoditas sayur, ikan, dan sembako, perbaikan saluran drainase, serta penyediaan tempat sampah terpadu guna menjaga kebersihan lingkungan pasar sebagai pusat roda ekonomi warga desa.</p>`
         }
       ],
       keuanganTransparansi: {
@@ -2846,9 +1373,9 @@
         ]
       },
       testimoni: [
-        { nama: "Ibu Maryam", peran: "Pedagang di Pasar Desa Batetangnga", foto: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80", komentar: "Pasar sekarang lebih tertib dan bersih sejak dikelola BUMDes. Tempat jualan nyaman, biaya retribusi jelas dan transparan." },
-        { nama: "Pak Darwis", peran: "Pemilik Rumah Makan Ikan Bakar", foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80", komentar: "Ikan nila dari kolam BUMDes Sipodalle segar sekali dan kualitasnya bagus, dagingnya manis karena air kolamnya jernih dari pegunungan." },
-        { nama: "Bapak Herman", peran: "Tokoh Masyarakat Batetangnga", foto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80", komentar: "Kami sangat mendukung BUMDes, hasil pasar dan ikan nila sudah nyata menyumbang PADes, semoga rencana air bersih dan wisata alam segera terwujud." }
+        { nama: "Ibu Maryam", peran: "Pedagang di Pasar Desa Batetangnga", foto: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80", komentar: "Pasar sekarang jauh lebih tertib dan bersih sejak dikelola BUMDesa. Tempat jualan nyaman, retribusinya jelas dan transparan." },
+        { nama: "Pak Darwis", peran: "Pemilik Rumah Makan Ikan Bakar", foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80", komentar: "Ikan nila dari kolam BUMDesa Sipodalle segar sekali dan kualitasnya bagus, dagingnya manis karena dibudidayakan dengan air pegunungan jernih." },
+        { nama: "Bapak Herman", peran: "Tokoh Masyarakat Dusun Kanang", foto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80", komentar: "Kami sangat mendukung pengurus BUMDesa, hasil pasar dan ikan nila sudah nyata menyumbang PADes untuk pembangunan Batetangnga." }
       ]
     };
 
@@ -2866,7 +1393,6 @@
     }
 
     function setupNavigation() {
-      // Top desktop nav links
       document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', (e) => {
           e.preventDefault();
@@ -2875,7 +1401,6 @@
         });
       });
 
-      // Mobile bottom app bar links
       document.querySelectorAll('.bottom-nav-item').forEach(item => {
         item.addEventListener('click', (e) => {
           e.preventDefault();
@@ -2886,7 +1411,15 @@
 
       window.addEventListener('hashchange', () => {
         const rawHash = window.location.hash.replace('#', '');
-        if (rawHash) navigateTo(rawHash, false);
+        if (rawHash) {
+          if (rawHash.startsWith('berita-')) {
+            const newsId = parseInt(rawHash.replace('berita-', ''));
+            navigateTo('berita', false);
+            openNewsDetail(newsId, false);
+          } else {
+            navigateTo(rawHash, false);
+          }
+        }
       });
     }
 
@@ -2894,24 +1427,24 @@
       const validPages = ['beranda', 'profil', 'berita', 'unit-usaha', 'laporan-keuangan'];
       if (!validPages.includes(pageId)) pageId = 'beranda';
 
-      // Hide all sections
+      if (pageId === 'berita' && updateHash) {
+        backToNewsList(false);
+      }
+
       document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active-page'));
       const targetSection = document.getElementById(pageId);
       if (targetSection) targetSection.classList.add('active-page');
 
-      // Update Desktop Nav Active States
       document.querySelectorAll('.nav-link').forEach(link => {
         if (link.getAttribute('data-nav') === pageId) link.classList.add('active');
         else link.classList.remove('active');
       });
 
-      // Update Mobile Bottom Nav Active States
       document.querySelectorAll('.bottom-nav-item').forEach(item => {
         if (item.getAttribute('data-bottom-nav') === pageId) item.classList.add('active');
         else item.classList.remove('active');
       });
 
-      // Close mobile drawer if open
       const navMenu = document.getElementById('navMenu');
       if (navMenu && navMenu.classList.contains('mobile-open')) {
         navMenu.classList.remove('mobile-open');
@@ -2925,8 +1458,17 @@
 
     function handleInitialHash() {
       const rawHash = window.location.hash.replace('#', '');
-      if (rawHash) navigateTo(rawHash, false);
-      else navigateTo('beranda', false);
+      if (rawHash) {
+        if (rawHash.startsWith('berita-')) {
+          const newsId = parseInt(rawHash.replace('berita-', ''));
+          navigateTo('berita', false);
+          openNewsDetail(newsId, false);
+        } else {
+          navigateTo(rawHash, false);
+        }
+      } else {
+        navigateTo('beranda', false);
+      }
     }
 
     function setupMobileMenu() {
@@ -2970,7 +1512,7 @@
         { icon: 'fa-solid fa-money-bill-trend-up', color: 'green', num: data.totalOmset, label: 'Akumulasi Omset Usaha', sub: 'Tahun Buku 2026' },
         { icon: 'fa-solid fa-hand-holding-dollar', color: 'orange', num: data.padesDisalurkan, label: 'Kontribusi PADes Batetangnga', sub: 'Mendukung Dana Desa' },
         { icon: 'fa-solid fa-cubes-stacked', color: 'blue', num: '2 Unit Aktif', label: 'Pasar Desa & Budidaya Ikan Nila', sub: '2 Unit Dalam Rencana' },
-        { icon: 'fa-solid fa-people-roof', color: 'purple', num: data.wargaTerlayani, label: 'Masyarakat & Pedagang Terlayani', sub: '85+ Mitra Pelaku Usaha' }
+        { icon: 'fa-solid fa-users', color: 'purple', num: data.pengurusTotal, label: 'Personil Kepengurusan', sub: 'Dusun Kanang, Batetangnga' }
       ];
       container.innerHTML = stats.map(st => `
         <div class="stat-card">
@@ -3006,7 +1548,7 @@
                 <button class="btn btn-outline-primary btn-sm" onclick="navigateTo('unit-usaha')">
                   Detail Unit <i class="fa-solid fa-arrow-right"></i>
                 </button>
-                <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDes%20Sipodalle,%20saya%20tertarik%20mengenai%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm" style="padding: 6px 12px;">
+                <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDesa%20Sipodalle,%20saya%20tertarik%20mengenai%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm" style="padding: 6px 12px;">
                   <i class="fa-brands fa-whatsapp"></i> WhatsApp
                 </a>
               </div>
@@ -3034,7 +1576,7 @@
             <h3 class="news-title">${n.judul}</h3>
             <p class="news-excerpt">${n.ringkasan}</p>
             <div class="news-footer">
-              <button class="read-more-btn" onclick="openNewsModal(${n.id})">
+              <button class="read-more-btn" onclick="openNewsDetail(${n.id})">
                 Baca Selengkapnya <i class="fa-solid fa-chevron-right"></i>
               </button>
             </div>
@@ -3072,8 +1614,13 @@
       if (orgContainer) {
         orgContainer.innerHTML = BUMDES_DATA.pengurus.map(p => {
           const isOrange = p.kategori === 'direksi' || p.kategori === 'penasihat';
+          const isBlue = p.kategori === 'pengawas';
+          let cardClass = 'org-card';
+          if (isOrange) cardClass += ' orange';
+          if (isBlue) cardClass += ' blue';
+
           return `
-            <div class="org-card ${isOrange ? 'orange' : ''}">
+            <div class="${cardClass}">
               <div class="org-avatar-icon"><i class="fa-solid fa-${p.fotoIcon}"></i></div>
               <h4>${p.nama}</h4>
               <span class="org-role-badge">${p.jabatan}</span>
@@ -3125,8 +1672,8 @@
             <h3 class="news-title">${n.judul}</h3>
             <p class="news-excerpt">${n.ringkasan}</p>
             <div class="news-footer">
-              <button class="read-more-btn" onclick="openNewsModal(${n.id})">
-                Baca Berita <i class="fa-solid fa-arrow-right"></i>
+              <button class="read-more-btn" onclick="openNewsDetail(${n.id})">
+                Baca Berita Lengkap <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -3134,48 +1681,77 @@
       `).join('');
     }
 
-    function openNewsModal(newsId) {
+    /**
+     * Membuka artikel berita di halaman yang sama (In-Page Reader - Tanpa Modal)
+     */
+    function openNewsDetail(newsId, updateHash = true) {
       const item = BUMDES_DATA.berita.find(n => n.id === newsId);
       if (!item) return;
-      const modalBody = document.getElementById('newsModalBody');
-      const backdrop = document.getElementById('newsModalBackdrop');
 
-      modalBody.innerHTML = `
-        <span class="news-category-badge" style="position: relative; top: 0; left: 0; display: inline-block; background: var(--primary-700); margin-bottom: 14px;">${item.kategori}</span>
-        <h2 style="font-size: 1.6rem; color: var(--neutral-900); margin-bottom: 12px; line-height: 1.35;">${item.judul}</h2>
-        <div style="display: flex; gap: 16px; font-size: 0.85rem; color: var(--neutral-500); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--neutral-200); flex-wrap: wrap;">
-          <span><i class="fa-regular fa-calendar"></i> ${item.tanggal}</span>
-          <span><i class="fa-solid fa-user-pen"></i> Penulis: ${item.penulis}</span>
-          <span><i class="fa-regular fa-clock"></i> ${item.durasi}</span>
-        </div>
-        <div style="width: 100%; height: 260px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px;">
-          <img src="${item.gambar}" alt="${item.judul}" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div style="font-size: 0.95rem; line-height: 1.7; color: var(--neutral-800);">
-          ${item.konten}
-        </div>
-        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--neutral-200); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-          <span style="font-size: 0.85rem; color: var(--neutral-500);">Bagikan berita:</span>
-          <div style="display: flex; gap: 8px;">
-            <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(item.judul + ' - ' + window.location.href)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
-              <i class="fa-brands fa-whatsapp"></i> WhatsApp
-            </a>
-            <button class="btn btn-outline-primary btn-sm" onclick="window.print()"><i class="fa-solid fa-print"></i> Cetak</button>
+      navigateTo('berita', false);
+
+      const listView = document.getElementById('newsListView');
+      const detailView = document.getElementById('newsDetailView');
+      const detailContent = document.getElementById('newsDetailContent');
+
+      if (listView && detailView && detailContent) {
+        listView.style.display = 'none';
+        detailView.style.display = 'block';
+
+        detailContent.innerHTML = `
+          <div class="article-reader-wrapper">
+            <button class="btn btn-outline-primary btn-sm back-to-list-btn" onclick="backToNewsList()">
+              <i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar Berita
+            </button>
+            <div class="article-header">
+              <span class="article-badge">${item.kategori}</span>
+              <h1 class="article-title">${item.judul}</h1>
+              <div class="article-meta-bar">
+                <span><i class="fa-regular fa-calendar"></i> Dipublikasikan: <strong>${item.tanggal}</strong></span>
+                <span><i class="fa-solid fa-user-pen"></i> Penulis: <strong>${item.penulis}</strong></span>
+                <span><i class="fa-regular fa-clock"></i> Waktu Baca: <strong>${item.durasi}</strong></span>
+              </div>
+            </div>
+            <div class="article-featured-img">
+              <img src="${item.gambar}" alt="${item.judul}">
+            </div>
+            <div class="article-body-text">
+              ${item.konten}
+            </div>
+            <div class="article-share-box">
+              <div class="share-left">
+                <span><i class="fa-solid fa-share-nodes"></i> Bagikan Berita:</span>
+                <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(item.judul + ' - BUMDesa Sipodalle: ' + window.location.href)}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
+                  <i class="fa-brands fa-whatsapp"></i> Bagikan ke WhatsApp
+                </a>
+                <button class="btn btn-outline-primary btn-sm" onclick="window.print()">
+                  <i class="fa-solid fa-print"></i> Cetak Artikel
+                </button>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="backToNewsList()">
+                <i class="fa-solid fa-list"></i> Lihat Berita Lainnya
+              </button>
+            </div>
           </div>
-        </div>
-      `;
-      backdrop.classList.add('open');
-      document.body.style.overflow = 'hidden';
+        `;
+
+        if (updateHash) history.pushState(null, null, `#berita-${newsId}`);
+        window.scrollTo({ top: 120, behavior: 'smooth' });
+      }
     }
 
-    function closeNewsModal(event) {
-      if (event.target.id === 'newsModalBackdrop') closeNewsModalDirect();
-    }
-    function closeNewsModalDirect() {
-      const backdrop = document.getElementById('newsModalBackdrop');
-      if (backdrop) {
-        backdrop.classList.remove('open');
-        document.body.style.overflow = '';
+    function backToNewsList(updateHash = true) {
+      const listView = document.getElementById('newsListView');
+      const detailView = document.getElementById('newsDetailView');
+
+      if (listView && detailView) {
+        detailView.style.display = 'none';
+        listView.style.display = 'block';
+      }
+
+      if (updateHash) {
+        history.pushState(null, null, '#berita');
+        window.scrollTo({ top: 120, behavior: 'smooth' });
       }
     }
 
@@ -3237,7 +1813,7 @@
               </div>
               <div class="unit-footer-actions">
                 <div class="unit-contact-info"><i class="fa-solid fa-user-gear"></i> PIC: <strong>${u.kontakPerson}</strong></div>
-                <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDes%20Sipodalle,%20saya%20ingin%20bertanya%20mengenai%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn ${isPlan ? 'btn-outline-primary' : 'btn-accent'} btn-sm">
+                <a href="https://wa.me/${BUMDES_DATA.info.whatsapp}?text=Halo%20Admin%20BUMDesa%20Sipodalle,%20saya%20ingin%20bertanya%20mengenai%20${encodeURIComponent(u.nama)}" target="_blank" rel="noopener noreferrer" class="btn ${isPlan ? 'btn-outline-primary' : 'btn-accent'} btn-sm">
                   <i class="fa-brands fa-whatsapp"></i> ${isPlan ? 'Tanya Rencana / Kemitraan' : 'Hubungi / Pesan via WhatsApp'}
                 </a>
               </div>
@@ -3333,13 +1909,6 @@
         `).join('');
       }
     }
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        closeNewsModalDirect();
-      }
-    });
   </script>
 </body>
-
 </html>
