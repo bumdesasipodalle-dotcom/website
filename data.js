@@ -385,20 +385,20 @@ const BUMDES_DATA = {
     {
       id: "doc-2",
       no: "02",
-      judul: "Perdes Penyertaan Modal Desa",
-      nomorSurat: "Perdes Batetangnga No. 06 Tahun 2020",
+      judul: "Perdes Penyertaan Modal BUMDes",
+      nomorSurat: "Perdes Batetangnga No. 08 Tahun 2025",
       kategori: "Regulasi & Legalitas",
       tipe: "PDF Resmi",
-      ukuran: "1.8 MB",
+      ukuran: "2.1 MB",
       badgeColor: "green",
       icon: "hand-holding-dollar",
-      downloadUrl: "",
-      deskripsi: "Peraturan Desa tentang Penyertaan Modal Pemerintah Desa Batetangnga ke BUMDesa Sipodalle untuk modal kerja dan investasi sarana.",
+      downloadUrl: "https://drive.google.com/file/d/19PAZOv2BLHWSRSXbmrvX2RfiXFM3OCAe/view?usp=sharing",
+      deskripsi: "Peraturan Desa Batetangnga tentang Penyertaan Modal Pemerintah Desa ke BUMDesa Sipodalle Batetangnga Sejahtera untuk pengembangan unit usaha dan sarana produktif.",
       ringkasanIsi: [
-        "Besaran alokasi penyertaan modal awal dari APBDes Batetangnga",
-        "Peruntukan modal: Pembangunan kolam ikan nila dan renovasi kios pasar",
-        "Mekanisme pelaporan dan pertanggungjawaban dana penyertaan modal desa",
-        "Ketentuan bagi hasil laba usaha untuk kas Pendapatan Asli Desa (PADes)"
+        "Penetapan alokasi dana penyertaan modal desa dari APBDes Batetangnga",
+        "Penyertaan modal untuk operasional unit pasar desa dan budidaya pembesaran ikan nila",
+        "Mekanisme pelaporan, pembukuan digital PPAK, dan pertanggungjawaban penyertaan modal",
+        "Kewajiban kontribusi bagi hasil laba bersih usaha untuk Pendapatan Asli Desa (PADes)"
       ]
     },
     {
