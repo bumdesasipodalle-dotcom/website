@@ -1,4 +1,4 @@
-﻿/**
+/**
  * DATA RESMI BUMDESA SIPODALLE BATETANGNGA SEJAHTERA
  */
 
@@ -185,13 +185,14 @@ const BUMDES_DATA = {
     galeriFoto: "12+ Dokumentasi"
   },
   visiMisi: {
-    visi: "Terwujudnya BUMDesa Sipodalle sebagai pilar kemandirian ekonomi Desa Batetangnga yang berdaya saing, transparan, berkeadilan, dan berkelanjutan menuju kesejahteraan masyarakat desa.",
+    visi: "Visi adalah suatu rangkaian kata yang di dalamnya terdapat impian. Cita-cita itulah yang kemudian mengerucut sebagai Visi BUM Desa Sipodalle Batetangnga Sejahtera, yaitu: “Melalui gerakan pemberdayaan masyarakat kita tumbuhkan tradisi membangun Desa”.",
+    visiTagline: "Melalui gerakan pemberdayaan masyarakat kita tumbuhkan tradisi membangun Desa",
+    misiPengantar: "Sebagai implementasi dalam mewujudkan Visi BUM Desa sebagaimana yang tercantum dalam poin di atas, meliputi:",
     misi: [
-      "Mengoptimalkan pengelolaan Pasar Desa sebagai pusat perdagangan yang tertib, bersih, dan berkeadilan.",
-      "Mengembangkan sektor perikanan produktif melalui budidaya dan pembesaran ikan nila bernilai ekonomi tinggi.",
-      "Mempersiapkan sarana infrastruktur air bersih (PAMSIMAS) dan destinasi ekowisata alam desa berkelanjutan.",
-      "Meningkatkan pendapatan asli desa (PADes) guna mendukung pembangunan fasilitas desa dan pemberdayaan warga.",
-      "Menerapkan tata kelola keuangan yang akuntabel dan transparan berbasis aplikasi laporan akuntansi digital (PPAK BUMDes)."
+      "Menggali dan memanfaatkan potensi alam yang diimbangi dengan peningkatan sumber daya manusia (SDM).",
+      "Membina kegiatan BUMDESA Sipodalle Batetangnga Sejahterah sebagai sarana kegiatan pengembangan ekonomi Desa dengan memperhatikan nilai-nilai luhur serta kultur budaya kemanusiaan dan kelestarian lingkungan hidup.",
+      "Mengembangkan kegiatan BUMDESA Sipodalle Batetangnga Sejahterah dalam rangka meningkatkan kesejahteraan ekonomi masyarakat.",
+      "Mengembangkan potensi, mendorong usaha ekonomi produktif guna menumbuhkan jiwa kewirausahaan menuju desa mandiri dan sejahtera."
     ]
   },
   pengurus: [
@@ -372,6 +373,7 @@ const BUMDES_DATA = {
       ukuran: "2.4 MB",
       badgeColor: "green",
       icon: "landmark",
+      downloadUrl: "https://drive.google.com/file/d/1A3EzHbcDbOoXfghurI-rujoYB_FQJhem/view?usp=sharing",
       deskripsi: "Peraturan Desa Batetangnga tentang Pembentukan, Pendirian, dan Tata Kelola Badan Usaha Milik Desa Sipodalle Batetangnga Sejahtera.",
       ringkasanIsi: [
         "Landasan hukum pendirian BUMDesa berasaskan musyawarah mufakat warga",
@@ -390,6 +392,7 @@ const BUMDES_DATA = {
       ukuran: "1.8 MB",
       badgeColor: "green",
       icon: "hand-holding-dollar",
+      downloadUrl: "",
       deskripsi: "Peraturan Desa tentang Penyertaan Modal Pemerintah Desa Batetangnga ke BUMDesa Sipodalle untuk modal kerja dan investasi sarana.",
       ringkasanIsi: [
         "Besaran alokasi penyertaan modal awal dari APBDes Batetangnga",
@@ -408,6 +411,7 @@ const BUMDES_DATA = {
       ukuran: "3.7 MB",
       badgeColor: "orange",
       icon: "file-signature",
+      downloadUrl: "",
       deskripsi: "Kumpulan Standar Operasional Prosedur (SOP) lengkap: SOP Pemasaran, SOP Budidaya Ikan Nila, SOP Pengelolaan Pasar Desa, dan SOP Keuangan Akuntansi PPAK.",
       ringkasanIsi: [
         "SOP Unit Budidaya Ikan: Jadwal pemberian pakan, kontrol kualitas air, dan teknis panen",
@@ -426,6 +430,7 @@ const BUMDES_DATA = {
       ukuran: "3.1 MB",
       badgeColor: "green",
       icon: "scale-balanced",
+      downloadUrl: "",
       deskripsi: "Anggaran Dasar (AD) dan Anggaran Rumah Tangga (ART) BUMDesa Sipodalle sebagai pedoman konstitusi organisasi dan aturan tata kerja kelembagaan.",
       ringkasanIsi: [
         "Hak, kewajiban, wewenang, dan tanggung jawab 10 Personil Pengurus",
@@ -444,6 +449,7 @@ const BUMDES_DATA = {
       ukuran: "2.1 MB",
       badgeColor: "blue",
       icon: "file-invoice-dollar",
+      downloadUrl: "",
       deskripsi: "Dokumen proposal pengajuan penambahan modal kerja pengembangan budidaya ikan nila siklus II dan persiapan sarana air bersih PAMSIMAS.",
       ringkasanIsi: [
         "Rencana Anggaran Biaya (RAB) pembuatan 4 petak kolam pembesaran baru",
@@ -462,6 +468,7 @@ const BUMDES_DATA = {
       ukuran: "1.9 MB",
       badgeColor: "green",
       icon: "gavel",
+      downloadUrl: "",
       deskripsi: "Peraturan Desa tentang Ketertiban Penyelenggaraan Pasar Desa dan Pemanfaatan Sumber Daya Air Tawar untuk Budidaya Perikanan.",
       ringkasanIsi: [
         "Regulasi tarif resmi retribusi pedagang harian, mingguan, dan sewa kios",
@@ -480,6 +487,7 @@ const BUMDES_DATA = {
       ukuran: "1.2 MB",
       badgeColor: "green",
       icon: "certificate",
+      downloadUrl: "https://drive.google.com/file/d/1HwdWklhuImGBxVUS4uEF3nOc07STzbct/view?usp=sharing",
       deskripsi: "Keputusan Menteri Hukum dan Hak Asasi Manusia RI tentang Pengesahan Badan Hukum BUM Desa Sipodalle Batetangnga Sejahtera.",
       ringkasanIsi: [
         "Nomor Induk Badan Hukum Resmi terdaftar di database Kemenkumham RI",

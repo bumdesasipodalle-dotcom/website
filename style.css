@@ -427,16 +427,24 @@ button, input, select, textarea { font-family: inherit; font-size: inherit; }
 .legalitas-box h4 { font-size: 0.92rem; color: var(--primary-900); margin-bottom: 8px; }
 .legalitas-box p { font-size: 0.85rem; margin-bottom: 4px; color: var(--neutral-700); }
 
-.visi-misi-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 22px; margin-bottom: 50px; }
+.visi-misi-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: 24px; margin-bottom: 50px; }
 .visi-card {
   background: var(--grad-hero); color: var(--white); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-md);
+  display: flex; flex-direction: column; justify-content: space-between;
 }
 .visi-card h3 { color: var(--accent-400); font-size: 1.4rem; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
-.visi-card p { font-size: 1.05rem; line-height: 1.65; color: var(--neutral-100); }
+.visi-card p { font-size: 0.98rem; line-height: 1.7; color: var(--neutral-100); margin-bottom: 16px; }
+.visi-highlight-quote {
+  background: rgba(255, 255, 255, 0.12); backdrop-filter: blur(8px);
+  border-left: 4px solid var(--accent-400); border-radius: var(--radius-sm);
+  padding: 14px 18px; font-size: 1.05rem; font-weight: 700; color: var(--accent-300);
+  font-style: italic; line-height: 1.5;
+}
 .misi-card { background: var(--white); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--neutral-200); box-shadow: var(--shadow-sm); }
-.misi-card h3 { color: var(--primary-800); font-size: 1.4rem; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+.misi-card h3 { color: var(--primary-800); font-size: 1.4rem; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.misi-intro-text { font-size: 0.92rem; color: var(--neutral-600); margin-bottom: 16px; font-weight: 500; }
 .misi-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-.misi-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--neutral-700); }
+.misi-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--neutral-700); line-height: 1.6; }
 .misi-list li i { color: var(--primary-600); font-size: 0.95rem; margin-top: 3px; flex-shrink: 0; }
 
 /* Struktur Organisasi 10 Personil */
