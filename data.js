@@ -366,20 +366,20 @@ const BUMDES_DATA = {
     {
       id: "doc-1",
       no: "01",
-      judul: "Perdes Pendirian BUMDesa Sipodalle",
-      nomorSurat: "Perdes Batetangnga No. 04 Tahun 2019",
+      judul: "Perdes Pendirian BUMDesa Sipodalle (Perubahan)",
+      nomorSurat: "Perdes Batetangnga No. 01 Tahun 2022",
       kategori: "Regulasi & Legalitas",
       tipe: "PDF Resmi",
       ukuran: "2.4 MB",
       badgeColor: "green",
       icon: "landmark",
       downloadUrl: "https://drive.google.com/file/d/1A3EzHbcDbOoXfghurI-rujoYB_FQJhem/view?usp=sharing",
-      deskripsi: "Peraturan Desa Batetangnga tentang Pembentukan, Pendirian, dan Tata Kelola Badan Usaha Milik Desa Sipodalle Batetangnga Sejahtera.",
+      deskripsi: "Peraturan Desa Batetangnga tentang Perubahan Pendirian dan Tata Kelola Badan Usaha Milik Desa Sipodalle Batetangnga Sejahtera.",
       ringkasanIsi: [
-        "Landasan hukum pendirian BUMDesa berasaskan musyawarah mufakat warga",
+        "Landasan hukum perubahan pendirian BUMDesa sesuai regulasi PP No. 11 Tahun 2021",
         "Penetapan nama resmi: BUM Desa Sipodalle Batetangnga Sejahtera",
         "Penetapan kedudukan kantor sekretariat di Jl. Tanai Dusun Kanang",
-        "Tujuan pemberdayaan ekonomi lokal dan peningkatan Pendapatan Asli Desa"
+        "Penataan unit usaha produktif pasar desa dan budidaya perikanan air tawar"
       ]
     },
     {
@@ -404,19 +404,19 @@ const BUMDES_DATA = {
     {
       id: "doc-3",
       no: "03",
-      judul: "SOP Tiap Unit Usaha & Manajemen BUMDes",
-      nomorSurat: "SK Direktur No. 08/SOP/BUMDES-SP/2022",
+      judul: "SK Direktur & SOP Operasional BUMDes",
+      nomorSurat: "Nomor: 118/05.3/76.04.06.2006/2025",
       kategori: "SOP Operasional",
-      tipe: "PDF Bundle",
-      ukuran: "3.7 MB",
+      tipe: "PDF Resmi",
+      ukuran: "2.6 MB",
       badgeColor: "orange",
       icon: "file-signature",
-      downloadUrl: "",
-      deskripsi: "Kumpulan Standar Operasional Prosedur (SOP) lengkap: SOP Pemasaran, SOP Budidaya Ikan Nila, SOP Pengelolaan Pasar Desa, dan SOP Keuangan Akuntansi PPAK.",
+      downloadUrl: "https://drive.google.com/file/d/19EfW4q2QQIj7d4oDA2bP9A_M977NA9Es/view?usp=sharing",
+      deskripsi: "Surat Keputusan Direktur BUMDesa Sipodalle beserta kumpulan Standar Operasional Prosedur (SOP) pengelolaan unit usaha, budidaya ikan nila, dan pasar desa.",
       ringkasanIsi: [
+        "Ketetapan Direktur tentang pengorganisasian dan tata kerja operasional BUMDes",
         "SOP Unit Budidaya Ikan: Jadwal pemberian pakan, kontrol kualitas air, dan teknis panen",
         "SOP Unit Pasar: Tata tertib penarikan retribusi, kebersihan kios, dan pembagian lapak",
-        "SOP Pemasaran: Saluran distribusi ikan segar dan penetapan harga jual kiloan/partai",
         "SOP Keuangan: Alur pencatatan kas masuk/keluar pada pembukuan PPAK BUMDes"
       ]
     },
@@ -481,7 +481,7 @@ const BUMDES_DATA = {
       id: "doc-7",
       no: "07",
       judul: "SK Sertifikat Kemenkumham RI",
-      nomorSurat: "AHU-01289.AH.01.33.TAHUN 2021",
+      nomorSurat: "NOMOR: AHU-01166.AH.01.33.TAHUN 2023",
       kategori: "Regulasi & Legalitas",
       tipe: "Sertifikat Digital",
       ukuran: "1.2 MB",
