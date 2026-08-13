@@ -994,19 +994,78 @@ button, input, select, textarea { font-family: inherit; font-size: inherit; }
 .alloc-list li { display: flex; justify-content: space-between; font-size: 0.85rem; border-bottom: 1px dashed rgba(255, 255, 255, 0.15); padding-bottom: 6px; }
 .alloc-list li span:last-child { font-weight: 700; color: var(--accent-400); }
 
-.modul-laporan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.modul-grid, .modul-laporan-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 14px;
+}
 .modul-card {
-  background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--neutral-200);
-  padding: 22px; box-shadow: var(--shadow-sm); transition: all 0.3s ease;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--neutral-200);
+  padding: 18px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.modul-card:hover { transform: translateY(-3px); border-color: var(--primary-400); box-shadow: var(--shadow-md); }
-.modul-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.modul-card:hover {
+  transform: translateX(5px);
+  border-color: var(--primary-400);
+  box-shadow: var(--shadow-md);
+  background: #f8fafc;
+}
+.modul-card-header {
+  display: contents;
+}
 .modul-icon {
-  width: 40px; height: 40px; border-radius: var(--radius-md); background: var(--primary-100); color: var(--primary-700);
-  display: flex; align-items: center; justify-content: center; font-size: 18px;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: var(--primary-100);
+  color: var(--primary-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
 }
-.modul-card h4 { font-size: 1.05rem; margin-bottom: 6px; }
-.modul-card p { font-size: 0.82rem; color: var(--neutral-600); line-height: 1.5; }
+.modul-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.modul-card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.modul-card h4 {
+  font-size: 1.05rem;
+  color: var(--neutral-900);
+  margin: 0;
+  font-weight: 700;
+}
+.modul-card p {
+  font-size: 0.86rem;
+  color: var(--neutral-600);
+  line-height: 1.5;
+  margin: 0;
+}
+.modul-badge-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--primary-100);
+  color: var(--primary-800);
+  white-space: nowrap;
+}
 
 /* Footer */
 .site-footer { background: var(--neutral-900); color: var(--neutral-300); padding: 60px 0 26px; border-top: 4px solid var(--primary-500); }
@@ -1837,7 +1896,7 @@ button, input, select, textarea { font-family: inherit; font-size: inherit; }
               </div>
             </div>
 
-            <!-- Modul Laporan Grid -->
+            <!-- Modul Laporan Grid (Susunan Horizontal yang Elegan) -->
             <h3 style="font-size: 1.25rem; margin-top: 36px; margin-bottom: 18px; color: var(--neutral-900);">
               <i class="fa-solid fa-folder-tree text-green"></i> Modul Laporan Keuangan Digital
             </h3>
@@ -2386,12 +2445,12 @@ const BUMDES_DATA = {
       badgeColor: "green",
       icon: "hand-holding-dollar",
       downloadUrl: "https://drive.google.com/file/d/19PAZOv2BLHWSRSXbmrvX2RfiXFM3OCAe/view?usp=sharing",
-      deskripsi: "Peraturan Desa Batetangnga tentang Penyertaan Modal Pemerintah Desa ke BUMDesa Sipodalle Batetangnga Sejahtera untuk pengembangan unit usaha dan sarana produktif.",
+      deskripsi: "Peraturan Desa Batetangnga tentang Penyertaan Modal Pemerintah Desa ke BUMDesa Sipodalle Batetangnga Sejahtera untuk menjalankan Unit Usaha Budidaya Ikan Air Tawar bersumber dari alokasi Anggaran Program Ketahanan Pangan Nasional di Desa.",
       ringkasanIsi: [
-        "Penetapan alokasi dana penyertaan modal desa dari APBDes Batetangnga",
-        "Penyertaan modal untuk operasional unit pasar desa dan budidaya pembesaran ikan nila",
-        "Mekanisme pelaporan, pembukuan digital PPAK, dan pertanggungjawaban penyertaan modal",
-        "Kewajiban kontribusi bagi hasil laba bersih usaha untuk Pendapatan Asli Desa (PADes)"
+        "Penyertaan modal bersumber dari alokasi Anggaran Program Ketahanan Pangan Nasional di Desa",
+        "Alokasi khusus untuk menjalankan dan memperkuat Unit Usaha Budidaya Ikan Air Tawar (Ikan Nila)",
+        "Pembiayaan sarana kolam pembesaran, pengadaan bibit unggul, pakan berkualitas, dan manajemen perairan",
+        "Pencatatan akuntansi digital PPAK BUMDes dan penyaluran bagi hasil PADes untuk kesejahteraan warga"
       ]
     },
     {
@@ -3134,7 +3193,7 @@ const BUMDES_DATA = {
       if (modal) modal.classList.remove('active');
     }
 
-    // Render Modul Laporan & Transparansi
+    // Render Modul Laporan & Transparansi (Format Horizontal Elegan)
     function renderKeuanganDashboard() {
       const compContainer = document.getElementById('compBarsList');
       if (compContainer) {
@@ -3155,12 +3214,14 @@ const BUMDES_DATA = {
       if (modulContainer) {
         modulContainer.innerHTML = BUMDES_DATA.keuanganTransparansi.modulLaporan.map(m => `
           <div class="modul-card">
-            <div class="modul-card-header">
-              <div class="modul-icon"><i class="fa-solid fa-${m.icon}"></i></div>
-              <span class="section-badge green" style="margin-bottom:0; font-size:0.72rem;">${m.badge}</span>
+            <div class="modul-icon"><i class="fa-solid fa-${m.icon}"></i></div>
+            <div class="modul-card-content">
+              <div class="modul-card-top-row">
+                <h4>${m.nama}</h4>
+                <span class="modul-badge-pill">${m.badge}</span>
+              </div>
+              <p>${m.deskripsi}</p>
             </div>
-            <h4>${m.nama}</h4>
-            <p>${m.deskripsi}</p>
           </div>
         `).join('');
       }

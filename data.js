@@ -393,12 +393,12 @@ const BUMDES_DATA = {
       badgeColor: "green",
       icon: "hand-holding-dollar",
       downloadUrl: "https://drive.google.com/file/d/19PAZOv2BLHWSRSXbmrvX2RfiXFM3OCAe/view?usp=sharing",
-      deskripsi: "Peraturan Desa Batetangnga tentang Penyertaan Modal Pemerintah Desa ke BUMDesa Sipodalle Batetangnga Sejahtera untuk pengembangan unit usaha dan sarana produktif.",
+      deskripsi: "Peraturan Desa Batetangnga tentang Penyertaan Modal Pemerintah Desa ke BUMDesa Sipodalle Batetangnga Sejahtera untuk menjalankan Unit Usaha Budidaya Ikan Air Tawar bersumber dari alokasi Anggaran Program Ketahanan Pangan Nasional di Desa.",
       ringkasanIsi: [
-        "Penetapan alokasi dana penyertaan modal desa dari APBDes Batetangnga",
-        "Penyertaan modal untuk operasional unit pasar desa dan budidaya pembesaran ikan nila",
-        "Mekanisme pelaporan, pembukuan digital PPAK, dan pertanggungjawaban penyertaan modal",
-        "Kewajiban kontribusi bagi hasil laba bersih usaha untuk Pendapatan Asli Desa (PADes)"
+        "Penyertaan modal bersumber dari alokasi Anggaran Program Ketahanan Pangan Nasional di Desa",
+        "Alokasi khusus untuk menjalankan dan memperkuat Unit Usaha Budidaya Ikan Air Tawar (Ikan Nila)",
+        "Pembiayaan sarana kolam pembesaran, pengadaan bibit unggul, pakan berkualitas, dan manajemen perairan",
+        "Pencatatan akuntansi digital PPAK BUMDes dan penyaluran bagi hasil PADes untuk kesejahteraan warga"
       ]
     },
     {
