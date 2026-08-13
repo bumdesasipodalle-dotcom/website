@@ -404,20 +404,20 @@ const BUMDES_DATA = {
     {
       id: "doc-3",
       no: "03",
-      judul: "SK Direktur & SOP Operasional BUMDes",
-      nomorSurat: "Nomor: 118/05.3/76.04.06.2006/2025",
-      kategori: "SOP Operasional",
-      tipe: "PDF Resmi",
-      ukuran: "2.6 MB",
-      badgeColor: "orange",
-      icon: "file-signature",
-      downloadUrl: "https://drive.google.com/file/d/19EfW4q2QQIj7d4oDA2bP9A_M977NA9Es/view?usp=sharing",
-      deskripsi: "Surat Keputusan Direktur BUMDesa Sipodalle beserta kumpulan Standar Operasional Prosedur (SOP) pengelolaan unit usaha, budidaya ikan nila, dan pasar desa.",
+      judul: "SK Direktur tentang Pengangkatan Pegawai BUMDes",
+      nomorSurat: "Keputusan Direktur Nomor 01 Tahun 2025",
+      kategori: "Regulasi & Legalitas",
+      tipe: "Dokumen Resmi",
+      ukuran: "1.5 MB",
+      badgeColor: "green",
+      icon: "user-check",
+      downloadUrl: "https://docs.google.com/document/d/1n76jsrXT2UoYa9_pQzWQ711ogOP3QY0T/edit?usp=sharing&ouid=102650960348222431856&rtpof=true&sd=true",
+      deskripsi: "Keputusan Direktur Badan Usaha Milik Desa Sipodalle Batetangnga Sejahtera Nomor 01 Tahun 2025 tentang Pengangkatan Pegawai Badan Usaha Milik Desa (BUM Desa) Sipodalle Batetangnga Sejahtera, Desa Batetangnga, Kecamatan Binuang, Kabupaten Polewali Mandar.",
       ringkasanIsi: [
-        "Ketetapan Direktur tentang pengorganisasian dan tata kerja operasional BUMDes",
-        "SOP Unit Budidaya Ikan: Jadwal pemberian pakan, kontrol kualitas air, dan teknis panen",
-        "SOP Unit Pasar: Tata tertib penarikan retribusi, kebersihan kios, dan pembagian lapak",
-        "SOP Keuangan: Alur pencatatan kas masuk/keluar pada pembukuan PPAK BUMDes"
+        "Pengangkatan resmi pegawai operasional BUMDesa Sipodalle Batetangnga Sejahtera",
+        "Penetapan struktur penugasan pada unit usaha pasar desa dan budidaya perikanan air tawar",
+        "Penetapan uraian tugas pokok, fungsi, wewenang, hak, dan kewajiban pegawai",
+        "Pedoman disiplin kerja, etika pelayanan, dan standar kinerja operasional BUMDesa"
       ]
     },
     {
@@ -517,19 +517,20 @@ const BUMDES_DATA = {
     {
       id: "doc-9",
       no: "09",
-      judul: "SOP Tata Kelola Kelembagaan BUMDes",
-      nomorSurat: "SOP-KL/BUMDES-SP/2023",
+      judul: "SK Direktur & SOP Operasional BUMDes",
+      nomorSurat: "Nomor: 118/05.3/76.04.06.2006/2025",
       kategori: "SOP Operasional",
-      tipe: "PDF Pedoman",
-      ukuran: "1.6 MB",
+      tipe: "PDF Resmi",
+      ukuran: "2.6 MB",
       badgeColor: "orange",
-      icon: "users-gear",
-      deskripsi: "Pedoman tata kelola manajemen internal, koordinasi kerja 10 personil, etika kerja, dan alur administrasi persuratan resmi kantor.",
+      icon: "file-signature",
+      downloadUrl: "https://drive.google.com/file/d/19EfW4q2QQIj7d4oDA2bP9A_M977NA9Es/view?usp=sharing",
+      deskripsi: "Surat Keputusan Direktur BUMDesa Sipodalle beserta kumpulan Standar Operasional Prosedur (SOP) pengelolaan unit usaha, budidaya ikan nila, dan pasar desa.",
       ringkasanIsi: [
-        "Struktur garis komando antara Penasehat, Pengawas, Direktur, dan Kepala Unit",
-        "Prosedur pembuatan berita acara, surat keputusan, dan pengarsipan berkas",
-        "Mekanisme rapat evaluasi bulanan dan pertanggungjawaban kinerja berkala",
-        "Sistem penilaian transparansi dan integritas pengelolaan aset BUMDes"
+        "Ketetapan Direktur tentang pengorganisasian dan tata kerja operasional BUMDes",
+        "SOP Unit Budidaya Ikan: Jadwal pemberian pakan, kontrol kualitas air, dan teknis panen",
+        "SOP Unit Pasar: Tata tertib penarikan retribusi, kebersihan kios, dan pembagian lapak",
+        "SOP Keuangan: Alur pencatatan kas masuk/keluar pada pembukuan PPAK BUMDes"
       ]
     },
     {
